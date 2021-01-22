@@ -58,5 +58,6 @@ public static void main(String[] args) {
         String format = sdf.format(date);
         System.out.println(date);
         System.out.println(format);
+        System.out.println();
     }
 }
