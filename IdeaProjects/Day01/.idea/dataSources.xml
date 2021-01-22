@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Demo01ToString.java" uuid="10bde424-9b76-4360-b4e0-eb6fb889c8d6">
+      <driver-ref>derby.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../Day13/../../../03 Innovation/03 JAVA/JavaSE-配套资料/02-Java语言进阶/02-Java语言进阶/day01_Object类、常用API/code/01_API/src/com/itheima/demo01/Object/Demo01ToString.java</jdbc-url>
+    </data-source>
+  </component>
+</project>
