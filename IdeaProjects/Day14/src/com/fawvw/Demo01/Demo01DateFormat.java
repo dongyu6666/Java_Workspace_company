@@ -1,5 +1,6 @@
 package com.fawvw.Demo01;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -43,10 +44,12 @@ public class Demo01DateFormat {
                 public Date parse(String source) throws ParseException
                 parse方法声明了一个异常叫ParseException
                 如果字符串和构造方法的模式不一样,那么程序就会抛出此异常
-                调用一个抛出了异常的方法,就必须的处理这个异常,要么throws继续抛出这个异常,要么try catch自己处理
+                调用一个抛出了异常的方法,就必须得处理这个异常,要么throws继续抛出这个异常,要么try catch自己处理
      */
-public static void main(String[] args) {
+public static void main(String[] args) throws ParseException {
     demo01();
+    System.out.println("============");
+    demo02();
 }
     public static void demo01(){
 
@@ -56,8 +59,15 @@ public static void main(String[] args) {
         //String format(Date date)  按照指定的模式,把Date日期,格式化为符合模式的字符串
         Date date = new Date();
         String format = sdf.format(date);
-        System.out.println(date);
-        System.out.println(format);
-        System.out.println();
+        System.out.println(date);//Fri Jan 22 14:01:58 CST 2021,打印现在的时间
+        System.out.println(format);//2021年01月22日 14时01分58秒
+
+    }
+
+    public static void demo02() throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
+        Date parse = sdf.parse("2088年08月08日 15时51分54秒");//把字符串解析为date
+        System.out.println(parse);
+
     }
 }
