@@ -30,7 +30,7 @@ CREATE TABLE `role` (
 DROP TABLE IF EXISTS `permission`;
 CREATE TABLE `permission` (
   `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '权限id',
-  `title` VARCHAR(64) NOT NULL DEFAULT '' COMMENT '权限标题',
+  `menu` VARCHAR(64) NOT NULL DEFAULT '' COMMENT '权限菜单',
   #`uris` varchar(1000) NOT NULL DEFAULT '' COMMENT '权限路径',
   #`status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '该记录是否有效1：有效、0：无效',
   `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
@@ -55,7 +55,7 @@ DROP TABLE IF EXISTS `role_permission`;
 CREATE TABLE `role_permission` (
   `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `role_id` INT(11) NOT NULL DEFAULT '0' COMMENT '角色id',
-  `access_id` INT(11) NOT NULL DEFAULT '0' COMMENT '权限id',
+  `permission_id` INT(11) NOT NULL DEFAULT '0' COMMENT '权限id',
   `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`)
@@ -81,3 +81,15 @@ CREATE TABLE `operate_log_info` (
   `update_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`)
 ) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+#查询所有人的名字，角色，权限
+SELECT u.id,u.name,r.name,p.menu
+FROM USER u 
+INNER JOIN user_role ur ON u.id = ur.uid
+INNER JOIN ROLE r ON r.id = ur.role_id
+INNER JOIN role_permission rp ON r.id = rp.role_id
+INNER JOIN permission p ON p.id = rp.permission_id
+
+
