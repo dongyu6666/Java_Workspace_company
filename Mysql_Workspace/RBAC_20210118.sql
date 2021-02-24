@@ -4,7 +4,8 @@ CREATE TABLE `user` (
   `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` VARCHAR(20) NOT NULL DEFAULT '' COMMENT '用户名',
   `password` VARCHAR(20) NOT NULL DEFAULT '' COMMENT '密码',
-  #`email` varchar(36) NOT NULL DEFAULT '' COMMENT '用户邮箱',
+  `email` VARCHAR(36) NOT NULL DEFAULT '' COMMENT '用户邮箱',
+  `phone` VARCHAR(20) NOT NULL DEFAULT '' COMMENT '用户手机号',
   #`is_admin` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为超级管理员1:是、0:否，默认不是',
   #`status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '该条记录是否有效1:有效、0：无效',
   `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
@@ -37,7 +38,7 @@ CREATE TABLE `permission` (
   `update_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`)
 ) ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-
+d
 
 #---------用户角色表--------------
 DROP TABLE IF EXISTS `user_role`;
