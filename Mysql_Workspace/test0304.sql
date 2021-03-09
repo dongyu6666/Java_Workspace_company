@@ -9,3 +9,5 @@ INNER JOIN `department` AS d ON d.id = b.de_id
 WHERE n.id =  '10'
 
 
+ALTER TABLE `test`.`department` ADD COLUMN `no3` INT(2) NULL; 
+

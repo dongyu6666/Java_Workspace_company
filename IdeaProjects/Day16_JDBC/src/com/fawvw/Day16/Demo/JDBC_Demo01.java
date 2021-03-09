@@ -1,4 +1,4 @@
-package com.fawvw.Day16.Demo01;
+package com.fawvw.Day16.Demo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -18,6 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/../Day14/Day14.iml" filepath="$PROJECT_DIR$/../Day14/Day14.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Day15/Day15.iml" filepath="$PROJECT_DIR$/../Day15/Day15.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Day16_JDBC/Day16_JDBC.iml" filepath="$PROJECT_DIR$/../Day16_JDBC/Day16_JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Day17_JDBC/Day17_JDBC.iml" filepath="$PROJECT_DIR$/../Day17_JDBC/Day17_JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Day18_Net/Day18_Net.iml" filepath="$PROJECT_DIR$/../Day18_Net/Day18_Net.iml" />
     </modules>
   </component>
 </project>
