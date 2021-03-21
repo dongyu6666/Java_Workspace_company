@@ -3,7 +3,7 @@ package jdbc;
 * 使用prepareStatement防止sql注入
 * */
 import domain.department;
-import util.JDBCUtils;
+import util.JDBCUtils_old;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ public class JDBC_Demo05 {
         ResultSet rs = null;
         //1.获取连接
         try {
-            conn =  JDBCUtils.getConnection();
+            conn =  JDBCUtils_old.getConnection();
             //2.定义sql
             String sql = "select * from user where user_name = ? and password = ?";
             //3.获取执行sql的对象
@@ -71,7 +71,7 @@ public class JDBC_Demo05 {
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            JDBCUtils.close(rs,pstmt,conn);
+            JDBCUtils_old.close(rs,pstmt,conn);
         }
 
 

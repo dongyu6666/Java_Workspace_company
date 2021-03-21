@@ -9,7 +9,7 @@ import java.util.Properties;
 /**
  * JDBC工具类
  */
-public class JDBCUtils {
+public class JDBCUtils_old {
     private static String url;
     private static String user;
     private static String password;
@@ -25,7 +25,7 @@ public class JDBCUtils {
             Properties pro = new Properties();
 
             //获取src路径下的文件的方式--->ClassLoader 类加载器
-            ClassLoader classLoader = JDBCUtils.class.getClassLoader();
+            ClassLoader classLoader = JDBCUtils_old.class.getClassLoader();
             URL res  = classLoader.getResource("jdbc.properties");
             String path = res.getPath();
 

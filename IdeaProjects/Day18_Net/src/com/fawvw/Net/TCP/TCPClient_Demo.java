@@ -15,8 +15,8 @@ public class TCPClient_Demo {
         byte[] bytes = new byte[1024];
         int read = is.read(bytes);
         System.out.println();
-        String str = new String(bytes,0,read);
-        System.out.println(str);
+        String str2 = new String(bytes,0,read);
+        System.out.println(str2);
         s.close();
     }
 }

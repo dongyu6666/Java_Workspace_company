@@ -11,3 +11,4 @@ WHERE n.id =  '10'
 
 ALTER TABLE `test`.`department` ADD COLUMN `no3` INT(2) NULL; 
 
+INSERT INTO `test`.`account` (`id`, `name`, `balance`) VALUES ('6', 'Somebody', '100');

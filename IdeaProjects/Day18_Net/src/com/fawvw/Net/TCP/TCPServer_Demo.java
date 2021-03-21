@@ -14,10 +14,10 @@ public class TCPServer_Demo {
 
         byte[] bytes = new byte[1024];
         int read = is.read(bytes);
-        String str = new String(bytes,0,read);
-        System.out.println(str);
+        String str1 = new String(bytes,0,read);
+        System.out.println(str1);
         OutputStream os = socket.getOutputStream();
-        os.write("我是服务器，收到".getBytes());
+        os.write("服务器收到啦".getBytes());
 
         socket.close();
         ss.close();

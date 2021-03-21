@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+    <!--配置Servlet -->
+    <servlet>
+        <servlet-name>demo_666</servlet-name>
+        <servlet-class>comfawvw.Web.servlet.ServletDemo2</servlet-class>
+        <!--指定Servlet的创建时机 -->
+        <!--在第一次被访问时就创建，值为负 -->
+        <!--在服务器启动时就创建，值为0或正整数 -->
+        <load-on-startup>5</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>demo_666</servlet-name>
+        <url-pattern>/demo_666</url-pattern>
+    </servlet-mapping>
+
+</web-app>
