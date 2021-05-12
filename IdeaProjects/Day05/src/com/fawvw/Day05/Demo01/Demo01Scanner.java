@@ -21,6 +21,7 @@ public class Demo01Scanner {
         Scanner sc = new Scanner(System.in);
         //3、使用,获取键盘输入的int数字
         int num = sc.nextInt();
+        String next = sc.next();
         System.out.println("数字是："+ num);
         String str = sc.next();
         System.out.println("字符串是："+ str);

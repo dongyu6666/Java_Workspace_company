@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="utf8" collation="utf8_general_ci">plee_platform_self</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="sg" view="standard">
+<left>196</left>
+<top>202</top>
+<width>231</width>
+<height>177</height>
+<sql_create_table>CREATE TABLE `sg` (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `platform_name` varchar(20) NOT NULL COMMENT '车型平台名称',
+  `diagnose_adr` varchar(6) NOT NULL COMMENT '诊断地址',
+  `SG_name` varchar(15) NOT NULL COMMENT '控制器名字缩写',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="cartype" view="standard">
+<left>679</left>
+<top>203</top>
+<width>226</width>
+<height>160</height>
+<sql_create_table>CREATE TABLE `cartype` (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `cartype_name` varchar(20) NOT NULL COMMENT '车型名称',
+  `responsible` varchar(30) NOT NULL COMMENT '负责人',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="platform" view="standard">
+<left>435</left>
+<top>204</top>
+<width>231</width>
+<height>143</height>
+<sql_create_table>CREATE TABLE `platform` (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `platform_name` varchar(20) NOT NULL COMMENT '车型平台名称',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>

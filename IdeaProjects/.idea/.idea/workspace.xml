@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c76d260-4698-40f1-88a3-a9363a3138e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Day19_servlet_login/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/lib/HikariCP-3.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/lib/slf4j-api-1.7.24.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/lib/slf4j-nop-1.7.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/JDBCUtils/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/dao/plee_UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/domain/UserLei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/domain/plee_PermissionLei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/domain/plee_RoleLei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/domain/plee_Role_permissionLei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/domain/plee_UserLei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/domain/plee_User_roleLei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/hikaricp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/servlet/FailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/servlet/SuccessServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/servlet/plee_LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/test/BeanUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/src/test/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/WEB-INF/lib/HikariCP-3.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/WEB-INF/lib/mchange-commons-java-0.2.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/WEB-INF/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/WEB-INF/lib/slf4j-api-1.7.24.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/WEB-INF/lib/slf4j-nop-1.7.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../plee_platform_DBserver/web/plee_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/.idea/artifacts/Tomcat_test_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/.idea/artifacts/Tomcat_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/.idea/artifacts/Tomcat_war_exploded2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/out/artifacts/Day19_servlet_war_exploded/WEB-INF/classes/com/fawvw/web/servlet/ServletDemo4_Http.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/artifacts/Day19_servlet_war_exploded/WEB-INF/classes/com/fawvw/web/servlet/ServletDemo4_Http.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/out/artifacts/Day19_servlet_war_exploded/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/artifacts/Day19_servlet_war_exploded/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/out/production/Day17_JDBC_HikariCP/hikaricp.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/production/Day17_JDBC_HikariCP/hikaricp.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/out/production/Day19_servlet/com/fawvw/web/servlet/ServletDemo4_Http.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/production/Day19_servlet/com/fawvw/web/servlet/ServletDemo4_Http.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day17_JDBC_HikariCP/src/hikaricp.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Day17_JDBC_HikariCP/src/hikaricp.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day19_servlet/src/com/fawvw/web/servlet/ServletDemo4_Http.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day19_servlet/src/com/fawvw/web/servlet/ServletDemo4_Http.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day19_servlet/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Day19_servlet/web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tomcat_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mysql_Workspace/RBAC_20210317.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mysql_Workspace/RBAC_20210317.sql" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1qudUcyyvt7q8sKUrpxeqf3o2nT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c76d260-4698-40f1-88a3-a9363a3138e1" name="Default Changelist" comment="" />
+      <created>1617933425753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617933425753</updated>
+      <workItem from="1617933427126" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

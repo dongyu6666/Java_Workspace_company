@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="plee_platform_tomcat">
+    <output-path>$PROJECT_DIR$/out/artifacts/plee_platform_tomcat</output-path>
+    <root id="root" />
+  </artifact>
+</component>

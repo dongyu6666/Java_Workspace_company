@@ -1,0 +1,3594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='ipb.xsl'?><IB-1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="uuid_cad86a7f-6fc1-4259-82f3-9a8b8aad3afd" version="3.24" xsi:noNamespaceSchemaLocation="IB-1.xsd">
+  <NAME>0019_ICAS1_Host</NAME>
+  <RELEASE-DATE>18.12.2020</RELEASE-DATE>
+  <IBN-REQUIRED>true</IBN-REQUIRED>
+  <DOC-INFO>
+    <CONTACTS>
+      <CONTACT documentOwner="true" id="uuid_e552f70f-2814-405e-b0f2-5838c2c71380">
+        <NAME>Christian Langemann</NAME>
+        <DEPARTMENT>PMP-E/A</DEPARTMENT>
+        <ROLE>Produktion</ROLE>
+        <PHONE>+49-5361-9-124487</PHONE>
+        <MOBILE-PHONE>+49-15229124487</MOBILE-PHONE>
+        <MAIL>christian.langemann@volkswagen.de</MAIL>
+      </CONTACT>
+      <CONTACT documentOwner="true" id="uuid_1211ffe5-acae-4221-ab41-8fb45cdcfca7">
+        <NAME>Christoper Koch</NAME>
+        <ROLE>DSB</ROLE>
+      </CONTACT>
+      <CONTACT documentOwner="true" id="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa">
+        <NAME>Erik Hahn</NAME>
+        <DEPARTMENT>EESN/1</DEPARTMENT>
+        <ROLE>BTV</ROLE>
+        <PHONE>+49-5361-9-88251</PHONE>
+        <MOBILE-PHONE>+49-160-93906687</MOBILE-PHONE>
+        <MAIL>erik.hahn@volkswagen.de</MAIL>
+      </CONTACT>
+      <CONTACT documentOwner="true" id="uuid_3b98f079-abae-4efe-9ebc-f869d6433959">
+        <NAME>Erik Hartmann</NAME>
+        <DEPARTMENT>EESD/3</DEPARTMENT>
+        <ROLE>DSB</ROLE>
+        <PHONE>+49-5361-9-86038</PHONE>
+        <MOBILE-PHONE>+49-160-9-0832716</MOBILE-PHONE>
+        <MAIL>Erik.Hartmann@volkswagen.de</MAIL>
+      </CONTACT>
+      <CONTACT documentOwner="true" id="uuid_31062747-7f2a-4ee8-b0be-2fd0f8a3c78e">
+        <NAME>Jonas Dorn</NAME>
+        <DEPARTMENT>VST-3/6</DEPARTMENT>
+        <ROLE>Kundendienst Bedatung</ROLE>
+        <PHONE>+49-5361-9-14096</PHONE>
+        <MOBILE-PHONE>+49-152-22859325</MOBILE-PHONE>
+        <MAIL>jonas.dorn@volkswagen.de</MAIL>
+      </CONTACT>
+      <CONTACT documentOwner="true" id="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96">
+        <NAME>%TBD%</NAME>
+      </CONTACT>
+      <CONTACT documentOwner="true" id="uuid_3169d85c-f9d2-4222-bde9-875a671f0fad">
+        <NAME>Christian Langemann</NAME>
+        <USER-ID>DSI92JV</USER-ID>
+        <COMPANY>VW AG</COMPANY>
+        <DIVISION>PT-E</DIVISION>
+        <DEPARTMENT>PT-E/B</DEPARTMENT>
+        <ROLE>Planer</ROLE>
+        <PHONE>015229124487</PHONE>
+        <MOBILE-PHONE>015229124487</MOBILE-PHONE>
+        <MAIL>christian.langemann@volkswagen.de</MAIL>
+      </CONTACT>
+    </CONTACTS>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <VERSION>1_0</VERSION>
+        <DATE>07.02.2018</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>initiale Erstellung</CHANGE>
+        <TOOL>IB EDITOR</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>2_0</VERSION>
+        <DATE>08.10.2018</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>"ZDC Schreiben" und "Document Informtions" aktualisiert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>2_1_DRAFT_1</VERSION>
+        <DATE>09.10.2018</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Durchsprachetermin am 09.10.2018</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>2_1</VERSION>
+        <DATE>12.10.2018</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Durchsprachetermin am 09.10.2018 und IBNZ Schätzung</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>2_2_DRAFT_1</VERSION>
+        <DATE>19.10.2018</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>IBNZ</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_0</VERSION>
+        <DATE>19.10.2018</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>IBNZ</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_1_DRAFT_1</VERSION>
+        <DATE>02.11.2018</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Qualifizierungszeit und Transportmodus Block aktualisiert, KL15 Block gelöscht</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_1</VERSION>
+        <DATE>02.11.2018</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Qualifizierungszeit und Transportmodus Block aktualisiert, KL15 Block gelöscht; Version zur Freigabe VW310</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_2_DRAFT_1</VERSION>
+        <DATE>13.02.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>SFD Dokumentationvorbereitung Block ergänzt.</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_2_DRAFT_2</VERSION>
+        <DATE>01.03.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Vehicle Conditions ergänzt</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_2_DRAFT_3</VERSION>
+        <DATE>01.03.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Sollwerte QRM in mA</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_2</VERSION>
+        <DATE>01.03.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Sollwerte QRM in mA</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_3</VERSION>
+        <DATE>27.03.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>ZV-Absicherung anlernen hinzugefügt</CHANGE>
+        <TOOL>DWB</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_4_DRAFT_1</VERSION>
+        <DATE>10.04.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Block "ZV-Absicherung anlernen" aktualisiert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_4_DRAFT_2</VERSION>
+        <DATE>25.04.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Pmodes aktualisiert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_4_DRAFT_3</VERSION>
+        <DATE>25.04.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Pmodes aktualisiert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_4_DRAFT_4</VERSION>
+        <DATE>25.04.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Pmodes aktualisiert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_4_DRAFT_5</VERSION>
+        <DATE>25.04.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Gültigkeit angepasst</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_4_DRAFT_6</VERSION>
+        <DATE>25.04.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Pmode aktualisiert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_4_DRAFT_7</VERSION>
+        <DATE>25.04.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Pmode aktualisiert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_4</VERSION>
+        <DATE>26.04.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Pmode aktualisiert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_7</VERSION>
+        <DATE>22.05.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>VKMS hinzugefügt</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_8</VERSION>
+        <DATE>22.07.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Klemme 15 EIN/ AUS Blöcke hinzugefügt</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>V3_9_DRAFT_1</VERSION>
+        <DATE>27.08.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Aufstartzeiten geändert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>V3_9</VERSION>
+        <DATE>30.08.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Aufstartzeiten geändert</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_10</VERSION>
+        <DATE>16.10.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>IBNB Uhrzeit UTC (Weltzeit) setzen hinzugefügt</CHANGE>
+        <TOOL>DWB_2_3_1</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_11</VERSION>
+        <DATE>15.11.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>neue Blöcke angelegt:
+- MEB Kundenfunktion Zündung aktiv durch Bremse treten - Deaktivieren
+- MEB Kundenfunktion Zündung aktiv durch Bremse treten - Aktivieren</CHANGE>
+        <TOOL>DWB_2_3_1</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>V3_12</VERSION>
+        <DATE>21.11.2019</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Anpassung der IBN-Reiehnfolge und Beschreibung : 
+"Zündung aktiv durch Bremse treten - Aktivieren" und 
+"Zündung aktiv durch Bremse treten - Deaktivieren";
+In Zündung aktiv durch Bremse treten - DeaktivierenVSIis set to 0.1; 
+In Zündung aktiv durch Bremse treten - AktivierenVSIis set to 0.1; 
+In Uhrzeit UTC (Weltzeit) setzenVSIis set to 1.0</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_13</VERSION>
+        <DATE>24.02.2020</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>- Create Block: Max-Sollverbauliste schreiben
+- Block Freischalten Schutz der Fahrzeugdiagnose an erster Stelle der Procedure Inbetriebnahme-Ablauf Gateway</CHANGE>
+        <TOOL>DWB_3_9_1</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_14</VERSION>
+        <DATE>25.02.2020</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>- Wartezeit nach Session-Wechsel
+- Abweichung zur 80125 --&gt; Extended-Session</CHANGE>
+        <TOOL>DWB_3_9_1</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_15</VERSION>
+        <DATE>31.03.2020</DATE>
+        <AUTHOR-REF ref="uuid_d2240620-bbe8-409e-8dbd-de4438ae4f96"/>
+        <CHANGE>Anlegen der optionalen Batterieprüfungen für Audi Modelle.
+Änderung der QuickRuheStrom Messung in zwei Abfolgen.</CHANGE>
+        <TOOL>DWB_3_10_0</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_16</VERSION>
+        <DATE>15.04.2020</DATE>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CHANGE>Aufstartzeit Java-Partition (0x8124) von 70 Sek. auf 45 Sek. geändert</CHANGE>
+        <TOOL>DWB_3_9_2</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_17</VERSION>
+        <DATE>16.04.2020</DATE>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CHANGE>Entfall folgender P-Modes in den Environments:
+- p_mode_occupant_presence_service
+- p_mode_suppression_of_ReadyToTravel_request</CHANGE>
+        <TOOL>DWB_3_9_2</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_18</VERSION>
+        <DATE>03.07.2020</DATE>
+        <AUTHOR-REF ref="uuid_3b98f079-abae-4efe-9ebc-f869d6433959"/>
+        <CHANGE>-	Entfall der Blöcke IBNB Zündung aktiv durch Bremse treten – Deaktivieren / Aktivieren
+-	Abbildung P-Modes (ODX basiert)
+-	Aktualisierung der Environments um die aktuellen P-Modes
+-	Beschreibung Transportmodus angepasst, da SFD-Schutz erforderlich</CHANGE>
+        <TOOL>DWB_4_2_1</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_19</VERSION>
+        <DATE>03.07.2020</DATE>
+        <AUTHOR-REF ref="uuid_1211ffe5-acae-4221-ab41-8fb45cdcfca7"/>
+        <CHANGE>-	IBNZ angepasst: Max-Sollverbauliste schreiben und Produktionsmodus aktivieren
+-	Optionale Blöcke nur für Audi relevant: QuickRuheStrom Messung aktivieren (nur Audi), QuickRuheStrom Messung bewerten (nur Audi), Energiedurchsatz prüfen (nur Audi), Energiebilanz prüfen (nur Audi), Ruhespannungsunterschreitung prüfen (nur Audi), Bauzustandsdokumentation 12V-Bordnetzbatterie (nur Audi)</CHANGE>
+        <TOOL>DWB_4_2_1</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_20</VERSION>
+        <DATE>14.07.2020</DATE>
+        <AUTHOR-REF ref="uuid_1211ffe5-acae-4221-ab41-8fb45cdcfca7"/>
+        <CHANGE>IBNB ZV-Absicherung anlernen -&gt; Komponentenschutz prüfen -&gt; Description angepasst</CHANGE>
+        <TOOL>DWB_4_2_1</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_21</VERSION>
+        <DATE>16.07.2020</DATE>
+        <AUTHOR-REF ref="uuid_1211ffe5-acae-4221-ab41-8fb45cdcfca7"/>
+        <CHANGE>- "IBNB Batteriedaten schreiben (nur Audi)" -&gt; optional entfernt
+- "IBNB Bauzustandsdokumentation Sonderbaugruppen XDW und XWF (nur Audi)" -&gt; neu angelegt
+- "IBNB Rücksetzen 12V-Prüfpuls-Diagnose" -&gt; neu angelegt</CHANGE>
+        <TOOL>DWB_4_2_1</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_22</VERSION>
+        <DATE>20.10.2020</DATE>
+        <AUTHOR-REF ref="uuid_1211ffe5-acae-4221-ab41-8fb45cdcfca7"/>
+        <CHANGE>In Block IBNB Rücksetzen 12 V Prüfpuls-Diagnose nach Batterietausch  IBNZ VSI auf 60 s gesetzt
+In Block IBNB Bauzustandsdokumentation Sonderbaugruppen XDW und XWF (nur Audi) -&gt; Steps -&gt; Sonderbaugruppe XDW Diebstahlwarnanlage dokumentieren -&gt; Zeile mit LAS entfernt
+IBNB Block „Rücksetzen 12V-Prüfpuls-Diagnose nach Batterietausch“ in „Rücksetzen 12V-Prüfpuls-Diagnose“ umbenannt.
+IB Objectives angepasst: Das Auslesen der P-Modes (lokal und zentral) ist nur in der End of Line Session bzw. Extended-Session möglich.
+Preconditions angepasst: LINDa (LIN-Dachkonsole) und DWA-Sensor sind gesteckt (gültig bis ME3)
+IBNB Block „Bedatung DWA-Sensor (gültig bis ME3)“ neu hinzugefügt</CHANGE>
+        <TOOL>DWB_4_3_4</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_23</VERSION>
+        <DATE>30.11.2020</DATE>
+        <AUTHOR-REF ref="uuid_e552f70f-2814-405e-b0f2-5838c2c71380"/>
+        <CHANGE>Preconditions -&gt; Abhängigkeit Komponentenschutz: Nach dem Einbringen eines GFA-Keys in den ICAS1 ist der Schritt "IBNB ZV-Absicherung anlernen" zwingend auszuführen.
+Description IBNB ZV-Absicherung anlernen  Abhängigkeit Komponentenschutz: Nach dem Einbringen eines GFA-Keys in den ICAS1 ist der Schritt "IBNB ZV-Absicherung anlernen" zwingend auszuführen.
+Blöcke IBNB SFD freischalten, IBNB SFD Dokumentationsvorbereitung, IBNB SFD [Info] neu hinzugefügt</CHANGE>
+        <TOOL>DWB_4_7_0</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_24</VERSION>
+        <DATE>02.12.2020</DATE>
+        <AUTHOR-REF ref="uuid_e552f70f-2814-405e-b0f2-5838c2c71380"/>
+        <CHANGE>Access Authorisations um SFD ergänzt
+IBNB Aufstartzeit</CHANGE>
+        <TOOL>DWB_4_7_0</TOOL>
+      </DOC-REVISION>
+      <DOC-REVISION>
+        <VERSION>3_25</VERSION>
+        <DATE>18.12.2020</DATE>
+        <AUTHOR-REF ref="uuid_3169d85c-f9d2-4222-bde9-875a671f0fad"/>
+        <CHANGE>In Uhrzeit UTC (Weltzeit) setzen Optional  is set to true; 
+User DSI92JV added to Contacts</CHANGE>
+        <TOOL>IPPP_V4</TOOL>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </DOC-INFO>
+  <IB-DESCRIPTION>
+    <VALIDITIES-REF>IB1_0019_ICAS1_Host_V3_25.tnr</VALIDITIES-REF>
+    <OBJECTIVES>
+      <OBJECTIVE>Die einzelnen SWCL des ICAS1 haben jeweils unterschiedliche Aufstartzeiten bis zur Verfügbarkeit der Diagnose.Daraus ergibt sich eine theoretisch optimale Reihenfolge der ICAS1 Inbetriebnahme:1 - HOST (0x0019) - Aufstartzeit &lt;1 Sek.2 - Embedded (0xC002)  - Aufstartzeit ca. 10 Sek.3 - Housekeeping (0xC003)  - Aufstartzeit ca. 15 Sek.4 - Adaptive (0x8123)  - Aufstartzeit ca. 15 Sek.5 - JAVA (0x8124)  - Aufstartzeit ca. 45 Sek.</OBJECTIVE>
+      <OBJECTIVE>Aktuell wird, abweichend zum QLAH 80125 V5.5, die Extended-Session zum Durchführen der Diagnose verwendet.</OBJECTIVE>
+      <OBJECTIVE>Nach jedem Kommunikationsaufbau (Start communication) ist nach dem Wechsel in die Ziel-Diagnosesitzung eine Wartezeit von 40 ms einzuhalten. Ebenfalls ist nach jedem Klemme15 Wechsel/Key-Off/On-Reset die Ziel-Diagnosesitzung in Verbindung mit einer Wartezeit von 40 ms einzustellen.</OBJECTIVE>
+      <OBJECTIVE>Das Auslesen der P-Modes (lokal und zentral) ist nur in der End of Line Session bzw. Extended-Session möglich.</OBJECTIVE>
+    </OBJECTIVES>
+    <IBNZ>
+      <IBNZ-ESTIMATION>59.0</IBNZ-ESTIMATION>
+    </IBNZ>
+  </IB-DESCRIPTION>
+  <ENVIRONMENT>
+    <PRE-CONDITIONS>
+      <PRE-CONDITION id="uuid_99731ee0-b087-4628-8423-74f836d9ccca" kdRelevant="true" pRelevant="true">Fahrgeschwindigkeit:
+negative Testbedingung: ESP_v_Signal &gt; 5 km/h (Testertext KD: "Fahrzeuggeschwindigkeit ist nicht Null" (5)),
+positive Testbedingung: ESP_v_Signal &lt;= 5 km/h</PRE-CONDITION>
+      <PRE-CONDITION id="uuid_4b3e7eed-fccf-446c-b9d1-d243720b5f6d" kdRelevant="true" pRelevant="true">Versorgungsspannung:
+negative Testbedingung: Versorgungsspannung &lt;= 10V (Testertext KD: "Versorgungsspannung zu niedrig" (10)),
+positive Testbedingung: Versorgungsspannung &gt; 10V</PRE-CONDITION>
+      <PRE-CONDITION id="uuid_7c4d298a-7bfa-44ac-8759-e0c6cb587d5d" kdRelevant="true" pRelevant="true">Subbussystem in Diagnose:
+negative Testbedingung: Subsystem in Diagnose (Testertext KD: "Subbussystem in Diagnose" (134)), 
+positive Testbedingung: Subsystem nicht in Diagnose</PRE-CONDITION>
+      <PRE-CONDITION id="uuid_cf3f1702-9766-4dc0-b867-72acf3d56c98" kdRelevant="true" pRelevant="true">Sperrzeit für Programmierung gemäß QLAH 80126-A402:
+negative Testbedingung: Sperrzeit für Programmierung ist aktiv (Testertext KD: "Sperrzeit für Programmierung ist aktiv"(129)),
+positive Testbedingung: Sperrzeit für Programmierung ist inaktiv</PRE-CONDITION>
+      <PRE-CONDITION id="uuid_360859af-f946-4d3b-aecb-ee87682f54fa" kdRelevant="true" pRelevant="true">Fahrbereitschaft:
+negative Testbedingung: MO_HYB_Fahrbereitschaft &gt; 0 oder MO_Fahrbereitschaft &gt; 0 (Testertext KD: "Elektrische Fahrbereitschaft ist nicht aus" (149)),
+positive Testbedingung: MO_HYB_Fahrbereitschaft = 0 und MO_Fahrbereitschaft = 0</PRE-CONDITION>
+      <PRE-CONDITION id="uuid_dcd39a70-f463-44ab-bfc3-2b9b4199ef3c" kdRelevant="false" pRelevant="false">Prüfung:
+Die Vorbedingungen können auch im Bootloader geprüft werden (durch Routine). Dort machen aber Checks bzgl. Geschwindigkeit keinen Sinn - das SG ist bereits im Bootloader!</PRE-CONDITION>
+      <PRE-CONDITION id="uuid_2fb602db-0f90-4d2a-8f78-af2df8a0d7e1" kdRelevant="true" pRelevant="true">LINDa (LIN-Dachkonsole) und DWA-Sensor sind gesteckt (gültig bis ME3)</PRE-CONDITION>
+      <PRE-CONDITION id="uuid_275d3e89-7406-4c3d-ba9f-b7348ab2fcad" kdRelevant="true" pRelevant="true">Abhängigkeit Komponentenschutz: Nach dem Einbringen eines GFA-Keys in den ICAS1 ist der Schritt "IBNB ZV-Absicherung anlernen" zwingend auszuführen.</PRE-CONDITION>
+    </PRE-CONDITIONS>
+    <ACCESS-AUTHORISATIONS>
+      <ACCESS-AUTHORISATION id="uuid_7fc11e80-3b31-4c86-9c75-99a3704ce23e">
+        <NAME>SFD</NAME>
+        <DESC>Diagnose wird über SFD geschützt</DESC>
+      </ACCESS-AUTHORISATION>
+    </ACCESS-AUTHORISATIONS>
+    <PRODUCTION-MODES>
+      <PRODUCTION-MODE id="uuid_4e13cf07-29ff-4f41-993c-1d86960e3099">
+        <NAME>p_mode_parking_coordinator</NAME>
+        <DESC>PaCo: P-Mode ParkkoordinatorDeaktivierung der Funktionalitäten des PaCo</DESC>
+        <BYTES>
+          <BYTE-0>xxxxxxx1</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_4afff4b4-cb39-478c-a0d8-3d19ad995f0c">
+        <NAME>p_mode_exterior_light</NAME>
+        <DESC>SAL: P-Mode AussenlichtFolgende Umfänge sollen bei aktiviertem P-Mode deaktiviert werden:- Tagfahrlicht (mit NSW und auch ohne)- Abblendlicht- Fernlicht- Standlicht- Fahrtrichtungsanzeiger- Begrenzungslicht- Schlusslicht- Nebelschlussleuchte- Funktion Coming Home / Leaving Home</DESC>
+        <BYTES>
+          <BYTE-0>xxxxxx1x</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_3ecfc6e2-04a9-4362-a3cf-7425a164079b">
+        <NAME>p_mode_central_locking_control</NAME>
+        <DESC>ZV-Lib: P-Mode Zugangskontrolle
+
+Bei aktiviertem Produktionsmodus sollen funktionale Einschränkungen der Zugangskontrolle gemäß Lastenheft BCM37-ZK-7944 wirksam sein.</DESC>
+        <BYTES>
+          <BYTE-0>xxxxx1xx</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_bc552bff-22f3-4f5c-9303-a30a18081fed">
+        <NAME>p_mode_occupant_presence_service</NAME>
+        <DESC>USS: P-Mode Insassenanwesenheitserkennung; Deaktivieren der kompletten Funktionalität der Insassenanwesenheitserkennung</DESC>
+        <BYTES>
+          <BYTE-0>xxxxxxxx</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_3c5010d9-3402-48ac-ac38-826a17ac18f9">
+        <NAME>p_mode_leaving_concept</NAME>
+        <DESC>VLK: P-Mode Verlassenskonzept; Deaktivieren der kompletten Funktionalität des Verlassenskonzepts</DESC>
+        <BYTES>
+          <BYTE-0>xxx1xxxx</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_159fead5-3ecb-47c9-8036-55474742aa45">
+        <NAME>p_mode_virtuel_pedal</NAME>
+        <DESC>EasyOpen: P-Mode Virtuelles Pedal
+
+Verhinderung einer ungewollten automatischen Heckklappenöffnung. Dies könnte passieren, wenn sich jemand mit einem angelernten Schlüssel im Heckbereich des Fahrzeugs aufhält und den kapazitiven Sensor aktiviert.</DESC>
+        <BYTES>
+          <BYTE-0>xx1xxxxx</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_09e54fbc-f9b5-458d-845d-d0bbd54fc839">
+        <NAME>p_mode_energy_management</NAME>
+        <DESC>EMHLR: P-Mode Energiemanagement
+
+Für den Produktionsablauf werden Funktionen, die die Batterie entladen (z.B. Rekuperation) deaktiviert</DESC>
+        <BYTES>
+          <BYTE-0>x1xxxxxx</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_60c342e3-fe1f-40c3-998b-81e48e37e6a2">
+        <NAME>p_mode_suppression_of_ReadyToTravel_request</NAME>
+        <DESC>SPN/KLS: P-Mode Unterdrückung der Antriebsstrangaktivierung; Es wird die Klemme50 Anforderung unterdrückt, damit in der Produktion die Fahrbereitschaft nicht versehentlich hergestellt werden kann.</DESC>
+        <BYTES>
+          <BYTE-0>xxxxxxxx</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_c03b75d1-4b3f-4d2b-8b8d-79e661f0c0ea">
+        <NAME>p_mode_suppression_of_automatic_terminal_15_deactivation</NAME>
+        <DESC>SPN/KLS: P-Mode Unterdrückung der Abschaltung der KL15 bei Fzg.-verlassen
+
+Die automatische Deaktivierung der Klemme 15 beim Fahrzeugverlassen wird unterdrückt. Es kann nur per ZAT oder Diagnose die Zündung deaktiviert werden.</DESC>
+        <BYTES>
+          <BYTE-0>xxxxxxxx</BYTE-0>
+          <BYTE-1>xxxxxxx1</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_144510dd-1914-44a6-86ef-04febd75b244">
+        <NAME>p_mode_suppression_driver_warning</NAME>
+        <DESC>SPN/KLS: P-Mode Unterdrückung FahrerwarnungDie automatische Deaktivierung der Fahrerwarnung durch die Klemmensteuerung</DESC>
+        <BYTES>
+          <BYTE-0>xxxxxxxx</BYTE-0>
+          <BYTE-1>xxxxxx1x</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+      <PRODUCTION-MODE id="uuid_1ea6f4c0-52c3-4d2b-9bfe-e8bf86aadc3b">
+        <NAME>p_mode_suppression_vehicleactivation_via_brakepedal</NAME>
+        <DESC>SPN/KLS: P-Mode Unterdrückung Vereinfachte Inbetriebnahme; Hiermit wird die vereinfachte Inbetriebnahme (Aktivieren der Klemme15 über Bremse treten) unterdrückt. Die Klemme 15 kann nur über den ZAT aktiviert und deaktiviert werden.</DESC>
+        <BYTES>
+          <BYTE-0>xxxxxxxx</BYTE-0>
+          <BYTE-1>xxxxxxxx</BYTE-1>
+          <BYTE-2>xxxxxxxx</BYTE-2>
+        </BYTES>
+      </PRODUCTION-MODE>
+    </PRODUCTION-MODES>
+  </ENVIRONMENT>
+  <PROCEDURES>
+    <PROCEDURE id="uuid_4159f0ba-ffda-4008-b1cd-5d828a0ef501">
+      <NAME>Inbetriebnahme-Ablauf Gateway</NAME>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_ee51f346-3500-4ba5-9685-e6473e690aef" optional="true" shortname="StartupTime" standardIBNB="true" version="1">
+        <NAME>Aufstartzeit</NAME>
+        <NAME_EN>Start-up time</NAME_EN>
+        <DESC>Dieser Block stellt die Aufstartzeit bis zur Diagnosefaehigkeit dar und muss nur verwendet werden, wenn vom QLAH abgewichen wird, d.h. das Steuergeraet laenger als 3s benoetigt, bis dieses nach Klemmenwechsel (Klemme 30 oder bei Relevanz Klemme 15) diagnosefaehig ist.</DESC>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <PARAMETERS>
+          <PARAMETER id="uuid_1c8fd9b2-54c1-4e7e-bcc6-36a95e4f3c85" optional="false">
+            <KEY>Aufstartzeit</KEY>
+            <DESC>Aufstartzeit in Sekunden</DESC>
+            <DATATYPE>Integer</DATATYPE>
+            <VALUE>&lt;1</VALUE>
+          </PARAMETER>
+        </PARAMETERS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_f80d0b6c-f0db-424a-a790-149963b8382d">
+            <NAME>Warten</NAME>
+            <DESC>Vor dem Kommunikationsaufbau muss die Zeitspanne gewartet werden, die sich aus der Differenz zum aktuellen Zeitpunkt und dem Zeitpunkt des zuletzt zurueck liegenden Kl.30- bzw. Kl.15-Wechsels ergibt. Ist diese negativ, muss nicht gewartet werden.</DESC>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE-REF ref="uuid_1c8fd9b2-54c1-4e7e-bcc6-36a95e4f3c85"/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>1.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuid_31c902d1-e26f-43b0-90ef-890a09ecd311" optional="false" shortname="UnlockSfd" standardIBNB="true" version="5">
+        <NAME>SFD freischalten</NAME>
+        <NAME_EN>SFD unlock</NAME_EN>
+        <DESC>Der Schutz der Fahrzeugdiagnose (SFD) wird freigeschaltet. Dieser Schritt muss nach der Verbaupruefung ausgefuehrt werden.</DESC>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_9a3f2b90-d2f5-4bbd-b68b-3270fb4aa213">
+            <NAME>Identifikation lesen: Technical_specifications_version</NAME>
+            <DESC>Der Diagnose-Client erkennt anhand des DataIdentifier "0xF1B4-Technical_specifications_version" ob der Diagnose-Server das in diesem Dokument beschriebene Verfahren implementiert hat. Bei SFD muss die Version groesser 1 sein.
+Wenn das Ergebnis kleiner 1 ist, dann ist das Steuergeraet kein SFD Teilnehmer und der Ablauf kann beendet werden.</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / ECU Identification</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentECUIdent</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>F1B4</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Technical_specifications_version</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Major Version PVD (Protection of Vehicle Diagnosis)</LONG-NAME>
+                <SHORT-NAME>Param_MajorVersiPVDProteOfVehicDiagn</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RecorDataIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_MajorVersiPVDProteOfVehicDiagn</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <VALUE-PROXY>
+                  <TOLERANCE>
+                    <MIN-VALUE>1.0</MIN-VALUE>
+                  </TOLERANCE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_6e940277-55d6-4d58-a356-0de174e9460b">
+            <NAME>Messwert lesen: Unlock_status_of_ECU_of_protection_of_vehicle_diagnosis</NAME>
+            <DESC>Folgender Zustand ist zu erwarten:
+
+Zustand 0: Steuergeraet jungfraeulich und verriegelt							[DataRecord 0 0 0 0]
+
+Sollte Zustand 1,2 oder 3 die Rueckmeldung sein bitte mit der Procedure Optional - SFD Freischaltzustand (Nacharbeit) (Case 1,2 oder 3) fortfahren. 
+
+Zustand 1: Steuergeraet gebraucht und verriegelt  							[DataRecord 0 0 1 0]
+Zustand 2: Steuergeraet Freigeschaltet per GFST (implizit SFD E2E nicht aktiv)  	[DataRecord 05 02 01 [FF]] SFD Generation 2 (SFD QLAH =&gt;2.0)	|  [DataRecord 02 02 01 [FF]] SFD Generation 1 (SFD QLAH =&gt;1.0 &amp; &lt;=2.0)
+Zustand 3: Steuergeraet Freigeschaltet per Online-FST (implizit SFD E2E aktiv) 	[DataRecord 05 01 01 [01-78]]</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Measurement Value</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentMeasuValue</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0174</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Unlock_status_of_ECU_of_protection_of_vehicle_diagnosis</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Duration_of_protection_of_vehicle_diagnosis</LONG-NAME>
+                <SHORT-NAME>Param_DuratOfProteOfVehicDiagn</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RecorDataIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_DuratOfProteOfVehicDiagn</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>no unlock active</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Role_for_protection_of_vehicle_diagnosis</LONG-NAME>
+                <SHORT-NAME>Param_RoleForProteOfVehicDiagn</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RecorDataIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_RoleForProteOfVehicDiagn</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>no unlock active</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Status_of_protection_of_vehicle_diagnosis</LONG-NAME>
+                <SHORT-NAME>Param_StatuOfProteOfVehicDiagn</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RecorDataIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_StatuOfProteOfVehicDiagn</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>group attribute set</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Type_of_potection_of_vehicle_diagnosis</LONG-NAME>
+                <SHORT-NAME>Param_TypeOfPotecOfVehicDiagn</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RecorDataIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_TypeOfPotecOfVehicDiagn</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>no unlock active</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_8fadb6f3-75c5-40db-b234-7ff0e158707d">
+            <NAME>SFD Offline Anfragestruktur lesen</NAME>
+            <DESC>Aus dem Steuergeraet wird die Offline-Anfrage-Struktur (Gruppenmerkmal-SFD-Projekt-ID-Tokenversion) ausgelesen um mit Hilfe von der Offline-Anfrage-Struktur das passende GFST aus dem ASV-Release laden zu koennen.
+Der Schritt ist in ODX spezifiziert. In Hex muss die Offline-Anfrage-Struktur mit dem Paramter 01 angefragt werden. 31 01 C0 08 01.</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>31</SERVICE-IDENTIFIER>
+              <LONG-NAME>Routine Control / Protection of Vehicle Diagnosis</LONG-NAME>
+              <SHORT-NAME>DiagnServi_RoutiContrProteOfVehicDiagn</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>C008</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RoutiIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RoutiIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Request_data_of_protection_of_vehicle_diagnosis</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>unlock request without replay protection</LONG-NAME>
+                <SHORT-NAME>Param_RequeData</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RequeData</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>01</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Status</LONG-NAME>
+                <SHORT-NAME>Param_RoutiStatu</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RoutiStatu</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Routine Finished Correctly</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Result</LONG-NAME>
+                <SHORT-NAME>Param_RoutiResul</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RoutiResul</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Correct Results</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>RoutineStatusRecord</LONG-NAME>
+                <SHORT-NAME>Param_Routi</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_Routi</PATH>
+                <DATATYPE>eA_BYTEFIELD</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Offline-Anfrage-Struktur muss als ASCII, fuer die Suche des Gruppenfreischalttokens im ASV-Release, uebergeben werden</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_40131eda-7c21-4749-b57b-16800e176504">
+            <NAME>Freischalten per Gruppenfreischalttoken</NAME>
+            <DESC>Über den RoutineIdentifier "0xC004-Unlock_protection_of_vehicle_diagnosis" wird die Auswertung des Freischalt-Tokens gestartet.</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>31</SERVICE-IDENTIFIER>
+              <LONG-NAME>Routine Control / Protection of Vehicle Diagnosis</LONG-NAME>
+              <SHORT-NAME>DiagnServi_RoutiContrProteOfVehicDiagn</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>C004</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RoutiIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RoutiIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Unlock_protection_of_vehicle_diagnosis</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Unlock Token</LONG-NAME>
+                <SHORT-NAME>Param_UnlocToken</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_UnlocToken</PATH>
+                <DATATYPE>eA_BYTEFIELD</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Gruppenfreischalttoken</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Status</LONG-NAME>
+                <SHORT-NAME>Param_RoutiStatu</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RoutiStatu</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Routine Finished Correctly</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Result</LONG-NAME>
+                <SHORT-NAME>Param_RoutiResul</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RoutiResul</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Correct Results</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>RoutineStatusRecord</LONG-NAME>
+                <SHORT-NAME>Param_Routi</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_Routi</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Unlock_successful</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_3b2f92f4-6f8b-41c8-900c-0452df72a25f" optional="false" standardIBNB="false">
+        <NAME>Max-Sollverbauliste schreiben</NAME>
+        <DESC>Damit alle Steuergeräte korrekt bedatet werden können, ist eine Maximal-Verbauliste zu schreiben. Erst nach dem Schreiben darf mit anderen Steuergeräten schreibend bedatet werden.
+Hinweis: Nach dem Schreiben des ZDC wird die Sollverbauliste dem tatsächlichen Verbau angepasst.</DESC>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_968d4b81-5477-42ce-af74-afa0460fbbbb">
+            <NAME>Max-Sollverbau schreiben</NAME>
+            <DESC>Sollverbau 0x04A3 über Service 2E mit 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF bedaten.</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Generic Service</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentGenerServi</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04A3</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Request Service Id</LONG-NAME>
+                <SHORT-NAME>Param_RequeServiId</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RequeServiId</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>2E</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>04A3</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Record</LONG-NAME>
+                <SHORT-NAME>Param_DataRecor</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor</PATH>
+                <DATATYPE>eA_BYTEFIELD</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>1.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_0ce914a1-553c-408b-a78b-4a9f0ebb1c5b" optional="false" standardIBNB="true">
+        <NAME>Verbauprüfung (Master)</NAME>
+        <DESC>Die Identifikationsdaten des (Master-)Steuergeräts werden gelesen und gegen die Vorgaben geprüft.</DESC>
+        <TIS>
+          <TI>SER00097</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_8c753622-fc82-4681-8162-2d68fc5b94b4">
+            <NAME>VW/Audi-Teilenummer lesen</NAME>
+            <TIS>
+              <TI>SER00101</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Data By Identifier / ECU Identification</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentECUIdent</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>F187</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>VW Spare Part Number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW Spare Part Number</LONG-NAME>
+                <SHORT-NAME>Param_VWSparePartNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentECUIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor</PATH>
+                <VALUE-PROXY>
+                  <VALUE/>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_d5281dfc-fac3-415a-97d3-5015d2afb96f">
+            <NAME>Softwareversion lesen</NAME>
+            <TIS>
+              <TI>SER00090</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / ECU Identification</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentECUIdent</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>F189</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>VW Application Software Version Number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW Application Software Version Number</LONG-NAME>
+                <SHORT-NAME>Param_VWAppliSoftwVersiNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentECUIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_f18ef509-130f-4f1b-8958-06a96c431159">
+            <NAME>Hardwareversion lesen</NAME>
+            <TIS>
+              <TI>SER00073</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / ECU Identification</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentECUIdent</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>F1A3</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>VW ECU Hardware Version Number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW ECU Hardware Version Number</LONG-NAME>
+                <SHORT-NAME>Param_VWECUHardwVersiNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentECUIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_e8fd86ad-4d1e-4143-ad4f-76c720356716">
+            <NAME>Hardwareteilenummer lesen</NAME>
+            <TIS>
+              <TI>SER00072</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / ECU Identification</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentECUIdent</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>F191</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>VW ECU Hardware Number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW ECU Hardware Number</LONG-NAME>
+                <SHORT-NAME>Param_VWECUHardwNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentECUIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_4aed4a4d-53d6-4ed3-9d8e-5759cbd9d7af">
+            <NAME>FAZIT-Identifikation lesen</NAME>
+            <DESC>Für die Ermittlung des Herstellercodes (HSC), der ggf. bei der ZDC-Berechnung benötigt wird.</DESC>
+            <TIS>
+              <TI>SER00065</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / ECU Identification</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentECUIdent</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>F17C</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>VW FAZIT Identification String</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>ECU Production Plant Number</LONG-NAME>
+                <SHORT-NAME>Param_ECUProduPlantNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentECUIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor</PATH>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>ECU Manufacturing Date</LONG-NAME>
+                <SHORT-NAME>Param_ECUManufDate</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentECUIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor</PATH>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>ECU Production Test System Number</LONG-NAME>
+                <SHORT-NAME>Param_ECUProduTestSysteNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentECUIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor</PATH>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Consecutive Supplier Number</LONG-NAME>
+                <SHORT-NAME>Param_ConseSupplNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentECUIdent</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_b53128e6-fb30-443c-be5f-3741e26de011">
+            <NAME>Verbauprüfung gegen Sollvorgabe</NAME>
+            <DESC>Folgende Identdaten werden gegen Sollvorgaben geprüft und dokumentiert:
+- VW Spare Part Number
+- VW Software Version Number (je nach Konfiguration)
+- VW ECU Hardware Version Number (je nach Konfiguration)</DESC>
+            <TIS>
+              <TI>SER00100</TI>
+            </TIS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.2</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_91ea0932-6231-4914-bb35-80ac8a181977" optional="false" shortname="InfoVkms" standardIBNB="true" version="1">
+        <NAME>Vehicle Key Management System [INFO]</NAME>
+        <DESC>VKMS Schlüssel einbringen; Abhängigkeiten zu anderen Systemen: SG ist VKMS Teilnehmer; Die erforderliche Inbetriebnahme ist in der gültigen Version der IB-1 VKMS beschrieben.</DESC>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_47846abe-e78a-4938-bf96-f4b1e6c3ba3c" optional="false" shortname="InfoWfs" standardIBNB="true" version="1">
+        <NAME>Wegfahrsperre [INFO]</NAME>
+        <DESC>Das Steuergerät ist Wegfahrsperren-Teilnehmer. Die erforderliche Inbetriebnahme ist in der gültigen Version der IB-1 Wegfahrsperre beschrieben.</DESC>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <IBNZ>
+          <VSI>0.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid31355ead-6cf0-4095-ade3-ced014adcfae" optional="false" standardIBNB="true">
+        <NAME>Komponentenschutz [INFO]</NAME>
+        <DESC>Das Steuergerät ist Komponentenschutz-Teilnehmer. Die erforderliche Inbetriebnahme ist in der gültigen Version der IB-1 Komponentenschutz beschrieben.</DESC>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <IBNZ>
+          <VSI>0.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuid_2da8a0d9-e9bf-4d3a-950e-2780c15290e3" optional="false" standardIBNB="false">
+        <NAME>FoD [INFO] </NAME>
+        <DESC>Abhängigkeiten zu anderen Systemen: FoD-Slave, eine Bedatungsrelevanz liegt nicht vor.</DESC>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <IBNZ>
+          <VSI>0.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuidaef7f2f6-3507-4b66-b25f-0df767b767d9" optional="false" standardIBNB="true">
+        <NAME>Zentralen Produktionsmodus aktivieren</NAME>
+        <DESC>Der zentrale Fahrzeugproduktionsmodus wird aktiviert</DESC>
+        <TIS>
+          <TI>SER00083</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <PARAMETERS>
+          <PARAMETER id="uuid_produktionsmodusaktivieren1_param1" optional="false">
+            <KEY>zentralen Produktionsmodus aktivieren</KEY>
+            <DESC>Aktivierung des zentralen Produktionsmodus über alle Steuergeräte, die den zentralen Produktionsmodus berücksichtigen. Steuergerätespezifische Produktionsmodi können nur mit aktiviertem zentralen Produktionsmodus aktiviert werden.</DESC>
+            <DATATYPE>String</DATATYPE>
+            <VALUE>0x01</VALUE>
+          </PARAMETER>
+        </PARAMETERS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_93641cd9-0470-4b8e-950d-5706709655cf">
+            <NAME>zentralen Produktionsmodus aktivieren</NAME>
+            <TIS>
+              <TI>SER00083</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Generic Service</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentGenerServi</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0x0EF4</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>3828</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Record</LONG-NAME>
+                <SHORT-NAME>Param_DataRecor</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE-REF ref="uuid_produktionsmodusaktivieren1_param1"/>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.082</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuid_de75cf14-33b6-48e3-ab78-36f271e4ec7d" optional="false" shortname="ActivateProductionMode" standardIBNB="true" version="1">
+        <NAME>Produktionsmodus aktivieren</NAME>
+        <DESC>Ein ausgewählter P-Mode wird im Steuergerät gesetzt.</DESC>
+        <TIS>
+          <TI>SER00083</TI>
+        </TIS>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <PARAMETERS>
+          <PARAMETER id="uuid_9f523e8e-45d7-457f-b43a-07f77c6e0d26" optional="false">
+            <KEY>Produktionsmodus</KEY>
+            <DESC>Name des im Vorfeld spezifizierten Produktionsmodus, der hiermit aktiviert werden soll (Referenz).</DESC>
+            <DATATYPE>String</DATATYPE>
+          </PARAMETER>
+        </PARAMETERS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_b2872c16-8abf-44f3-afab-f9e8a4d3cbca">
+            <NAME>Anpassung schreiben: Productionmode</NAME>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04FE</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Productionmode</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_central_locking_control</LONG-NAME>
+                <SHORT-NAME>Param_PModeCentrLockiContr</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeCentrLockiContr</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_energy_management</LONG-NAME>
+                <SHORT-NAME>Param_PModeEnergManag</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeEnergManag</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_exterior_light</LONG-NAME>
+                <SHORT-NAME>Param_PModeExterLight</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeExterLight</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_leaving_concept</LONG-NAME>
+                <SHORT-NAME>Param_PModeLeaviConce</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeLeaviConce</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_occupant_presence_service</LONG-NAME>
+                <SHORT-NAME>Param_PModeOccupPreseServi</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeOccupPreseServi</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_parking_coordinator</LONG-NAME>
+                <SHORT-NAME>Param_PModeParkiCoord</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeParkiCoord</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_suppression_driver_warning</LONG-NAME>
+                <SHORT-NAME>Param_PModeSupprDriveWarni</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeSupprDriveWarni</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_suppression_of_automatic_terminal_15_deactivation</LONG-NAME>
+                <SHORT-NAME>Param_PModeSupprOfAutomTermi15Deact</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeSupprOfAutomTermi15Deact</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_suppression_of_ReadyToTravel_request</LONG-NAME>
+                <SHORT-NAME>Param_PModeSupprOfReadyReque</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeSupprOfReadyReque</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_suppression_vehicleactivation_via_brakepedal</LONG-NAME>
+                <SHORT-NAME>Param_PModeSupprVehicViaBrake</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeSupprVehicViaBrake</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>p_mode_virtuel_pedal</LONG-NAME>
+                <SHORT-NAME>Param_PModeVirtuPedal</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_PModeVirtuPedal</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activate</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.082</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_zdcschreiben1" optional="false" shortname="WriteZdc" standardIBNB="true" version="2">
+        <NAME>ZDC schreiben</NAME>
+        <DESC>Der ZDC wird bestimmt, berechnet und ins Steuergerät geschrieben.</DESC>
+        <TIS>
+          <TI>SER00105</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <TAGS>
+          <TAG>IBNZ VSI-Wert aus Gateway MQB37W</TAG>
+        </TAGS>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <PARAMETERS>
+          <PARAMETER id="uuid_ed2293ef-3438-479b-9a3c-f40db019c3eb" optional="true">
+            <KEY>Datensatz Download</KEY>
+            <DESC>0 - kein Datensatz Download; 1 - Datensatz Download Gen. 1; 2 - Datensatz Download Gen. 2</DESC>
+            <DATATYPE>Integer</DATATYPE>
+            <DEFAULT>2</DEFAULT>
+          </PARAMETER>
+          <PARAMETER id="uuid_0e97af81-d88b-4e2a-8329-e4be6ac8c3e0" optional="true">
+            <KEY>Login-Code Datensatz Download</KEY>
+            <DESC>Falls kein Security Access benötigt wird, wird hier nichts eingetragen.</DESC>
+            <DATATYPE>Integer</DATATYPE>
+          </PARAMETER>
+          <PARAMETER id="uuid_a4512a9b-3e4b-413c-b9ad-c9addf5571b1" optional="true">
+            <KEY>Login-Code Kalibrierung</KEY>
+            <DESC>Falls kein Security Access benötigt wird, wird hier nichts eingetragen.</DESC>
+            <DATATYPE>Integer</DATATYPE>
+          </PARAMETER>
+          <PARAMETER id="uuid_3ecb65f7-938d-4088-ae6a-03dab919e31f" optional="true">
+            <KEY>Mute-Modus</KEY>
+            <DESC>Muss nur befüllt werden, wenn Datensatz Download Gen. 1 verwendet wird und der Wert abweichend vom Default-Wert ist.</DESC>
+            <DATATYPE>Boolean</DATATYPE>
+            <DEFAULT>false</DEFAULT>
+          </PARAMETER>
+          <PARAMETER id="uuid_951ca8af-1d86-4bbc-80e3-f344b70396bd" optional="true">
+            <KEY>Wartezeit nach Reset</KEY>
+            <DESC>Wartezeit in Sekunden</DESC>
+            <DATATYPE>Integer</DATATYPE>
+            <DEFAULT>0</DEFAULT>
+          </PARAMETER>
+          <PARAMETER id="uuid_7e883867-a521-421d-9d1f-cdfb08168f86" optional="true">
+            <KEY>Datensatz Download vor Kalibrierung</KEY>
+            <DESC>Muss nur befüllt werden, falls abweichend von Standardreihenfolge Datensatzdownload vor Kalibrierung.</DESC>
+            <DATATYPE>Boolean</DATATYPE>
+            <DEFAULT>true</DEFAULT>
+          </PARAMETER>
+          <PARAMETER id="uuid_35ad5d26-2679-4413-837a-3f819cb87142" optional="true">
+            <KEY>Reset nach Datensatz Download</KEY>
+            <DESC>Muss nur befüllt werden, wenn Datensatz Download Gen. 1 verwendet wird und der Wert abweichend vom Default-Wert ist.</DESC>
+            <DATATYPE>Boolean</DATATYPE>
+            <DEFAULT>true</DEFAULT>
+          </PARAMETER>
+          <PARAMETER id="uuid_16e59c00-51ca-42eb-9860-cf6dd07399ae" optional="true">
+            <KEY>Reset nach Kalibrierung/Codierung</KEY>
+            <DESC>Muss nur befüllt werden, falls Reset nach erfolgter Kalibrierung/Codierung zwingend notwendig ist.</DESC>
+            <DATATYPE>Boolean</DATATYPE>
+            <VALUE>true</VALUE>
+            <DEFAULT>false</DEFAULT>
+          </PARAMETER>
+          <PARAMETER id="uuid_91013bbe-948d-4e38-b5df-8c16ce5d9d69" optional="false">
+            <KEY>Q-LAH Paket Version</KEY>
+            <DESC>Zugrunde liegende Diagnose-QLAH-Paket Version im Format "x.y" (siehe aktuell gültiges Dokument Versionierung_DiagQLAH_*.pdf), z.B. "1.7" für Release 11/2014.</DESC>
+            <DATATYPE>String</DATATYPE>
+            <VALUE>2.12</VALUE>
+          </PARAMETER>
+        </PARAMETERS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_2b59fd95-f72f-4421-a98a-bbc22e757818">
+            <NAME>ZDC bestimmen und berechnen</NAME>
+            <DESC>ZDC gemäß Lastenheft berechnen</DESC>
+            <TIS>
+              <TI>SER00103</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+          </STEP>
+          <STEP cyclic="false" id="uuid_d7b6c01f-9496-4936-8e34-e9da71abb1e0">
+            <NAME>Werkstattcode schreiben</NAME>
+            <DESC>Entfällt ab Q-LAH Paket Version 1.7.</DESC>
+            <TIS>
+              <TI>SER00102</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / ECU Identification</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentECUIdent</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>F198</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Repair Shop Code Or Tester Serial Number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW Device Number</LONG-NAME>
+                <SHORT-NAME>Param_VWDevicNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor</PATH>
+                <VALUE-PROXY>
+                  <VALUE/>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Importer Number</LONG-NAME>
+                <SHORT-NAME>Param_ImporNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor</PATH>
+                <VALUE-PROXY>
+                  <VALUE/>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Workshop Number</LONG-NAME>
+                <SHORT-NAME>Param_WorksNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor</PATH>
+                <VALUE-PROXY>
+                  <VALUE/>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_6126b6ba-db8a-4afc-afbe-8b7b45032030">
+            <NAME>Programmierdatum schreiben</NAME>
+            <DESC>Entfällt ab Q-LAH Paket Version 1.7.</DESC>
+            <TIS>
+              <TI>SER00084</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / ECU Identification</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentECUIdent</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>F199</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Programming Date</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Year</LONG-NAME>
+                <SHORT-NAME>Param_Year</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_Date</PATH>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Month</LONG-NAME>
+                <SHORT-NAME>Param_Month</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_Date</PATH>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Day</LONG-NAME>
+                <SHORT-NAME>Param_Day</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_Date</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_88144618-11eb-4876-b88a-09520b41e3cb">
+            <NAME>Security Access Seed lesen</NAME>
+            <DESC>Entfällt, falls kein Login-Code für Datensatz Download angegeben ist.</DESC>
+            <TIS>
+              <TI>SER00087</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>27</SERVICE-IDENTIFIER>
+              <LONG-NAME>Security Access / Request Seed</LONG-NAME>
+              <SHORT-NAME>DiagnServi_SecurAccesRequeSeed</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>03</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Security Access Type</LONG-NAME>
+                <SHORT-NAME>Param_SecurAccesType</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Request Seed Login</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Security Access Seed</LONG-NAME>
+                <SHORT-NAME>Param_SecurAccesSeed</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_SecurAccesRequeSeed</RESPONSE-SHORT-NAME>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_26d52594-7dc0-4ed6-994f-d94cd765f730">
+            <NAME>Security Access Key berechnen</NAME>
+            <DESC>Key aus Seed und Login-Code für Datensatz Download gemäß Lastenheft berechnen. Entfällt, falls kein Login-Code für Datensatz Download angegeben ist.</DESC>
+            <TIS>
+              <TI>SER00085</TI>
+            </TIS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_e11b9d3e-2663-4519-8c3b-a07709db0c67">
+            <NAME>Security Access Key schreiben</NAME>
+            <DESC>Entfällt, falls kein Login-Code für Datensatz Download angegeben ist.</DESC>
+            <TIS>
+              <TI>SER00086</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>27</SERVICE-IDENTIFIER>
+              <LONG-NAME>Security Access / Send Key</LONG-NAME>
+              <SHORT-NAME>DiagnServi_SecurAccesSendKey</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Security Access Type</LONG-NAME>
+                <SHORT-NAME>Param_SecurAccesType</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Send Key Login</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Security Access Key</LONG-NAME>
+                <SHORT-NAME>Param_SecurAccesKey</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_e1a4b069-1b38-45c7-9268-dbb19039b152">
+            <NAME>Stummschaltung (Mute) aktivieren</NAME>
+            <DESC>Mute Modus zur Unterdrückung der restlichen Busnachrichten zur Beschleunigung der Bedatung (optional, gesteuert über Parameter).</DESC>
+            <TIS>
+              <TI>SER00094</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>28</SERVICE-IDENTIFIER>
+              <LONG-NAME>Communication Control</LONG-NAME>
+              <SHORT-NAME>DiagnServi_CommuContr</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>8101</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Control Type</LONG-NAME>
+                <SHORT-NAME>Param_ContrType</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Enable Rx And Disable Tx</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Communication Type Bits 4 to 7</LONG-NAME>
+                <SHORT-NAME>Param_CommuTypeBits4To7</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>All Networks</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Communication Type Bits 0 to 1</LONG-NAME>
+                <SHORT-NAME>Param_CommuTypeBits0To1</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Normal Communication Messages</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_6a250848-79b1-415f-a842-7aca32020d25">
+            <NAME>Datensatz Download schreiben</NAME>
+            <DESC>Datensatz Download Generation 1 oder 2 gemäß entsprechendem Lastenheft. Reihenfolge gemäß Parameter "Datensatz Download vor Kalibrierung".</DESC>
+            <TIS>
+              <TI>SER00059</TI>
+            </TIS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_bbcb6cc9-f895-4388-8b71-22778de48c26">
+            <NAME>Klemme 15 - Reset</NAME>
+            <DESC>Entfällt in Abhängigkeit des entsprechenden Parameters.</DESC>
+            <TIS>
+              <TI>SER00030</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>11</SERVICE-IDENTIFIER>
+              <LONG-NAME>ECU Reset / Key Off On Reset</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ECUResetKeyOffOnReset</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>1102</DATA-IDENTIFIER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_91e32671-9ea1-403a-a3c2-698d1b2a77b2">
+            <NAME>Warten</NAME>
+            <DESC>Wartezeit bis SG nach Reset betriebsbereit ist</DESC>
+            <TIS>
+              <TI>MAS01717</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE-REF ref="uuid_951ca8af-1d86-4bbc-80e3-f344b70396bd"/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+          </STEP>
+          <STEP cyclic="false" id="uuid_99607fad-e09c-448b-bde0-2c3c48e2b3e4">
+            <NAME>Auswahl der Diagnosesitzung</NAME>
+            <DESC>Auswahl der für den Fachbereich relevanten Diagnosesitzung</DESC>
+            <TIS>
+              <TI>SER00001</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>10</SERVICE-IDENTIFIER>
+              <LONG-NAME>Diagnostic Session Control</LONG-NAME>
+              <SHORT-NAME>DiagnServi_DiagnSessiContr</SHORT-NAME>
+            </DIAG-SERVICE>
+          </STEP>
+          <STEP cyclic="false" id="uuid_1ef4f324-2452-48d4-8e5f-5bae1d58ea91">
+            <NAME>Security Access Seed lesen</NAME>
+            <DESC>Entfällt, falls kein Login-Code für Kalibrierung angegeben ist.</DESC>
+            <TIS>
+              <TI>SER00087</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>27</SERVICE-IDENTIFIER>
+              <LONG-NAME>Security Access / Request Seed</LONG-NAME>
+              <SHORT-NAME>DiagnServi_SecurAccesRequeSeed</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>03</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Security Access Type</LONG-NAME>
+                <SHORT-NAME>Param_SecurAccesType</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Request Seed Login</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Security Access Seed</LONG-NAME>
+                <SHORT-NAME>Param_SecurAccesSeed</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_SecurAccesRequeSeed</RESPONSE-SHORT-NAME>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_8410bb35-c998-476d-81aa-9a4b363a0be3">
+            <NAME>Security Access Key berechnen</NAME>
+            <DESC>Key aus Seed und Login-Code für Kalibrierung gemäß Lastenheft berechnen. Entfällt, falls kein Login-Code für Kalibrierung angegeben ist.</DESC>
+            <TIS>
+              <TI>SER00085</TI>
+            </TIS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_fa786408-3c37-4af6-bca1-07abe4429437">
+            <NAME>Security Access Key schreiben</NAME>
+            <DESC>Entfällt, falls kein Login-Code für Kalibrierung angegeben ist.</DESC>
+            <TIS>
+              <TI>SER00086</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>27</SERVICE-IDENTIFIER>
+              <LONG-NAME>Security Access / Send Key</LONG-NAME>
+              <SHORT-NAME>DiagnServi_SecurAccesSendKey</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Security Access Type</LONG-NAME>
+                <SHORT-NAME>Param_SecurAccesType</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Send Key Login</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Security Access Key</LONG-NAME>
+                <SHORT-NAME>Param_SecurAccesKey</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_fb4a94dc-5dad-4cb6-85e2-cd11c47338a9">
+            <NAME>Kalibrierung schreiben</NAME>
+            <DESC>Reihenfolge gemäß Parameter "Datensatz Download vor Kalibrierung".</DESC>
+            <TIS>
+              <TI>SER00076</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Generic Service</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentGenerServi</SHORT-NAME>
+            </DIAG-SERVICE>
+          </STEP>
+          <STEP cyclic="false" id="uuid_3392e475-16ab-4561-8fc2-f6899778d1b6">
+            <NAME>Codierung schreiben</NAME>
+            <DESC>Reihenfolge gemäß Parameter "Datensatz Download vor Kalibrierung".</DESC>
+            <TIS>
+              <TI>SER00056</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Variant Coding</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentVariaCodin</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0600</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Raw-Data</LONG-NAME>
+                <SHORT-NAME>Param_RawData</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_6e5d0642-9230-4796-ba48-48d392893296">
+            <NAME>Klemme 15 - Reset</NAME>
+            <DESC>Entfällt in Abhängigkeit des entsprechenden Parameters.</DESC>
+            <TIS>
+              <TI>SER00030</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>11</SERVICE-IDENTIFIER>
+              <LONG-NAME>ECU Reset / Key Off On Reset</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ECUResetKeyOffOnReset</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>1102</DATA-IDENTIFIER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_aa70e8aa-2087-4fc0-b024-38130b1e0e2e">
+            <NAME>Warten</NAME>
+            <DESC>Wartezeit bis SG nach Reset betriebsbereit ist</DESC>
+            <TIS>
+              <TI>MAS01717</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE-REF ref="uuid_951ca8af-1d86-4bbc-80e3-f344b70396bd"/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+          </STEP>
+          <STEP cyclic="false" id="uuid_01c1e56a-70f6-4850-a649-ad324623db9c">
+            <NAME>Auswahl der Diagnosesitzung</NAME>
+            <DESC>Auswahl der für den Fachbereich relevanten Diagnosesitzung</DESC>
+            <TIS>
+              <TI>SER00001</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>10</SERVICE-IDENTIFIER>
+              <LONG-NAME>Diagnostic Session Control</LONG-NAME>
+              <SHORT-NAME>DiagnServi_DiagnSessiContr</SHORT-NAME>
+            </DIAG-SERVICE>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>16.5</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_e629582e-3a67-4192-b008-8f6cd2e25db3" optional="false" standardIBNB="true">
+        <NAME>Verbauprüfung (Slave) mit Sammelidentifier</NAME>
+        <DESC>Die Identifikationsdaten der Slave-Steuergeräte werden über die Sammelidentifier gelesen und gegen die Vorgaben geprüft.</DESC>
+        <TIS>
+          <TI>SER00098</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_2b1332e8-e7e5-4e20-bec7-3943078118e5">
+            <NAME>VW/Audi-Teilenummer lesen</NAME>
+            <TIS>
+              <TI>SER00101</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Slave Lists</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentSlaveLists</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0611</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_DataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Slave_list_VW_spare_part_number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW Spare Part Number</LONG-NAME>
+                <SHORT-NAME>Param_VWSparePartNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentSlaveLists</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_SubSyVWSparePartNumbe.STRUC_SubSyVWSparePartNumbe</PATH>
+                <VALUE-PROXY>
+                  <VALUE/>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_789bed06-be85-4b80-a433-5f1f315780e9">
+            <NAME>Softwareversion lesen</NAME>
+            <TIS>
+              <TI>SER00090</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Slave Lists</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentSlaveLists</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0612</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_DataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Slave_list_VW_software_version_number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW Application Software Version Number</LONG-NAME>
+                <SHORT-NAME>Param_VWAppliSoftwVersiNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentSlaveLists</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_SubSyVWAppliSoftwVersiNumbe.STRUC_SubSyVWAppliSoftwVersiNumbe</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_97c19146-c709-4b0c-84c3-b8fff961ffa7">
+            <NAME>Hardwareversion lesen</NAME>
+            <TIS>
+              <TI>SER00073</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Slave Lists</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentSlaveLists</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0613</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_DataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Slave_list_VW_ecu_hardware_version_number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW ECU Hardware Version Number</LONG-NAME>
+                <SHORT-NAME>Param_VWECUHardwVersiNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentSlaveLists</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_SubSyVWECUHardwVersiNumbe.STRUC_SubSyVWECUHardwVersiNumbe</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_099d2e1a-1715-4dc3-9bf2-3c97f9a88f43">
+            <NAME>Hardwareteilenummer lesen</NAME>
+            <TIS>
+              <TI>SER00072</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Slave Lists</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentSlaveLists</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0614</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_DataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Slave_list_VW_hardware_number</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>VW ECU Hardware Number</LONG-NAME>
+                <SHORT-NAME>Param_VWECUHardwNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentSlaveLists</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_SubSyVWECUHardwNumbe.STRUC_SubSyVWECUHardwNumbe</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_c9a93067-ffa7-44c4-b1bb-72eb56f8ecf1">
+            <NAME>FAZIT-Identifikation lesen</NAME>
+            <TIS>
+              <TI>SER00065</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Slave Lists</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentSlaveLists</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0616</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_DataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>Slave_list_VW_FAZIT_identification_string</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>ECU Production Plant Number</LONG-NAME>
+                <SHORT-NAME>Param_ECUProduPlantNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentSlaveLists</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_SubSyVWFAZITIdentStrin.STRUC_SubSyVWFAZITIdentStrin.Param_VWFAZITIdentStrin</PATH>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>ECU Manufacturing Date</LONG-NAME>
+                <SHORT-NAME>Param_ECUManufDate</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentSlaveLists</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_SubSyVWFAZITIdentStrin.STRUC_SubSyVWFAZITIdentStrin.Param_VWFAZITIdentStrin</PATH>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>ECU Production Test System Number</LONG-NAME>
+                <SHORT-NAME>Param_ECUProduTestSysteNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentSlaveLists</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_SubSyVWFAZITIdentStrin.STRUC_SubSyVWFAZITIdentStrin.Param_VWFAZITIdentStrin</PATH>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Consecutive Supplier Number</LONG-NAME>
+                <SHORT-NAME>Param_ConseSupplNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentSlaveLists</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_SubSyVWFAZITIdentStrin.STRUC_SubSyVWFAZITIdentStrin.Param_VWFAZITIdentStrin</PATH>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_958886e7-dcf0-4e1c-a3af-d8cb9fc64e21">
+            <NAME>Verbauprüfung gegen Sollvorgabe</NAME>
+            <TIS>
+              <TI>SER00100</TI>
+            </TIS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>10.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_f4535d17-809c-4e6f-9e01-cd95d3f2a233" optional="false" standardIBNB="false">
+        <NAME>ZV-Absicherung anlernen</NAME>
+        <DESC>Fehler 0x0100E3 auf passiv gesetzt bzw. gelöscht: Anlernvorgang erfolgreich
+Fehler 0x0100E3 auf aktiv gesetzt: Anlernvorgang nicht erfolgreich
+Abhängigkeit Komponentenschutz: Nach dem Einbringen eines GFA-Keys in den ICAS1 ist der Schritt "IBNB ZV-Absicherung anlernen" zwingend auszuführen.</DESC>
+        <TAGS>
+          <TAG>IBNZ: Info von Lars Sommer: ca. 1s für die Routine. Off-Set Planung für Komponetenschutz prüfen 1s</TAG>
+        </TAGS>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <DEPENDENCIES>Komponentenschutz muss erfolgreich angelernt worden sein</DEPENDENCIES>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_04a1bd7e-4a1e-4fc6-8daf-471dcd0a5b84">
+            <NAME>Komponentenschutz prüfen</NAME>
+            <DESC>Es muss sichergestellt werden, dass vor dem Anlernen der ZV-Absicherung der Komponentenschutz im ICAS1 erfolgreich angelernt wurde. Ist dies nicht der Fall, kann die Anlernroutine für die ZV-Absicherung nicht erfolgreich durchgeführt werden. Hierfür wird geschaut, ob der GFA-Key schon geschrieben wurde. Wenn der DTC-DFCC 0xD20000 aktiv gesetzt ist, dann ist der GFA-Key noch nicht geschrieben (dann Komponentenschutz Inbetriebnahme durchführen). Ist der DTC-DFCC 0xD20000 passiv oder nicht vorhanden, wurde der GFA-Key geschrieben (weiter mit dem nächsten Schritt!).
+ 
+DTC-DFCC: 0xD20000
+DTC-TI: U111400 ("Komponentenschutz GFA-Schlüssel")</DESC>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>19</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read DTC Information / Report DTC By Confirmed And Pending Status</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDTCInforReporDTCByConfiAndPendiStatu</SHORT-NAME>
+            </DIAG-SERVICE>
+          </STEP>
+          <STEP cyclic="false" id="uuid_3e6d2bc5-52e2-42da-a2de-fabcf8070c65">
+            <NAME>Routine starten: Central_locking_protection_basic_setting</NAME>
+            <DESC>positive Antwort auf Anlernroutine: 
+[$710x530]
+Negative Antwort auf Anlernroutine:
+[$7F31xx]</DESC>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>31</SERVICE-IDENTIFIER>
+              <LONG-NAME>Routine Control / Start Basic Setting</LONG-NAME>
+              <SHORT-NAME>DiagnServi_RoutiContrStartBasicSetti</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0530</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RoutiIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RoutiIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Central_locking_protection_basic_setting</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Control Option Central_locking_training</LONG-NAME>
+                <SHORT-NAME>Param_RoutiContrOptioCentrLockiTrain</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RoutiContrOptioCentrLockiTrain</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>0x040000</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>2.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_40e8825e-e2f5-44f7-9615-ead3bedfca13" optional="true" standardIBNB="false">
+        <NAME>Uhrzeit UTC (Weltzeit) setzen</NAME>
+        <DESC>Schreiben der UTC-Zeit zur Inbetriebnahme des Basisdienst Zeitmaster. UTC-Zeit wird u.a. benötigt, um Zeitstempel für Fehlerspeichereinträge korrekt auszugeben.</DESC>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_97d30a20-7417-4210-a896-77f6f09b587d">
+            <NAME>Anpassung schreiben: Time_and_Date_UTC</NAME>
+            <DESC>Format: JJJJ-MM-DDThh:mm:ss+00:00
+
+"JJJJ"		Jahr (z.B. 2019)
+"-", "T", ":"	Trennzeichen (nicht variable Formatierung des Zeitstring)
+"MM"		Monat (z.B. 03)
+"DD"			Tag (z.B. 01)
+"hh"			Stunden (z.B. 23)
+"mm"		Minuten (z.B. 07)
+"ss"			Sekunden (z.B. 00)
+"+00:00"		Zeitzone UTC (nicht variable Formatierung des Zeitstring)
+
+Example:
+2018-05-16T12:04:42+00:00 --&gt; HEX: 32 30 31 38 2d 30 35 2d 31 36 54 31 32 3a 30 34 3a 34 32 2b 30 30 3a 30 30</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0908</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Time_and_Date_UTC</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Time_and_Date_UTC</LONG-NAME>
+                <SHORT-NAME>Param_TimeAndDateUTC</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_TimeAndDateUTC</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Uhrzeit UTC (Weltzeit)</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>1.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_c2908fe5-c170-4b35-b2ee-c4b81ddfebff" optional="false" standardIBNB="false">
+        <NAME>Rücksetzen 12V-Prüfpuls-Diagnose</NAME>
+        <DESC>Wenn eine 12V Batterie defekt ist, wird dieses durch den Prüfpuls (PP) erkannt. Im Anschluss an den Defekt muss die 12V Batterie getauscht werden. Die Ergebnisse des PP haben ein ASIL A(B). Um die Ergebnisse auf den initialen Wert für eine neue Batterie zu setzen, bedarf es folgenden Ablauf, welcher mit der FuSi abgestimmt ist.:
+1. Klemme 15 Ein
+2. Routine 0x0639 ("Rücksetzen 12V Prüfpuls-Diagnose") starten
+3. Klemme 15 Aus
+4. Warnblinker einschalten
+5. Klemme 15 Ein</DESC>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_8f9a900f-dab2-4e7e-950c-c62d93cdf814">
+            <NAME>Klemme 15 Ein</NAME>
+            <DESC>Klemme 15 Einschalten</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_16b6f078-1a74-4df7-8ae0-89b64c78e874">
+            <NAME>Routine starten: Reset_12V Test_Puls_Diagnosis</NAME>
+            <DESC>Routine "Rücksetzen 12V Prüfpuls-Diagnose" starten</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>31</SERVICE-IDENTIFIER>
+              <LONG-NAME>Routine Control / Start Basic Setting</LONG-NAME>
+              <SHORT-NAME>DiagnServi_RoutiContrStartBasicSetti</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0639</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RoutiIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RoutiIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Reset_12V Test_Puls_Diagnosis</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Control Option</LONG-NAME>
+                <SHORT-NAME>Param_RoutiContrOptio</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RoutiContrOptio</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Reset</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_5f88d3c6-6656-410e-9db9-7b5934bee093">
+            <NAME>Klemme 15 Aus</NAME>
+            <DESC>Klemme 15 Ausschalten</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_a33ea9f4-ee87-4ce6-883e-7583853826d3">
+            <NAME>Warnblinker einschalten</NAME>
+            <DESC>Taster für Warnblinker betätigen</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_19a82b39-ef10-448f-901d-d01eec5fff6b">
+            <NAME>Klemme 15 Ein</NAME>
+            <DESC>Klemme 15 Einschalten</DESC>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>60.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_e9318093-878d-42cd-8952-9fe30972c581" optional="false" shortname="ClearDiagnosticInformation" standardIBNB="true" version="1">
+        <NAME>Ereignisspeicher löschen</NAME>
+        <DESC>Die Ereignisspeicher werden gelöscht.</DESC>
+        <TIS>
+          <TI>SER00062</TI>
+        </TIS>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <PARAMETERS>
+          <PARAMETER id="uuid_d64016c3-275a-46ae-9539-222d1dbc9ea4" optional="true">
+            <KEY>funktionale Adressierung</KEY>
+            <DATATYPE>Boolean</DATATYPE>
+            <DEFAULT>false</DEFAULT>
+          </PARAMETER>
+          <PARAMETER id="uuid_8d6ae498-527e-4835-b14d-1a0e442c3d21" optional="true">
+            <KEY>OBD</KEY>
+            <DATATYPE>Boolean</DATATYPE>
+            <DEFAULT>false</DEFAULT>
+          </PARAMETER>
+        </PARAMETERS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_548ee2fb-ca69-4bf6-bb4d-350abf0a5f56">
+            <NAME>Ereignisspeicher löschen</NAME>
+            <DESC>Standardschritt, falls die Parameter nicht verändert wurden (keine funktionale Adressierung und kein OBD).</DESC>
+            <TIS>
+              <TI>SER00062</TI>
+            </TIS>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>14</SERVICE-IDENTIFIER>
+              <LONG-NAME>Clear Diagnostic Information</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ClearDiagnInfor</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>FFFFFF</DATA-IDENTIFIER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_46e4d8ff-f751-4211-a89e-9b5341ee9eed">
+            <NAME>Ereignisspeicher löschen OBD funktional</NAME>
+            <DESC>Alternativer Schritt für funktionale Adressierung und OBD.</DESC>
+            <TIS>
+              <TI>SER00062</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>04</SERVICE-IDENTIFIER>
+              <LONG-NAME>Clear/Reset Emission-Related Diagnostic Information</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ClearResetEmissRelatDiagnInfor</SHORT-NAME>
+            </DIAG-SERVICE>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.116</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_82534303-fd60-4df4-97c3-ec1e423e3a0c" optional="false" shortname="DiagnosticInformationQualificationTime" standardIBNB="true" version="1">
+        <NAME>Ereignisspeicher Qualifizierungszeit</NAME>
+        <DESC>Wartezeit bis der Ereignisspeicher aktualsiert ist. Die Längste Qualifizierungszeit für Erkennung der Unterspannung beträgt 90 Sekunden. Darüberhinaus beträgt die maximale Qualifizierungszeit 10 Sekunden</DESC>
+        <TIS>
+          <TI>SER00064</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <PARAMETERS>
+          <PARAMETER id="uuid_20fd2e94-2696-4852-944d-9f81aeab5c4d" optional="false">
+            <KEY>Wartezeit</KEY>
+            <DESC>Wartezeit in Sekunden</DESC>
+            <DATATYPE>Integer</DATATYPE>
+            <VALUE>90</VALUE>
+          </PARAMETER>
+        </PARAMETERS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_79a20566-53e1-4a31-a3d6-6d4596891bf8">
+            <NAME>Warten</NAME>
+            <TIS>
+              <TI>MAS01717</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE-REF ref="uuid_20fd2e94-2696-4852-944d-9f81aeab5c4d"/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>90.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_b2e86989-91a0-4701-b30c-a0f3ff43fe88" optional="false" standardIBNB="true">
+        <NAME>Ereignisspeicher prüfen</NAME>
+        <DESC>Die Ereignisspeicher werden gelesen, geprüft und dokumentiert.</DESC>
+        <TIS>
+          <TI>SER00063</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <PARAMETERS>
+          <PARAMETER id="uuid_3588c94f-6d3c-423c-b79c-f5738c8a2d9b" optional="true">
+            <KEY>Überlesene Ereignisspeichereinträge</KEY>
+            <DESC>Überlesene Ereignisspeichereinträge als Auflistung im Format "Eintrag1, Eintrag2, Eintrag3, ..., EintragN"</DESC>
+          </PARAMETER>
+        </PARAMETERS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_a49da630-b437-4541-a028-22e3b8bd75d4">
+            <NAME>Ereignisspeicher lesen</NAME>
+            <TIS>
+              <TI>SER00061</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>19</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read DTC Information / Report DTC By Confirmed And Pending Status</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDTCInforReporDTCByConfiAndPendiStatu</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>020C</DATA-IDENTIFIER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_22fbfc86-27de-4acc-ac2e-133c8b909976">
+            <NAME>Ereignisspeicher filtern</NAME>
+            <TIS>
+              <TI>SER00060</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+          </STEP>
+          <STEP cyclic="false" id="uuid_8ecd753e-e401-44a0-8630-2213b8e65166">
+            <NAME>Ereignisspeicher pruefen</NAME>
+            <TIS>
+              <TI>SER00063</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.069</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_fcf6de94-d8e2-4828-8d8b-fb4a614bc1a0" optional="true" standardIBNB="false">
+        <NAME>QuickRuheStrom Messung aktivieren (nur Audi)</NAME>
+        <DESC>Im Folgenden genannte Randbedingungen sind für einen iO-Ablauf der QRS-Messung nach dem Starten des QRS-Messmodus einzuhalten:
+- Inbetriebnahme abgeschlossen
+- Zündung aus / Verbraucher aus / Lichtdrehschalter = 0 / kein Ladegerät angeschlossen
+- Diagnose nicht aktiv / keine angeschlossenen Prüfmittel am OBD-Stecker im Fahrzeug
+- Stillstand aller Räder (v=0) / Alternative: P-Modus im ESP-Steuergerät
+Als idealer Prozessort in der Fertigung hat sich die Dichtkabine bewährt. Da während der Mindestbewässerungszeit von 6 min das Fahrzeug in Ruhezustand geht.</DESC>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <TAGS>
+          <TAG>IBNZ VSI-Wert aus Gateway MQB37W</TAG>
+        </TAGS>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_7bd0caf4-dacf-4fb4-91a8-1ab3d8ea3a73">
+            <NAME>QRS Messung Ergebnis prüfen</NAME>
+            <DESC>QRS Messergebnis in mA auslesen und prüfen.
+Sollwert kleiner/gleich 60mA</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Measurement Value</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentMeasuValue</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>2AF8</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Quiescent_current_management</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>stall_current_measurement_value</LONG-NAME>
+                <SHORT-NAME>Param_StallCurreMeasuValue</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_StallCurreMeasuValue</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <DISPLAYUNIT>mA</DISPLAYUNIT>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_1963014b-a68c-47e1-bc67-6bc0be9a91e2">
+            <NAME>QRS abhängig vom Ergebnis aktivieren</NAME>
+            <DESC>QRS abhängig vom QRS Messung Ergebnis aktivieren
+QRS Messung Ergebnis i.O. -&gt; QRS muss nicht mehr aktiviert werden</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_43b73990-2ac7-4afc-8f84-9eafae8e2ab6">
+            <NAME>Kilometerschwelle abweichend von 2 km setzen</NAME>
+            <DESC>Kilometerschwelle bei der die QRS-Messung automatisch beendet wird.
+Defaultwert. 2km
+Bei Bedarf kann die Kilometerschwelle erhöht werden.
+[Wert in Kilometer 2..150]</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04AD</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Stall_Current_Measuring_Mode_Deactivation_Distance</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Stall_Current_Measuring_Mode_Deactivation_Distance</LONG-NAME>
+                <SHORT-NAME>Param_StallCurreMeasuModeDeactDista</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.TABROW_StallCurreMeasuModeDeactDista.Param_StallCurreMeasuModeDeactDista</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>3</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_115fe21d-ee76-4579-8e69-9894765f7afe">
+            <NAME>QRS Modus aktivieren</NAME>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04FD</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Stall_Current_Measuring_Mode</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Stall_Current_Meausureing_Mode</LONG-NAME>
+                <SHORT-NAME>Param_StallCurreMeausMode</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.TABROW_StallCurreMeasuMode.Param_StallCurreMeausMode</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activated</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_78700095-be17-4a03-89e5-ab4f2776b064">
+            <NAME>Prozesszeit</NAME>
+            <DESC>Als idealer Prozessort in der Fertigung hat sich die Dichtkabine bewährt. Da während der Mindestbewäserungszeit von 6 min das Fahrzeug in Ruhezustand geht.</DESC>
+            <TIS>
+              <TI>MAS01717</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE>%WARTEZEIT%</VALUE>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>80.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_376663fb-fba5-45e0-8029-28fefe516b83" optional="true" standardIBNB="false">
+        <NAME>QuickRuheStrom Messung bewerten (nur Audi)</NAME>
+        <DESC>Im Folgenden genannte Randbedingungen sind für einen iO-Ablauf der QRS-Messung nach dem Starten des QRS-Messmodus einzuhalten:
+- Inbetriebnahme abgeschlossen
+- Zündung aus / Verbraucher aus / Lichtdrehschalter = 0 / kein Ladegerät angeschlossen
+- Diagnose nicht aktiv / keine angeschlossenen Prüfmittel am OBD-Stecker im Fahrzeug
+- Stillstand aller Räder (v=0) / Alternative: P-Modus im ESP-Steuergerät
+Als idealer Prozessort in der Fertigung hat sich die Dichtkabine bewährt. Da während der Mindestbewääserungszeit von 6 min das Fahrzeug in Ruhezustand geht.</DESC>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <TAGS>
+          <TAG>IBNZ VSI-Wert aus Gateway MQB37W</TAG>
+        </TAGS>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_1757c46f-d8b8-41b0-8aa1-3010a6a03d60">
+            <NAME>QRS Modus Status abfragen</NAME>
+            <DESC>Aktuellen Status der QuickRuheStrom Messung abfragen </DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Measurement Value</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentMeasuValue</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>2AF8</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentMeasuValue</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Quiescent_current_management</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>stall_current_measurement_state</LONG-NAME>
+                <SHORT-NAME>Param_StallCurreMeasuState</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentMeasuValue</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.Param_StallCurreMeasuState</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_89bf26ae-fed7-47fb-b84a-4df635e1fa0e">
+            <NAME>QRS Messung Ergebnis prüfen</NAME>
+            <DESC>QRS Messergebnis in mA auslesen und prüfen.
+Sollwert kleiner/gleich 60mA</DESC>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Measurement Value</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentMeasuValue</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>2AF8</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentMeasuValue</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Quiescent_current_management</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>stall_current_measurement_value</LONG-NAME>
+                <SHORT-NAME>Param_StallCurreMeasuValue</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentMeasuValue</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.TABROW_QuiesCurreManag.Param_StallCurreMeasuValue</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <VALUE-PROXY>
+                  <TOLERANCE>
+                    <MIN-VALUE>1.0</MIN-VALUE>
+                    <MAX-VALUE>60.0</MAX-VALUE>
+                  </TOLERANCE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_b5d1f72f-8301-4a6e-bbeb-0db46b66c041">
+            <NAME>QRS Modus deaktivieren</NAME>
+            <DESC>Quickruhestrommessung deaktivieren</DESC>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04FD</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Stall_Current_Measuring_Mode</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Stall_Current_Meausureing_Mode</LONG-NAME>
+                <SHORT-NAME>Param_StallCurreMeausMode</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.TABROW_StallCurreMeasuMode.Param_StallCurreMeausMode</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>not activated</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.3</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_f341da1d-1b59-490c-821d-13721175bd74" optional="true" standardIBNB="false">
+        <NAME>Energiedurchsatz prüfen (nur Audi)</NAME>
+        <DESC>Am ZP8 soll der Energiedurchsatz an allen Fahrzeugen bewertet werden.
+Ein Überschreiten des Grenzwertes (zweifache Batterie-Nennkapazität) muss zum Tausch der Batterie führen.
+Ziel:
+- neuwertige Batterie vor Kunde,
+- wenig zyklisierte Batterien vor Kunde
+- Verfügbarkeit der Funktione Start/Stopp und Rekuperation vor Kunde</DESC>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_56c843dd-b625-4e59-8563-aed07ba258fe">
+            <NAME>Messwert lesen: LifeCycleData 4</NAME>
+            <DESC>Energiedurchsatz aus Historiendaten 4 auslesen</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Measurement Value</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentMeasuValue</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0493</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>LifeCycleData 4</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>LifeCycleData 04-01</LONG-NAME>
+                <SHORT-NAME>Param_LifeC0401</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_LifeC0401</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_37989761-4a49-4be8-9479-09834e4056d9">
+            <NAME>Energiedurchsatz aus Historiendaten 4 ausschneiden</NAME>
+            <DESC>Energiedurchsatz aus dem "Param_LifeC0401" ausschneiden.
+Format String: ccc*JJJJ-MM-TT-hh:mm*LL*AAA*CCC*BBBBBBBBBB*GGGGG*FFFFF*MMMM*NNNN*OOOO**
+                        005*2011-04-15-08:43*02*068*VA0*1234567890*00010*00010*0000*0000*0000**
+
+Energiedurchsatz sind die 5 Stellen (FFFFF) nach dem siebten Trennzeichen (*)</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_fd7e2d97-a2b3-4b21-a97a-18bfbfc7b81c">
+            <NAME>Batteriekapazität lesen</NAME>
+            <DESC>Zur Berechnung des zulässigen Energiedurchsatz verbaute Batteriekapazität aus der Anpassung 12V Batterie bestimmen.</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>2A31</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Battery_Adaption</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Battery_capacity</LONG-NAME>
+                <SHORT-NAME>Param_BatteCapac</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_BatteCapac</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <DISPLAYUNIT>Ah</DISPLAYUNIT>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_0afc7b2a-baf4-421a-becd-a3422c40d8c3">
+            <NAME>Energiedurchsatz prüfen</NAME>
+            <DESC>Energiedurchatz auf kleiner/gleich der zweichfachen Batteriekapazität prüfen.
+Bei n.i.O. muss die Batterie getauscht werden!</DESC>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.2</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_e78b7d0c-d20f-4c81-a2d0-dda5db002078" optional="true" standardIBNB="false">
+        <NAME>Energiebilanz prüfen (nur Audi)</NAME>
+        <DESC>Die Bewertung der Energiebilanz am Bandende soll in Abhängigkeit der Batteriekapazität anhand folgender Berechnung erfolgen.
+Berechnungsvorschrift:
+Ladebilanzgrenzwert = (0,98 + (Ladebilanz – 10000 – Offset) : Batterienennkapazität) * 100
+Ladefaktor (Ladeeffizienz von Batterien &lt; 100% bzw. Ladefaktor &lt; 1, d.h. ein Teil des Ladestroms ist später nicht mehr als Entladestrom nutzbar.)
+aktuell, ausgelesene Ladebilanz aus dem Steuergerät, siehe Messwert „Historiendaten 4“
+verbaute Batteriekapazität im Fahrzeug
+Offset = entgangene Energiemengen aus den Vorprüfungen, die durch Batterieresets im Steuergerät verloren gegangen sind.
+
+Prüfvorschrift:
+Ladebilanzgrenzwert &gt;= 90 --&gt; ZP8 i.O.
+Ladebilanzgrenzwert &gt;10 ... &lt; 90 --&gt; Nachladen
+Ladebilanzgrenzwert &lt; =10 --&gt; Batterie ausbauen / als defekt/tiefentladen kennzeichnen</DESC>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_4a37330c-4d73-4bb0-98eb-dcc4560a0c8e">
+            <NAME>Historiendaten 4 lesen</NAME>
+            <DESC>Energiebilanz aus Historiendaten 4 auslesen</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Measurement Value</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentMeasuValue</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0493</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>LifeCycleData 4</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>LifeCycleData 04-01</LONG-NAME>
+                <SHORT-NAME>Param_LifeC0401</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_LifeC0401</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_9f7a16ac-1460-4e8e-b308-686aaa6caee6">
+            <NAME>Energiebilanz aus Historiendaten 4 ausschneiden</NAME>
+            <DESC>Energiedurchsatz aus dem "Param_LifeC0401" ausschneiden.
+Format String: ccc*JJJJ-MM-TT-hh:mm*LL*AAA*CCC*BBBBBBBBBB*GGGGG*FFFFF*MMMM*NNNN*OOOO**
+                       005*2011-04-15-08:43*02*068*VA0*1234567890*00010*00010*0000*0000*0000**
+
+Energiebilanz sind die 5 Stellen (GGGGG) nach dem sechsten Trennzeichen (*)</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_9d533668-f553-47ff-8d8e-eb23e88efd16">
+            <NAME>Batteriekapazität lesen</NAME>
+            <DESC>Zur Berechnung des zulässigen Energiebilanz verbaute Batteriekapazität aus der Anpassung 12V Batterie bestimmen.</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>2A31</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Battery_Adaption</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Battery_capacity</LONG-NAME>
+                <SHORT-NAME>Param_BatteCapac</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_BatteCapac</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <DISPLAYUNIT>Ah</DISPLAYUNIT>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_27956bf5-4117-44ee-ab76-fde67e620a94">
+            <NAME>Energiebilanz berechnen</NAME>
+            <DESC>Berechnungsvorschrift:
+Energiebilanzgrenzwert = (0,98 + (Ladebilanz – 10000 – Offset) : Batterienennkapazität) * 100
+Ladefaktor "0,98" (Ladeeffizienz von Batterien &lt; 100% bzw. Ladefaktor &lt; 1, d.h. ein Teil des Ladestroms ist später nicht mehr als Entladestrom nutzbar)
+aktuell, ausgelesene Ladebilanz aus dem Steuergerät, siehe Messwert „Historiendaten 4 lesen“
+verbaute Batteriekapazität im Fahrzeug (siehe Batteriekapazität lesen)
+Offset = entgangene Energiemengen aus den Vorprüfungen, die durch Batterieresets im Steuergerät verloren gegangen sind (wenn nicht anders definiert 0 Ah annehmen)
+</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_7d577600-fe9f-403f-afaa-d8f4bb5f850b">
+            <NAME>Energiebilanz prüfen</NAME>
+            <DESC>Prüfvorschrift:
+Ladebilanzgrenzwert &gt;= 90 --&gt; ZP8 i.O.
+Ladebilanzgrenzwert &gt;10 ... &lt; 90 --&gt; Nachlade
+Ladebilanzgrenzwert &lt; =10 --&gt; Batterie ausbauen / als defekt/tiefentladen kennzeichnen</DESC>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.2</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_c05a385c-1081-48ad-89c5-fa5c65d72974" optional="true" standardIBNB="false">
+        <NAME>Ruhespannungsunterschreitung prüfen (nur Audi)</NAME>
+        <DESC>Am ZP8 wird zur Bewertung auch die Chronik Ruhespannungsunterschreitung herangezogen.
+Bei Gesamtdauer der Unterschreitung 12,2V &gt; 10h → Batterie ersetzen (ausgebaute Batterie über Batterieprüfraum laden/prüfen)
+Bei Gesamtdauer der Unterschreitung 11,6V &gt; 10h → Batterie ersetzen (ausgebaute Batterie verschrotten)</DESC>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_d6ab64de-5b44-49f6-ab70-7750a899f9ef">
+            <NAME>Historiendaten 1 lesen</NAME>
+            <DESC>Hsitoriendaten 1 lesen um die Gesamtruhespannungsunterschreitung unter 12,2 Volt und 11,6 Volt zu ermitteln.</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Measurement Value</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentMeasuValue</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0490</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>LifeCycleData 1</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>LifeCycleData 01-04</LONG-NAME>
+                <SHORT-NAME>Param_LifeC0104</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_LifeC0104</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>LifeCycleData 01-07</LONG-NAME>
+                <SHORT-NAME>Param_LifeC0107</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_LifeC0107</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_051d4e5d-1857-4716-a182-e0807f77c3c7">
+            <NAME>Gesamtdauer Ruhespannungsunterschreitung unter 12,2 Volt</NAME>
+            <DESC>Summe aller Ruhespannungsunterschreitungen der aktuell angelernten Batterie unter 12,2 Volt bestimmen.
+Die Gesamtanzahl in Stunden befindet sich im Parameter "LifeCycleData 01-04" nach dem dritten Trennzeichen.
+Format String "2010-04-26-00:35*00.1*06*00048***"</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_5a37f983-7e47-4dd0-a0a9-833f1e6266d3">
+            <NAME>Gesamtdauer Ruhespannungsunterschreitung unter 11,6 Volt</NAME>
+            <DESC>Summe aller Ruhespannungsunterschreitungen der aktuell angelernten Batterie unter 11,6 Volt bestimmen.
+Die Gesamtanzahl in Stunden befindet sich im Parameter "LifeCycleData 01-07" nach dem dritten Trennzeichen.
+Format String "2010-04-26-00:35*00.1*06*00048***"</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_dc91faac-0ce3-4181-828e-232c68008bd4">
+            <NAME>Ruhespannungsunterschreitung unter 12,2 Volt prüfen</NAME>
+            <DESC>Gesamtdauer der Unterschreitung unter 12,2 Volt auf keiner/gleich 10 Stunden prüfen.
+Bei n.i.O. ist die Batterie evtl. vorgeschädigt und entspricht nicht mehr den Kriterien einer Neubatterie.
+Batterie muss getauscht werden.</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_714102a5-e528-42f4-8ba8-38b62b9115f0">
+            <NAME>Ruhespannungsunterschreitung unter 11,6 Volt prüfen</NAME>
+            <DESC>Gesamtdauer der Unterschreitung unter 11,6 Volt auf keiner/gleich 10 Stunden prüfen.
+Bei n.i.O. ist die Batterie evtl. vorgeschädigt und entspricht nicht mehr den Kriterien einer Neubatterie.
+Batterie muss getauscht werden.</DESC>
+          </STEP>
+          <STEP cyclic="false" id="uuid_49fc90f6-48b5-403e-a008-39040a8d1bdc">
+            <NAME>Summe Ruhespannungsunterschreitung unter 12,2 Volt und 11,6 Volt prüfen</NAME>
+            <DESC>Summe Gesamtdauer der Unterschreitung unter 12,2 Volt und unter 11,6 Volt auf keiner/gleich 10 Stunden prüfen.
+Bei n.i.O. ist die Batterie evtl. vorgeschädigt und entspricht nicht mehr den Kriterien einer Neubatterie.
+Batterie muss getauscht werden.</DESC>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.1</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_4bec43da-6cda-425c-a133-fa24f0e3ed3d" optional="true" standardIBNB="true">
+        <NAME>Bauzustandsdokumentation 12V-Bordnetzbatterie (nur Audi)</NAME>
+        <DESC>Der Bauzustand wird gemäß Kapitel "Bauzustandsdokumentation" dokumentiert.</DESC>
+        <TIS>
+          <TI>MAS04188</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <TAGS>
+          <TAG>IBNZ VSI-Wert aus Gateway MQB37W</TAG>
+        </TAGS>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <GENERAL-CONDITIONS>Fahrzeug komplett aufgebaut und i.O., keine Weiteren IBN-Tätigkeiten am Fahrzeug erwartet</GENERAL-CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_4413aa67-b578-43cf-a75f-6cd1d865dfa7">
+            <NAME>BZD Hersteller/Seriennummer Baugruppe 782</NAME>
+            <DESC>Baugruppennummer 782 + 3 Stellen Hersteller + 10 Stellen Seriennummer</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>2A31</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Battery_Adaption</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Battery_manufacturer</LONG-NAME>
+                <SHORT-NAME>Param_BatteManuf</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_BatteManuf</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Battery_serial_number</LONG-NAME>
+                <SHORT-NAME>Param_BatteSeriaNumbe</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_BatteSeriaNumbe</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_a1acd149-c99e-4a5a-a0bc-0990448bc03b">
+            <NAME>BZD Kapazität Baugruppe 789</NAME>
+            <DESC>Baugruppennummer 789 + 3 Stellen Kapazität
+(rechtbündig, ggf links mit 0 auffüllen)</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>2A31</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Battery_Adaption</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Battery_capacity</LONG-NAME>
+                <SHORT-NAME>Param_BatteCapac</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_BatteCapac</PATH>
+                <DATATYPE>eA_UINT32</DATATYPE>
+                <DISPLAYUNIT>Ah</DISPLAYUNIT>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.5</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_49c93f45-8e31-4724-ba80-4eac8a317d6d" optional="false" standardIBNB="true">
+        <NAME>Bauzustandsdokumentation</NAME>
+        <DESC>Der Bauzustand wird gemäß Kapitel "Bauzustandsdokumentation" dokumentiert.</DESC>
+        <TIS>
+          <TI>MAS04188</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <TAGS>
+          <TAG>IBNZ VSI-Wert aus Gateway MQB37W</TAG>
+        </TAGS>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <GENERAL-CONDITIONS>Fahrzeug komplett aufgebaut und i.O., keine Weiteren IBN-Tätigkeiten am Fahrzeug erwartet</GENERAL-CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <IBNZ>
+          <VSI>10.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuid_375972d1-0f2b-4d8b-9859-85a7fd48f201" optional="false" shortname="PrepareSfdDocumentation" standardIBNB="true" version="3">
+        <NAME>SFD Dokumentationsvorbereitung</NAME>
+        <NAME_EN>SFD prepare documentation</NAME_EN>
+        <DESC>Zur Vorbereitung der Rueckdokumentation an FAZIT ist es zwingend erforderlich, dass die IAS (Inbetriebnahme-Anfrage-Struktur) ausgelesen wird. 
+Die IAS ist dann im Abschnitt „Durchfuehrung Rueckdokumentation“ in das Telegramm „SFR1" zu implementieren. Ohne diese Rueckmeldung sind spaetere Hof- und Hafenaktionen nicht moeglich (offline).</DESC>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>IBN3(Bandende)</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_dd20094d-3728-42fc-98ac-ee687180df46">
+            <NAME>SFD Rueckdokumentation IAS</NAME>
+            <DESC>Zur Vorbereitung der Rueckdokumentation an FAZIT ist es zwingend erforderlich das die IAS (Inbetriebnahme-Anfrage-Struktur) aus den SFD-Steuergeraeten ausgelesen wird.
+Ohne diese Rueckmeldung ist ein spaeteres Öffnen nach ZP bei Offline-Anfrage (Hof- und Hafenaktionen) nicht moeglich.
+Im KD-Fall werden die IAS grundsaetzlich zur Anfrage mit uebermittelt.
+
+Der Schritt ist in ODX spezifiziert. In Hex muss die IAS mit dem Paramter 05 angefragt werden. 31 01 C0 08 05.
+
+Der ermittelte Wert ist zwischen zu puffern und gebuendelt im Schritt "Durchfuehrung Rueckdokumentation" in einem SFR1 Telegramm durchzufuehren.</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>31</SERVICE-IDENTIFIER>
+              <LONG-NAME>Routine Control / Protection of Vehicle Diagnosis</LONG-NAME>
+              <SHORT-NAME>DiagnServi_RoutiContrProteOfVehicDiagn</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>C008</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RoutiIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_RoutiIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Request_data_of_protection_of_vehicle_diagnosis</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>startup request</LONG-NAME>
+                <SHORT-NAME>Param_RequeData</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RequeData</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>05</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Status</LONG-NAME>
+                <SHORT-NAME>Param_RoutiStatu</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RoutiStatu</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Routine Finished Correctly</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Result</LONG-NAME>
+                <SHORT-NAME>Param_RoutiResul</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_RoutiResul</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Correct Results</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>RoutineStatusRecord</LONG-NAME>
+                <SHORT-NAME>Param_Routi</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <PATH>Param_DataRecor.Param_Routi</PATH>
+                <DATATYPE>eA_BYTEFIELD</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>IAS als hex-stream, die IAS muss dann in ASCII in das FAZIT-Telegramm integriert werden</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.1</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_1114dbeb-3e09-4ea7-be7e-ef9025ab5af9" optional="true" shortname="InfoSfd" standardIBNB="true" version="2">
+        <NAME>SFD [INFO]</NAME>
+        <NAME_EN>SFD [INFO]</NAME_EN>
+        <DESC>Die Diagnose des Steuergeraets wird durch SFD geschuetzt. SG-uebergreifende Teilumfaenge von SFD sind in der gueltigen Version der IB-1 SFD beschrieben.</DESC>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuid_46f4df2a-de3a-44fd-9beb-7be55aca4e28" optional="false" shortname="ActivateTransportMode" standardIBNB="true" version="1">
+        <NAME>Aktivieren Transportmodus</NAME>
+        <DESC>Der Transportmodus wird aktiviert. Das Aktivieren des Transportmodus ist über SFD geschützt (mindestens Rolle BASIC erforderlich).</DESC>
+        <TIS>
+          <TI>MAS16751</TI>
+        </TIS>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <GENERAL-CONDITIONS>Fahrzeug komplett aufgebaut und i.O., keine Weiteren IBN-Tätigkeiten am Fahrzeug erwartet</GENERAL-CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_ac0d8893-0068-43ab-a800-3169d3301955">
+            <NAME>Aktivieren Transportmodus</NAME>
+            <TIS>
+              <TI>MAS16751</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Generic Service</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentGenerServi</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04FFFF</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>1279</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Record</LONG-NAME>
+                <SHORT-NAME>Param_DataRecor</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>FF</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.082</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuide3692f79-d432-41e7-9e64-f3c71a1cd84f" optional="false" standardIBNB="true">
+        <NAME>Produktionsmodus deaktivieren</NAME>
+        <DESC>Deaktiviert alle gesetzten P-Modes im Steuergerät.</DESC>
+        <TIS>
+          <TI>IDE02332</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <GENERAL-CONDITIONS>Fahrzeug komplett aufgebaut und i.O., keine Weiteren IBN-Tätigkeiten am Fahrzeug erwartet</GENERAL-CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_9d3c6a81-271f-480c-9892-558eb96099fe">
+            <NAME>Produktionsmodus deaktivieren</NAME>
+            <TIS>
+              <TI>IDE02332</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Generic Service</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentGenerServi</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>04FC</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>1276</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Record</LONG-NAME>
+                <SHORT-NAME>Param_DataRecor</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>0000 0000 0000 0000 0000 0000</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.082</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuidfb649f33-e978-496b-86d5-dc51f29b0c52" optional="false" standardIBNB="true">
+        <NAME>Zentralen Produktionsmodus deaktiveren</NAME>
+        <DESC>Der zentrale Fahrzeugproduktionsmodus wird deaktivert</DESC>
+        <TIS>
+          <TI>SER00083</TI>
+        </TIS>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <GENERAL-CONDITIONS>Fahrzeug komplett aufgebaut und i.O., keine Weiteren IBN-Tätigkeiten am Fahrzeug erwartet</GENERAL-CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <PARAMETERS>
+          <PARAMETER id="uuid_produktionsmodusaktivieren1_param2" optional="false">
+            <KEY>zentralen Produktionsmodus deaktivieren</KEY>
+            <DESC>Deaktivierung des zentralen Produktionsmodus über alle Steuergeräte, die den zentralen Produktionsmodus berücksichtigen</DESC>
+            <DATATYPE>String</DATATYPE>
+            <VALUE>0x00</VALUE>
+          </PARAMETER>
+        </PARAMETERS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_dc7c00b9-9727-4dff-8a95-c6ddbfabf714">
+            <NAME>zentralen Produktionsmodus deaktivieren</NAME>
+            <TIS>
+              <TI>SER00083</TI>
+            </TIS>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Generic Service</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentGenerServi</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0x0EF4</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE>3828</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Data Record</LONG-NAME>
+                <SHORT-NAME>Param_DataRecor</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <VALUE-PROXY>
+                  <VALUE-REF ref="uuid_produktionsmodusaktivieren1_param2"/>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>0.082</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="true" P-relevant="true" id="uuid_0a6be836-badc-4b5b-8832-57bd76d4075f" optional="false" standardIBNB="true">
+        <NAME>Abschließen Schutz der Fahrzeugdiagnose</NAME>
+        <DESC>Der Schutz der Fahrzeugdiagnose (SFD) wird abgeschlossen.</DESC>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Inbetriebnahme (konstruktiv bedingt)</CATEGORY>
+        <AREA>ZP8</AREA>
+        <LOGICAL-LINK>FG</LOGICAL-LINK>
+        <CONDITIONS>
+          <GENERAL-CONDITIONS>Fahrzeug komplett aufgebaut und i.O., keine Weiteren IBN-Tätigkeiten am Fahrzeug erwartet</GENERAL-CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_f4ea3e37-6228-4c33-b591-82dc355b8a25">
+            <NAME>Routine starten</NAME>
+            <DESC>Der Diagnose-Client muss den 31hex Dienst „LOCK“ auf dem Steuergerät aufrufen um die Freischaltung aufzuheben.
+ODX-Adressierung über funktionalen Request möglich</DESC>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>31</SERVICE-IDENTIFIER>
+              <LONG-NAME>Routine Control / Protection of Vehicle Diagnosis FUNCTIONAL</LONG-NAME>
+              <SHORT-NAME>DiagnServi_RoutiContrProteOfVehicDiagnFUNCT</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>C005</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RoutiIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RoutiContrProteOfVehicDiagnFUNCT</RESPONSE-SHORT-NAME>
+                <PATH>Param_RoutiIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Lock_protection_of_vehicle_diagnosis</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>empty</LONG-NAME>
+                <SHORT-NAME>Param_Empty</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RoutiContrProteOfVehicDiagnFUNCT</RESPONSE-SHORT-NAME>
+                <PATH>Param_RoutiContrOptio.TABROW_LockProteOfVehicDiagn.Param_Empty</PATH>
+                <DATATYPE>eA_BYTEFIELD</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>0</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Status</LONG-NAME>
+                <SHORT-NAME>Param_RoutiStatu</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RoutiContrProteOfVehicDiagnFUNCT</RESPONSE-SHORT-NAME>
+                <PATH>Param_RoutiStatuRecor.TABROW_LockProteOfVehicDiagn.Param_RoutiStatu</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Routine Finished Correctly</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Routine Result</LONG-NAME>
+                <SHORT-NAME>Param_RoutiResul</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RoutiContrProteOfVehicDiagnFUNCT</RESPONSE-SHORT-NAME>
+                <PATH>Param_RoutiStatuRecor.TABROW_LockProteOfVehicDiagn.Param_RoutiResul</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Correct Results</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>RoutineStatusRecord</LONG-NAME>
+                <SHORT-NAME>Param_Routi</SHORT-NAME>
+                <MESSAGE-TYPE>RESPONSE</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_RoutiContrProteOfVehicDiagnFUNCT</RESPONSE-SHORT-NAME>
+                <PATH>Param_RoutiStatuRecor.TABROW_LockProteOfVehicDiagn.Param_Routi</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Lock_successful</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_888befe1-0759-4316-b25c-c795f8fc9ae3">
+            <NAME>Messwert lesen</NAME>
+            <DESC>Dokumentation SFD-Status aller SFD-Steuergeräte</DESC>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>22</SERVICE-IDENTIFIER>
+              <LONG-NAME>Read Data By Identifier / Measurement Value</LONG-NAME>
+              <SHORT-NAME>DiagnServi_ReadDataByIdentMeasuValue</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>0174</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_ReadDataByIdentMeasuValue</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Unlock_status_of_ECU_of_protection_of_vehicle_diagnosis</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>1.5</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuid_7ce90ed3-64e3-4917-a3b7-c3b8585a0fcf" optional="true" standardIBNB="false">
+        <NAME>Klemme 15 Einschalten</NAME>
+        <DESC>Klemme 15 Einschalten ist hier als optinaler Schritt angeben zur Prozessunterstützung, um nicht manuell/mit Werkerbindung die Klemme 15 schalten zu müssen.</DESC>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Prozessunterstützung</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_6599885f-aa40-4e67-a7a8-82fe9ae9ba57">
+            <NAME>Initalisierung der SPN- Bedienstelle Diagnose</NAME>
+            <DESC>Die Initialisierung ist 60s lang aktiv, in dieser Zeit kann mit 0x1203 Dienst die Klemme 15 über Diagnose geschaltet werden. Nach 60s muss dieser Schritt bei Bedarf erneut ausgeführt werden</DESC>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>1202</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Initialization_diagnostics_switching_terminal</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Initialization_diagnostics_switching_terminal</LONG-NAME>
+                <SHORT-NAME>Param_InitiDiagnSwitcTermi</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.TABROW_InitiDiagnSwitcTermi.Param_InitiDiagnSwitcTermi</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activated</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_4787f110-920f-4001-a951-6c16eb05de67">
+            <NAME>Klemme 15 einschalten</NAME>
+            <TIME-PARAMETER>
+              <VALUE-PROXY>
+                <VALUE/>
+              </VALUE-PROXY>
+            </TIME-PARAMETER>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>1203</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Terminal_15_adaption_body_control_module</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Terminal_15_adaption_body_control_module</LONG-NAME>
+                <SHORT-NAME>Param_Termi15AdaptBodyContrModul</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.TABROW_Termi15AdaptBodyContrModul.Param_Termi15AdaptBodyContrModul</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>on</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>1.0</VSI>
+        </IBNZ>
+      </BLOCK>
+      <BLOCK KD-relevant="false" P-relevant="true" id="uuid_a29b297f-6acd-4d96-bf13-a430c7f6d69c" optional="true" standardIBNB="false">
+        <NAME>Klemme 15 Ausschalten</NAME>
+        <DESC>Klemme 15 Ausschalten ist hier als optinaler Schritt angeben zur Prozessunterstützung, um nicht manuell/mit Werkerbindung die Klemme 15 schalten zu müssen.</DESC>
+        <AUTHOR-REF ref="uuid_1b717cf0-565d-4139-b57b-30f1228c60aa"/>
+        <CATEGORY>Prozessunterstützung</CATEGORY>
+        <AREA>No Recommendation</AREA>
+        <LOGICAL-LINK>GatewUDS</LOGICAL-LINK>
+        <CONDITIONS>
+          <MANUAL-OPERATIONS>false</MANUAL-OPERATIONS>
+        </CONDITIONS>
+        <STEPS>
+          <STEP cyclic="false" id="uuid_5f2a2c6a-5b82-4e6b-8ba2-6fecb60db0b3">
+            <NAME>Initalisierung der SPN- Bedienstelle Diagnose</NAME>
+            <DESC>Die Initialisierung ist 60s lang aktiv, in dieser Zeit kann mit 0x1203 Dienst die Klemme 15 über Diagnose geschaltet werden. Nach 60s muss dieser Schritt bei Bedarf erneut ausgeführt werden</DESC>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>1202</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Initialization_diagnostics_switching_terminal</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Initialization_diagnostics_switching_terminal</LONG-NAME>
+                <SHORT-NAME>Param_InitiDiagnSwitcTermi</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.TABROW_InitiDiagnSwitcTermi.Param_InitiDiagnSwitcTermi</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>activated</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+          <STEP cyclic="false" id="uuid_15d1090a-328b-40de-8274-5129315b9874">
+            <NAME>Klemme 15 ausschalten</NAME>
+            <DIAG-SERVICE>
+              <SERVICE-IDENTIFIER>2E</SERVICE-IDENTIFIER>
+              <LONG-NAME>Write Data By Identifier / Calibration Data</LONG-NAME>
+              <SHORT-NAME>DiagnServi_WriteDataByIdentCalibData</SHORT-NAME>
+            </DIAG-SERVICE>
+            <DIAG-PARAMETERS>
+              <DATA-IDENTIFIER>1203</DATA-IDENTIFIER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Record Data Identifier</LONG-NAME>
+                <SHORT-NAME>Param_RecorDataIdent</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_RecorDataIdent</PATH>
+                <DATATYPE>eA_UNICODE2STRING</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>Terminal_15_adaption_body_control_module</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+              <DIAG-PARAMETER>
+                <LONG-NAME>Terminal_15_adaption_body_control_module</LONG-NAME>
+                <SHORT-NAME>Param_Termi15AdaptBodyContrModul</SHORT-NAME>
+                <MESSAGE-TYPE>REQUEST</MESSAGE-TYPE>
+                <RESPONSE-SHORT-NAME>Resp_WriteDataByIdentCalibData</RESPONSE-SHORT-NAME>
+                <PATH>Param_DataRecor.TABROW_Termi15AdaptBodyContrModul.Param_Termi15AdaptBodyContrModul</PATH>
+                <DATATYPE>eTEXTTABLE</DATATYPE>
+                <VALUE-PROXY>
+                  <VALUE>off</VALUE>
+                </VALUE-PROXY>
+              </DIAG-PARAMETER>
+            </DIAG-PARAMETERS>
+          </STEP>
+        </STEPS>
+        <IBNZ>
+          <VSI>1.0</VSI>
+        </IBNZ>
+      </BLOCK>
+    </PROCEDURE>
+  </PROCEDURES>
+  <BZD>
+    <S42-ATTRIBUTES-ADDED>false</S42-ATTRIBUTES-ADDED>
+    <IDENTS>
+      <IDENT>
+        <NAME>TBD</NAME>
+        <S42-ATTRIBUTE>TBD</S42-ATTRIBUTE>
+        <BGONLINE>TBD</BGONLINE>
+        <DID>TBD</DID>
+      </IDENT>
+    </IDENTS>
+  </BZD>
+</IB-1>

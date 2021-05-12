@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Day19_servlet_login:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Day19_servlet_login_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Day19_servlet_login/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Day19_servlet_login" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="HikariCP-3.2.0 (2)" />
+          <element id="library" level="project" name="commons-logging-1.2" />
+          <element id="file-copy" path="$PROJECT_DIR$/../Day19_servlet_login/lib/HikariCP-3.2.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../Day19_servlet_login/lib/slf4j-nop-1.7.9.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../Day19_servlet_login/lib/slf4j-api-1.7.24.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../Day19_servlet_login/lib/mysql-connector-java-8.0.16.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
