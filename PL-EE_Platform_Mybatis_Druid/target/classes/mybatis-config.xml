@@ -2,7 +2,7 @@
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
-<!--ºËÐÄÅäÖÃ-->
+<!--æ ¸å¿ƒé…ç½®-->
 <configuration>
     <properties resource="db.properties"/>
 
@@ -24,7 +24,7 @@
         </environment>
     </environments>
 
-    <!--Ã¿Ò»¸ömapper.xml¶¼ÐèÒªÔÚMybatisºËÐÄÅäÖÃÎÄ¼þÖÐ×¢²á-->
+    <!--æ¯ä¸€ä¸ªmapper.xmléƒ½éœ€è¦åœ¨Mybatisæ ¸å¿ƒé…ç½®æ–‡ä»¶ä¸­æ³¨å†Œ-->
     <mappers>
         <mapper resource="dao/UserMapper.xml"/>
         <mapper resource="dao/CartypeMapper.xml"/>

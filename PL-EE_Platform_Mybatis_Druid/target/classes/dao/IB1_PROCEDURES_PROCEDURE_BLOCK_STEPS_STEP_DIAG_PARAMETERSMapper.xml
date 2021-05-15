@@ -53,9 +53,16 @@
     ipp.BLOCK_TAGS_TAG BLOCK_TAGS_TAG,
     ipp.BLOCK_AREA BLOCK_AREA,
     ipp.BLOCK_LOGICAL_LINK BLOCK_LOGICAL_LINK,
+    ipp.BLOCK_LAS BLOCK_LAS,
+    ipp.BLOCK_TIMEOUT BLOCK_TIMEOUT,
+    ipp.BLOCK_POLLINTERVALL BLOCK_POLLINTERVALL,
+
     ipp.BLOCK_CONDITIONS_MANUAL_OPERATIONS BLOCK_CONDITIONS_MANUAL_OPERATIONS,
+    ipp.BLOCK_CONDITIONS_GENERAL_CONDITIONS BLOCK_CONDITIONS_GENERAL_CONDITIONS,
+    ipp.BLOCK_CONDITIONS_BUILDUP_CONDITIONS BLOCK_CONDITIONS_BUILDUP_CONDITIONS,
     ipp.BLOCK_IBNZ_VSI BLOCK_IBNZ_VSI,
-    
+    ipp.BLOCK_IBNZ_VSI_VERIFIED BLOCK_IBNZ_VSI_VERIFIED,
+
     iss.STEP_NAME STEP_NAME,
     iss.STEP_DESC STEP_DESC,
     iss.STEP_DIAG_SERVICE_IDENTIFIER STEP_DIAG_SERVICE_IDENTIFIER,
@@ -93,19 +100,19 @@
     AND iss.STEP_NAME = issdp.STEP_NAME) as temp
         <where>
             <if test = "platform_name != null">
-                platform_name = #{platform_name}
+                issdp.platform_name = #{platform_name}
             </if>
             <if test = "IB1_VERSION != null">
-                and IB1_VERSION = #{IB1_VERSION}
+                and issdp.IB1_VERSION = #{IB1_VERSION}
             </if>
             <if test = "diagnose_adr != null">
-                and diagnose_adr = #{diagnose_adr}
+                and issdp.diagnose_adr = #{diagnose_adr}
             </if>
             <if test = "BLOCK_NAME != null">
-                and BLOCK_NAME = #{BLOCK_NAME}
+                and issdp.BLOCK_NAME = #{BLOCK_NAME}
             </if>
             <if test = "STEP_NAME != null">
-                and STEP_NAME = #{STEP_NAME}
+                and issdp.STEP_NAME = #{STEP_NAME}
             </if>
         </where>
 
@@ -143,8 +150,15 @@
             <result property="BLOCK_TAGS_TAG" column="BLOCK_TAGS_TAG"></result>
             <result property="BLOCK_AREA" column="BLOCK_AREA"></result>
             <result property="BLOCK_LOGICAL_LINK" column="BLOCK_LOGICAL_LINK"></result>
+            <result property="BLOCK_LAS" column="BLOCK_LAS"></result>
+            <result property="BLOCK_TIMEOUT" column="BLOCK_TIMEOUT"></result>
+            <result property="BLOCK_POLLINTERVALL" column="BLOCK_POLLINTERVALL"></result>
+
             <result property="BLOCK_CONDITIONS_MANUAL_OPERATIONS" column="BLOCK_CONDITIONS_MANUAL_OPERATIONS"></result>
+            <result property="BLOCK_CONDITIONS_GENERAL_CONDITIONS" column="BLOCK_CONDITIONS_GENERAL_CONDITIONS"></result>
+            <result property="BLOCK_CONDITIONS_BUILDUP_CONDITIONS" column="BLOCK_CONDITIONS_BUILDUP_CONDITIONS"></result>
             <result property="BLOCK_IBNZ_VSI" column="BLOCK_IBNZ_VSI"></result>
+            <result property="BLOCK_IBNZ_VSI_VERIFIED" column="BLOCK_IBNZ_VSI_VERIFIED"></result>
         </association>
 
         <association property="IB1_Basic" javaType="pojo.IB1_BasicLei">

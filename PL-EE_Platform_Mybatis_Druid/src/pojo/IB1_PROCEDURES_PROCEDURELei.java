@@ -20,15 +20,25 @@ public class IB1_PROCEDURES_PROCEDURELei {
     private String BLOCK_TAGS_TAG;
     private String BLOCK_AREA;
     private String BLOCK_LOGICAL_LINK;
+
+    private String BLOCK_LAS;
+    private String BLOCK_TIMEOUT;
+    private String BLOCK_POLLINTERVALL;
+
     private String BLOCK_CONDITIONS_MANUAL_OPERATIONS;
+    private String BLOCK_CONDITIONS_GENERAL_CONDITIONS;
+    private String BLOCK_CONDITIONS_BUILDUP_CONDITIONS;
+
+
     private String BLOCK_IBNZ_VSI;
+    private String BLOCK_IBNZ_VSI_VERIFIED;
 
     private IB1_BasicLei IB1_Basic;
 
     public IB1_PROCEDURES_PROCEDURELei() {
     }
 
-    public IB1_PROCEDURES_PROCEDURELei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String PROCEDURE_NAME, String BLOCK_KD_relevant, String BLOCK_P_relevant, String BLOCK_optional, String BLOCK_shortname, String BLOCK_standardIBNB, String BLOCK_version, String BLOCK_NAME, String BLOCK_NAME_EN, String BLOCK_DESC, String BLOCK_TAGS_TAG, String BLOCK_AREA, String BLOCK_LOGICAL_LINK, String BLOCK_CONDITIONS_MANUAL_OPERATIONS, String BLOCK_IBNZ_VSI, IB1_BasicLei IB1_Basic) {
+    public IB1_PROCEDURES_PROCEDURELei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String PROCEDURE_NAME, String BLOCK_KD_relevant, String BLOCK_P_relevant, String BLOCK_optional, String BLOCK_shortname, String BLOCK_standardIBNB, String BLOCK_version, String BLOCK_NAME, String BLOCK_NAME_EN, String BLOCK_DESC, String BLOCK_TAGS_TAG, String BLOCK_AREA, String BLOCK_LOGICAL_LINK, String BLOCK_LAS, String BLOCK_TIMEOUT, String BLOCK_POLLINTERVALL, String BLOCK_CONDITIONS_MANUAL_OPERATIONS, String BLOCK_CONDITIONS_GENERAL_CONDITIONS, String BLOCK_CONDITIONS_BUILDUP_CONDITIONS, String BLOCK_IBNZ_VSI, String BLOCK_IBNZ_VSI_VERIFIED, IB1_BasicLei IB1_Basic) {
         this.platform_name = platform_name;
         this.IB1_VERSION = IB1_VERSION;
         this.diagnose_adr = diagnose_adr;
@@ -46,8 +56,14 @@ public class IB1_PROCEDURES_PROCEDURELei {
         this.BLOCK_TAGS_TAG = BLOCK_TAGS_TAG;
         this.BLOCK_AREA = BLOCK_AREA;
         this.BLOCK_LOGICAL_LINK = BLOCK_LOGICAL_LINK;
+        this.BLOCK_LAS = BLOCK_LAS;
+        this.BLOCK_TIMEOUT = BLOCK_TIMEOUT;
+        this.BLOCK_POLLINTERVALL = BLOCK_POLLINTERVALL;
         this.BLOCK_CONDITIONS_MANUAL_OPERATIONS = BLOCK_CONDITIONS_MANUAL_OPERATIONS;
+        this.BLOCK_CONDITIONS_GENERAL_CONDITIONS = BLOCK_CONDITIONS_GENERAL_CONDITIONS;
+        this.BLOCK_CONDITIONS_BUILDUP_CONDITIONS = BLOCK_CONDITIONS_BUILDUP_CONDITIONS;
         this.BLOCK_IBNZ_VSI = BLOCK_IBNZ_VSI;
+        this.BLOCK_IBNZ_VSI_VERIFIED = BLOCK_IBNZ_VSI_VERIFIED;
         this.IB1_Basic = IB1_Basic;
     }
 
@@ -187,6 +203,30 @@ public class IB1_PROCEDURES_PROCEDURELei {
         this.BLOCK_LOGICAL_LINK = BLOCK_LOGICAL_LINK;
     }
 
+    public String getBLOCK_LAS() {
+        return BLOCK_LAS;
+    }
+
+    public void setBLOCK_LAS(String BLOCK_LAS) {
+        this.BLOCK_LAS = BLOCK_LAS;
+    }
+
+    public String getBLOCK_TIMEOUT() {
+        return BLOCK_TIMEOUT;
+    }
+
+    public void setBLOCK_TIMEOUT(String BLOCK_TIMEOUT) {
+        this.BLOCK_TIMEOUT = BLOCK_TIMEOUT;
+    }
+
+    public String getBLOCK_POLLINTERVALL() {
+        return BLOCK_POLLINTERVALL;
+    }
+
+    public void setBLOCK_POLLINTERVALL(String BLOCK_POLLINTERVALL) {
+        this.BLOCK_POLLINTERVALL = BLOCK_POLLINTERVALL;
+    }
+
     public String getBLOCK_CONDITIONS_MANUAL_OPERATIONS() {
         return BLOCK_CONDITIONS_MANUAL_OPERATIONS;
     }
@@ -195,12 +235,36 @@ public class IB1_PROCEDURES_PROCEDURELei {
         this.BLOCK_CONDITIONS_MANUAL_OPERATIONS = BLOCK_CONDITIONS_MANUAL_OPERATIONS;
     }
 
+    public String getBLOCK_CONDITIONS_GENERAL_CONDITIONS() {
+        return BLOCK_CONDITIONS_GENERAL_CONDITIONS;
+    }
+
+    public void setBLOCK_CONDITIONS_GENERAL_CONDITIONS(String BLOCK_CONDITIONS_GENERAL_CONDITIONS) {
+        this.BLOCK_CONDITIONS_GENERAL_CONDITIONS = BLOCK_CONDITIONS_GENERAL_CONDITIONS;
+    }
+
+    public String getBLOCK_CONDITIONS_BUILDUP_CONDITIONS() {
+        return BLOCK_CONDITIONS_BUILDUP_CONDITIONS;
+    }
+
+    public void setBLOCK_CONDITIONS_BUILDUP_CONDITIONS(String BLOCK_CONDITIONS_BUILDUP_CONDITIONS) {
+        this.BLOCK_CONDITIONS_BUILDUP_CONDITIONS = BLOCK_CONDITIONS_BUILDUP_CONDITIONS;
+    }
+
     public String getBLOCK_IBNZ_VSI() {
         return BLOCK_IBNZ_VSI;
     }
 
     public void setBLOCK_IBNZ_VSI(String BLOCK_IBNZ_VSI) {
         this.BLOCK_IBNZ_VSI = BLOCK_IBNZ_VSI;
+    }
+
+    public String getBLOCK_IBNZ_VSI_VERIFIED() {
+        return BLOCK_IBNZ_VSI_VERIFIED;
+    }
+
+    public void setBLOCK_IBNZ_VSI_VERIFIED(String BLOCK_IBNZ_VSI_VERIFIED) {
+        this.BLOCK_IBNZ_VSI_VERIFIED = BLOCK_IBNZ_VSI_VERIFIED;
     }
 
     public IB1_BasicLei getIB1_Basic() {
@@ -231,8 +295,14 @@ public class IB1_PROCEDURES_PROCEDURELei {
                 ", BLOCK_TAGS_TAG='" + BLOCK_TAGS_TAG + '\'' +
                 ", BLOCK_AREA='" + BLOCK_AREA + '\'' +
                 ", BLOCK_LOGICAL_LINK='" + BLOCK_LOGICAL_LINK + '\'' +
+                ", BLOCK_LAS='" + BLOCK_LAS + '\'' +
+                ", BLOCK_TIMEOUT='" + BLOCK_TIMEOUT + '\'' +
+                ", BLOCK_POLLINTERVALL='" + BLOCK_POLLINTERVALL + '\'' +
                 ", BLOCK_CONDITIONS_MANUAL_OPERATIONS='" + BLOCK_CONDITIONS_MANUAL_OPERATIONS + '\'' +
+                ", BLOCK_CONDITIONS_GENERAL_CONDITIONS='" + BLOCK_CONDITIONS_GENERAL_CONDITIONS + '\'' +
+                ", BLOCK_CONDITIONS_BUILDUP_CONDITIONS='" + BLOCK_CONDITIONS_BUILDUP_CONDITIONS + '\'' +
                 ", BLOCK_IBNZ_VSI='" + BLOCK_IBNZ_VSI + '\'' +
+                ", BLOCK_IBNZ_VSI_VERIFIED='" + BLOCK_IBNZ_VSI_VERIFIED + '\'' +
                 ", IB1_Basic=" + IB1_Basic +
                 '}';
     }

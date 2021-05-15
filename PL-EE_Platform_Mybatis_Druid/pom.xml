@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.faw-vw</groupId>
-    <artifactId>PL-EE_Platform_Mybatis0413_V02</artifactId>
+    <artifactId>PL-EE_Platform_DBserver0512</artifactId>
     <version>1.0-SNAPSHOT</version>
     <!--导入依赖-->
     <dependencies>
@@ -115,6 +115,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
                 <configuration>
                     <source>6</source>
                     <target>6</target>
