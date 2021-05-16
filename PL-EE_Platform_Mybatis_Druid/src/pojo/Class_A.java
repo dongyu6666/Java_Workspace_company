@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 //定义接口
 public class Class_A {
 
+    private JSONArray IB1_Basic;
     private JSONArray DOC_INFO;
     private JSONArray IB_DESCRIPTION;
     private JSONArray ENVIRONMENT;
@@ -17,7 +18,8 @@ public class Class_A {
     public Class_A() {
     }
 
-    public Class_A(JSONArray DOC_INFO, JSONArray IB_DESCRIPTION, JSONArray ENVIRONMENT, JSONArray BZD, JSONArray REFERENCES, JSONArray CUSTOMER_ADJUSTMENTS, JSONArray SECURITY_PROPERTIES, JSONArray IB1_TNR) {
+    public Class_A(JSONArray IB1_Basic, JSONArray DOC_INFO, JSONArray IB_DESCRIPTION, JSONArray ENVIRONMENT, JSONArray BZD, JSONArray REFERENCES, JSONArray CUSTOMER_ADJUSTMENTS, JSONArray SECURITY_PROPERTIES, JSONArray IB1_TNR) {
+        this.IB1_Basic = IB1_Basic;
         this.DOC_INFO = DOC_INFO;
         this.IB_DESCRIPTION = IB_DESCRIPTION;
         this.ENVIRONMENT = ENVIRONMENT;
@@ -26,6 +28,14 @@ public class Class_A {
         this.CUSTOMER_ADJUSTMENTS = CUSTOMER_ADJUSTMENTS;
         this.SECURITY_PROPERTIES = SECURITY_PROPERTIES;
         this.IB1_TNR = IB1_TNR;
+    }
+
+    public JSONArray getIB1_Basic() {
+        return IB1_Basic;
+    }
+
+    public void setIB1_Basic(JSONArray IB1_Basic) {
+        this.IB1_Basic = IB1_Basic;
     }
 
     public JSONArray getDOC_INFO() {
@@ -95,7 +105,8 @@ public class Class_A {
     @Override
     public String toString() {
         return "Class_A{" +
-                "DOC_INFO=" + DOC_INFO +
+                "IB1_Basic=" + IB1_Basic +
+                ", DOC_INFO=" + DOC_INFO +
                 ", IB_DESCRIPTION=" + IB_DESCRIPTION +
                 ", ENVIRONMENT=" + ENVIRONMENT +
                 ", BZD=" + BZD +

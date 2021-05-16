@@ -36,6 +36,8 @@ public class getIB1_All_servlet extends HttpServlet {
 
         //声明变量
         SqlSession sqlSession = null;
+        //IB1_Basic
+        IB1_BasicMapper IB1_Basicmapper = null;
         //DOC_INFO
         IB1_DOC_INFO_CONTACTSMapper IB1_DOC_INFO_CONTACTSmapper = null;
         IB1_DOC_INFO_DOC_REVISIONSMapper IB1_DOC_INFO_DOC_REVISIONSmapper = null;
@@ -60,8 +62,8 @@ public class getIB1_All_servlet extends HttpServlet {
         //IB1_TNR
         IB1_TNRMapper IB1_TNRmapper = null;
 
-
-
+        //IB1_Basic
+        List<IB1_BasicLei> IB1_Basiclist = null;
         //DOC_INFO
         List<IB1_DOC_INFO_CONTACTSLei> IB1_DOC_INFO_CONTACTSlist = null;
         List<IB1_DOC_INFO_DOC_REVISIONSLei> IB1_DOC_INFO_DOC_REVISIONSlist = null;
@@ -86,7 +88,8 @@ public class getIB1_All_servlet extends HttpServlet {
         //IB1_TNR
         List<IB1_TNRLei> IB1_TNRlist = null;
 
-
+        //IB1_Basic
+        String IB1_Basic_list= null;
         //DOC_INFO
         String IB1_DOC_INFO_CONTACTS_list= null;
         String IB1_DOC_INFO_DOC_REVISIONS_list= null;
@@ -115,6 +118,10 @@ public class getIB1_All_servlet extends HttpServlet {
         try {
             sqlSession = MybatisUtils.getSqlSession();
             // getMapper
+
+            //IB1_Basic
+            IB1_Basicmapper = sqlSession.getMapper(IB1_BasicMapper.class);
+
             //DOC_INFO
             IB1_DOC_INFO_CONTACTSmapper = sqlSession.getMapper(IB1_DOC_INFO_CONTACTSMapper.class);
             IB1_DOC_INFO_DOC_REVISIONSmapper = sqlSession.getMapper(IB1_DOC_INFO_DOC_REVISIONSMapper.class);
@@ -146,6 +153,9 @@ public class getIB1_All_servlet extends HttpServlet {
             map.put("diagnose_adr", diagnose_adr);
 
             //get IB1_PROCEDURES_PROCEDURE from Mysql, IB1_PROCEDURES_PROCEDURE is list，从数据读出的list
+
+            //IB1_Basic
+            IB1_Basiclist = IB1_Basicmapper.getIB1_Basic(map);
             //DOC_INFO
             IB1_DOC_INFO_CONTACTSlist = IB1_DOC_INFO_CONTACTSmapper.getIB1_DOC_INFO_CONTACTS(map);
             IB1_DOC_INFO_DOC_REVISIONSlist = IB1_DOC_INFO_DOC_REVISIONSmapper.getIB1_DOC_INFO_DOC_REVISIONS(map);
@@ -174,6 +184,9 @@ public class getIB1_All_servlet extends HttpServlet {
             //System.out.println("map查出来的(NOK)："+ IB1_DOC_INFO_DOC_REVISIONSlist);
 
             //transform IB1_Basic to JSON String，list转成JSONString
+
+            //IB1_Basic
+            IB1_Basic_list = JSON.toJSONString(IB1_Basiclist);
             //DOC_INFO
             IB1_DOC_INFO_CONTACTS_list = JSON.toJSONString(IB1_DOC_INFO_CONTACTSlist);
             IB1_DOC_INFO_DOC_REVISIONS_list = JSON.toJSONString(IB1_DOC_INFO_DOC_REVISIONSlist);
@@ -202,6 +215,8 @@ public class getIB1_All_servlet extends HttpServlet {
             //System.out.println("toJSONString的(OK)："+ IB1_DOC_INFO_DOC_REVISIONS_list);
 
             //transform to JSONArray，JSONString转成JSONArray的
+            //IB1_Basic
+            JSONArray IB1_Basic_array = JSONArray.parseArray(IB1_Basic_list);
             //DOC_INFO
             JSONArray IB1_DOC_INFO_CONTACTS_array = JSONArray.parseArray(IB1_DOC_INFO_CONTACTS_list);
             JSONArray IB1_DOC_INFO_DOC_REVISIONS_array = JSONArray.parseArray(IB1_DOC_INFO_DOC_REVISIONS_list);
@@ -227,7 +242,7 @@ public class getIB1_All_servlet extends HttpServlet {
             JSONArray IB1_TNR_array = JSONArray.parseArray(IB1_TNR_list);
 
             //System.out.println("JSONArray的(OK)："+ IB1_DOC_INFO_DOC_REVISIONS_array);
-
+            //class_b是有二级目录的
             Class_A class_a = new Class_A();
             Class_B class_b1 = new Class_B();//DOC_INFO
             Class_B class_b2 = new Class_B();//IB_DESCRIPTION
@@ -269,10 +284,12 @@ public class getIB1_All_servlet extends HttpServlet {
             //System.out.println("class_b_json_plus的JSONarray(OK):"+class_b_JSONarray);
 
             //将class_b_JSONarray存到class_a里,转化成class_a_JSONarray
+
             class_a.setDOC_INFO(class_b_JSONarray_DOC_INFO);
             class_a.setIB_DESCRIPTION(class_b_JSONarray_IB_DESCRIPTION);
             class_a.setENVIRONMENT(class_b_JSONarray_ENVIRONMENT);
-            //以下一级目录直接存在class_a里
+            //以下的一级目录直接存在class_a里，因为没有二级目录所以不需要存
+            class_a.setIB1_Basic(IB1_Basic_array);
             class_a.setBZD(IB1_BZD_array);
             class_a.setREFERENCES(IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENT_array);
             class_a.setCUSTOMER_ADJUSTMENTS(IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC_array);
