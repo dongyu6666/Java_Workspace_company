@@ -8,17 +8,19 @@ public class IB1_IB_DESCRIPTION_IB_VARIANTSLei {
     private String IB1_NAME;
 
     private String NAME;
+    private String PRODUCT_ID;
     private String DESC;
 
     public IB1_IB_DESCRIPTION_IB_VARIANTSLei() {
     }
 
-    public IB1_IB_DESCRIPTION_IB_VARIANTSLei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String NAME, String DESC) {
+    public IB1_IB_DESCRIPTION_IB_VARIANTSLei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String NAME, String PRODUCT_ID, String DESC) {
         this.platform_name = platform_name;
         this.IB1_VERSION = IB1_VERSION;
         this.diagnose_adr = diagnose_adr;
         this.IB1_NAME = IB1_NAME;
         this.NAME = NAME;
+        this.PRODUCT_ID = PRODUCT_ID;
         this.DESC = DESC;
     }
 
@@ -62,6 +64,14 @@ public class IB1_IB_DESCRIPTION_IB_VARIANTSLei {
         this.NAME = NAME;
     }
 
+    public String getPRODUCT_ID() {
+        return PRODUCT_ID;
+    }
+
+    public void setPRODUCT_ID(String PRODUCT_ID) {
+        this.PRODUCT_ID = PRODUCT_ID;
+    }
+
     public String getDESC() {
         return DESC;
     }
@@ -78,6 +88,7 @@ public class IB1_IB_DESCRIPTION_IB_VARIANTSLei {
                 ", diagnose_adr='" + diagnose_adr + '\'' +
                 ", IB1_NAME='" + IB1_NAME + '\'' +
                 ", NAME='" + NAME + '\'' +
+                ", PRODUCT_ID='" + PRODUCT_ID + '\'' +
                 ", DESC='" + DESC + '\'' +
                 '}';
     }

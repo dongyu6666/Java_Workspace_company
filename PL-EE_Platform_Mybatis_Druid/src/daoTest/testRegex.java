@@ -1,6 +1,7 @@
 package daoTest;
 
 
+import com.alibaba.fastjson.util.TypeUtils;
 import org.junit.Test;
 
 import pojo.Regex;
@@ -13,6 +14,9 @@ public class testRegex {
     //查询全部
     @Test
     public void getTTT() {
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         String IB1_filename = "IB1_V1_7.xml";
         Regex regex = new Regex();
         regex.setIB1_filename(IB1_filename);

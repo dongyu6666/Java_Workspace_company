@@ -6,7 +6,22 @@
 <mapper namespace="dao.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper">
 
     <select id="getIB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP" resultType="pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPLei">
-    SELECT * FROM IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP
+        /*SELECT
+        CONCAT(' select ',GROUP_CONCAT(COLUMN_NAME),' from ', TABLE_NAME,' ;')
+        FROM information_schema.COLUMNS
+        WHERE TABLE_NAME = 'IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP'
+        AND TABLE_SCHEMA = 'plee_platform'
+        AND COLUMN_NAME != 'platform_name'
+        AND COLUMN_NAME != 'IB1_VERSION'
+        AND COLUMN_NAME != 'diagnose_adr'
+        AND COLUMN_NAME != 'IB1_NAME'
+        AND COLUMN_NAME != 'BLOCK_NAME'
+        AND COLUMN_NAME != 'STEP_NAME'
+
+        AND COLUMN_NAME != 'create_time'
+        AND COLUMN_NAME != 'update_time';*/
+
+        SELECT id,STEP_DESC,STEP_DIAG_SERVICE_IDENTIFIER,STEP_DIAG_SERVICE_LONG_NAME,STEP_DIAG_SERVICE_SHORT_NAME,STEP_DIAG_PARAMETERS_DATA_IDENTIFIER FROM ib1_procedures_procedure_block_steps_step
     <where>
         <if test = "platform_name != null">
             platform_name = #{platform_name}
@@ -37,6 +52,9 @@
             </if>
             <if test = "BLOCK_NAME != null">
                 and BLOCK_NAME = #{BLOCK_NAME}
+            </if>
+            <if test = "STEP_NAME != null">
+                and STEP_NAME = #{STEP_NAME}
             </if>
         </where>
     </select>

@@ -2,6 +2,7 @@ package servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.IB1_PROCEDURES_PROCEDUREMapper;
 import org.apache.ibatis.session.SqlSession;
 import pojo.API;
@@ -26,6 +27,9 @@ import java.util.regex.Pattern;
 public class getIB1_BLOCK_NAME_servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
             //查询IB1_IB1_BLOCK_NAME
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
+
             //setContentType
             response.setContentType("text/html;charset=UTF-8");
             //request.getAttribute();
@@ -58,6 +62,8 @@ public class getIB1_BLOCK_NAME_servlet extends HttpServlet {
             List<IB1_PROCEDURES_PROCEDURELei> IB1_BLOCK_NAMElist = null;
             String list= null;
         try {
+                //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+                TypeUtils.compatibleWithJavaBean =true;
                 //获得SqlSession对象
                 sqlSession = MybatisUtils.getSqlSession();
                 // getMapper

@@ -4,8 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.faw-vw</groupId>
-    <artifactId>PL-EE_Platform_DBserver0512</artifactId>
+    <artifactId>PL-EE_Platform_DBServer0512</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <!--导入依赖-->
     <dependencies>
         <!--mysql驱动-->
@@ -35,7 +39,6 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.47</version>
         </dependency>
-
 
         <!-- servlet依赖的jar包start -->
         <dependency>
@@ -101,14 +104,16 @@
                 </includes>
                 <filtering>true</filtering>
             </resource>
-<!--            <resource>
+
+            <resource>
                 <directory>src/main/java</directory>
                 <includes>
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
                 </includes>
                 <filtering>true</filtering>
-            </resource>-->
+            </resource>
+
 
         </resources>
         <plugins>

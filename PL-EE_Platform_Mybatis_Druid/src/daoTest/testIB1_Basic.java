@@ -2,6 +2,7 @@ package daoTest;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.IB1_BasicMapper;
 import dao.IB1_DOC_INFO_CONTACTSMapper;
 import dao.IB1_DOC_INFO_DOC_REVISIONSMapper;
@@ -20,7 +21,8 @@ public class testIB1_Basic {
     @Test
     public void getTTT() {
 
-
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
         //获得SqlSession对象
         API api = new API();
         api.setStatus("true");
@@ -36,6 +38,8 @@ public class testIB1_Basic {
 
 
         try {
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
             sqlSession = MybatisUtils.getSqlSession();
             // getMapper
             mapper = sqlSession.getMapper(IB1_BasicMapper.class);

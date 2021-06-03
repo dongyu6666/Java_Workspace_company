@@ -2,6 +2,7 @@ package servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.IB1_TNRMapper;
 import org.apache.ibatis.session.SqlSession;
 import pojo.API;
@@ -23,12 +24,16 @@ import java.util.Map;
 public class getIB1_TNR_servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //查询IB1_PROCEDURES_PROCEDURE
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         //setContentType
         response.setContentType("text/html;charset=UTF-8");
         //request.getAttribute();
         String platform_name = request.getParameter("platform_name");
         String IB1_VERSION = request.getParameter("IB1_VERSION");
         String diagnose_adr = request.getParameter("diagnose_adr");
+        String IB1_TNR_filename = request.getParameter("IB1_TNR_filename");
 
         //获得SqlSession对象
         API api = new API();
@@ -43,6 +48,9 @@ public class getIB1_TNR_servlet extends HttpServlet {
         String list= null;
 
         try {
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
+
             sqlSession = MybatisUtils.getSqlSession();
             // getMapper
             mapper = sqlSession.getMapper(IB1_TNRMapper.class);
@@ -51,6 +59,7 @@ public class getIB1_TNR_servlet extends HttpServlet {
             map.put("platform_name", platform_name);
             map.put("IB1_VERSION", IB1_VERSION);
             map.put("diagnose_adr", diagnose_adr);
+            map.put("IB1_TNR_filename", IB1_TNR_filename);
 
             //get IB1_PROCEDURES_PROCEDURE from Mysql, IB1_PROCEDURES_PROCEDURE is list
             IB1_TNRlist = mapper.getIB1_TNR(map);

@@ -2,6 +2,7 @@ package servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.PlatformMapper;
 import org.apache.ibatis.session.SqlSession;
 import pojo.API;
@@ -20,7 +21,10 @@ import java.util.List;
 @WebServlet("/getPlatform")
 public class getPlatform_servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            //查询全部用户
+            //查询全部平台
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
+
             //setContentType
             response.setContentType("text/html;charset=UTF-8");
             //request.getAttribute();
@@ -38,6 +42,8 @@ public class getPlatform_servlet extends HttpServlet {
             String list= null;
 
             try {
+                //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+                TypeUtils.compatibleWithJavaBean =true;
                 sqlSession = MybatisUtils.getSqlSession();
                 // getMapper
                 PlatformMapper mapper1 = sqlSession.getMapper(PlatformMapper.class);

@@ -44,6 +44,7 @@
         <mapper resource="dao/IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYMapper.xml"/>
         <mapper resource="dao/IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONMapper.xml"/>
         <mapper resource="dao/IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEMapper.xml"/>
+        <mapper resource="dao/IB1_ENVIRONMENT_TRANSPORT_MODEMapper.xml"/>
 
         <mapper resource="dao/IB1_PROCEDURES_PROCEDUREMapper.xml"/>
         <mapper resource="dao/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper.xml"/>

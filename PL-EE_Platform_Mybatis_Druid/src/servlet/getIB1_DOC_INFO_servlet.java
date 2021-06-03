@@ -2,6 +2,7 @@ package servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.IB1_DOC_INFO_CONTACTSMapper;
 import dao.IB1_DOC_INFO_DOC_REVISIONSMapper;
 import org.apache.ibatis.session.SqlSession;
@@ -23,6 +24,9 @@ import java.util.Map;
 public class getIB1_DOC_INFO_servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //查询IB1_PROCEDURES_PROCEDURE
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         //setContentType
         response.setContentType("text/html;charset=UTF-8");
         //request.getAttribute();
@@ -46,6 +50,8 @@ public class getIB1_DOC_INFO_servlet extends HttpServlet {
         String IB1_DOC_INFO_CONTACTS_list= null;
         String IB1_DOC_INFO_DOC_REVISIONS_list= null;
         try {
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
             sqlSession = MybatisUtils.getSqlSession();
             // getMapper
             IB1_DOC_INFO_CONTACTSmapper = sqlSession.getMapper(IB1_DOC_INFO_CONTACTSMapper.class);

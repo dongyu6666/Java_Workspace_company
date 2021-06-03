@@ -92,7 +92,7 @@ CREATE TABLE `IB2P_PROCEDURES_PROCEDURE_IB_1_BLOCK`(
 `NAME` VARCHAR(100) COMMENT 'Inbetriebnahme-Ablauf',
 
 `optional` VARCHAR(10) COMMENT '例如ture',
-`ADDITIONAL_DESC` VARCHAR(1000) COMMENT '例如erforderlich für Übernahme der HMI-Defaul',
+`ADDITIONAL_DESC` VARCHAR(10000) COMMENT '例如erforderlich für Übernahme der HMI-Defaul',
 `AREA` VARCHAR(500) COMMENT '例如No Recommendation',
 `LAS` VARCHAR(100) COMMENT 'Auswertung VKV1 = "J"',
 `ADDITIONAL_CONDITIONS_RESSOURCES` VARCHAR(100) COMMENT 'Kalibriertafel, FAS-Einstellstand.',

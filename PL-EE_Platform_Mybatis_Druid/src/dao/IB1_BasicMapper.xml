@@ -6,6 +6,18 @@
 <mapper namespace="dao.IB1_BasicMapper">
 
     <select id="getIB1_Basic" resultType="pojo.IB1_BasicLei">
+/*        SELECT
+        CONCAT(' select ',GROUP_CONCAT(COLUMN_NAME),' from ', TABLE_NAME,' ;')
+        FROM information_schema.COLUMNS
+        WHERE TABLE_NAME = 'IB1_Basic'
+        AND TABLE_SCHEMA = 'plee_platform'
+        AND COLUMN_NAME != 'platform_name'
+        AND COLUMN_NAME != 'IB1_VERSION'
+        AND COLUMN_NAME != 'diagnose_adr'
+        AND COLUMN_NAME != 'IB1_NAME'
+
+        AND COLUMN_NAME != 'create_time'
+        AND COLUMN_NAME != 'update_time';*/
         SELECT * FROM IB1_Basic
     <where>
         <if test = "platform_name != null">

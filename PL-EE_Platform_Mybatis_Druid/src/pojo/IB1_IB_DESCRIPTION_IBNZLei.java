@@ -9,17 +9,19 @@ public class IB1_IB_DESCRIPTION_IBNZLei {
 
     private String IBNZ_ESTIMATION;
     private String IBNZ_COMMITMENT;
+    private String REASON;
 
     public IB1_IB_DESCRIPTION_IBNZLei() {
     }
 
-    public IB1_IB_DESCRIPTION_IBNZLei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String IBNZ_ESTIMATION, String IBNZ_COMMITMENT) {
+    public IB1_IB_DESCRIPTION_IBNZLei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String IBNZ_ESTIMATION, String IBNZ_COMMITMENT, String REASON) {
         this.platform_name = platform_name;
         this.IB1_VERSION = IB1_VERSION;
         this.diagnose_adr = diagnose_adr;
         this.IB1_NAME = IB1_NAME;
         this.IBNZ_ESTIMATION = IBNZ_ESTIMATION;
         this.IBNZ_COMMITMENT = IBNZ_COMMITMENT;
+        this.REASON = REASON;
     }
 
     public String getPlatform_name() {
@@ -70,6 +72,14 @@ public class IB1_IB_DESCRIPTION_IBNZLei {
         this.IBNZ_COMMITMENT = IBNZ_COMMITMENT;
     }
 
+    public String getREASON() {
+        return REASON;
+    }
+
+    public void setREASON(String REASON) {
+        this.REASON = REASON;
+    }
+
     @Override
     public String toString() {
         return "IB1_IB_DESCRIPTION_IBNZLei{" +
@@ -79,6 +89,7 @@ public class IB1_IB_DESCRIPTION_IBNZLei {
                 ", IB1_NAME='" + IB1_NAME + '\'' +
                 ", IBNZ_ESTIMATION='" + IBNZ_ESTIMATION + '\'' +
                 ", IBNZ_COMMITMENT='" + IBNZ_COMMITMENT + '\'' +
+                ", REASON='" + REASON + '\'' +
                 '}';
     }
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口（Dao）-->
+<mapper namespace="dao.IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONMapper">
+
+    <select id="getIB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION" resultType="pojo.IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONLei">
+        SELECT * FROM IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION
+    <where>
+        <if test = "platform_name != null">
+            platform_name = #{platform_name}
+        </if>
+        <if test = "IB1_VERSION != null">
+            and IB1_VERSION = #{IB1_VERSION}
+        </if>
+        <if test = "diagnose_adr != null">
+            and diagnose_adr = #{diagnose_adr}
+        </if>
+    </where>
+    </select>
+
+
+</mapper>

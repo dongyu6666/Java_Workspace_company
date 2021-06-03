@@ -6,9 +6,20 @@
 <mapper namespace="dao.IB1_PROCEDURES_PROCEDUREMapper">
 
     <select id="getIB1_PROCEDURES_PROCEDURE" resultType="pojo.IB1_PROCEDURES_PROCEDURELei">
+      /*  SELECT
+        CONCAT(' select ',GROUP_CONCAT(COLUMN_NAME),' from ', TABLE_NAME,' ;')
+        FROM information_schema.COLUMNS
+        WHERE TABLE_NAME = 'IB1_PROCEDURES_PROCEDURE'
+        AND TABLE_SCHEMA = 'plee_platform'
+        AND COLUMN_NAME != 'platform_name'
+        AND COLUMN_NAME != 'IB1_VERSION'
+        AND COLUMN_NAME != 'diagnose_adr'
+        AND COLUMN_NAME != 'IB1_NAME'
 
-    SELECT * FROM IB1_PROCEDURES_PROCEDURE
-    <where>
+        AND COLUMN_NAME != 'create_time'
+        AND COLUMN_NAME != 'update_time';*/
+        SELECT id,PROCEDURE_NAME,BLOCK_KD_relevant,BLOCK_P_relevant,BLOCK_optional,BLOCK_shortname,BLOCK_standardIBNB,BLOCK_version,BLOCK_NAME,BLOCK_NAME_EN,BLOCK_DESC,BLOCK_TAGS_TAG,BLOCK_AREA,BLOCK_LOGICAL_LINK,BLOCK_LAS,BLOCK_CONDITIONS_DEPENDENCIES,BLOCK_CONDITIONS_BUILDUP_CONDITIONS,BLOCK_CONDITIONS_GENERAL_CONDITIONS,BLOCK_CONDITIONS_RESSOURCES,BLOCK_CONDITIONS_MISCELLANEOUS,BLOCK_CONDITIONS_MANUAL_OPERATIONS,BLOCK_POLLINTERVALL,BLOCK_TIMEOUT,BLOCK_IBNZ_VSI,BLOCK_IBNZ_VSI_VERIFIED FROM ib1_procedures_procedure
+        <where>
     <if test = "platform_name != null">
         platform_name = #{platform_name}
     </if>
@@ -18,6 +29,9 @@
     <if test = "diagnose_adr != null">
         and diagnose_adr = #{diagnose_adr}
     </if>
+        <if test = "BLOCK_NAME != null">
+            and BLOCK_NAME = #{BLOCK_NAME}
+        </if>
     </where>
     </select>
 
@@ -38,22 +52,5 @@
     </select>
 
 
-
-<!--    <select id="getIB1_All" resultMap="test">
-    SELECT
-    ib.IB1_RELEASE_DATE IB1_RELEASE_DATE,
-    ipp.BLOCK_NAME BLOCK_NAME
-    FROM ib1_basic AS ib LEFT JOIN ib1_procedures_procedure AS ipp
-    ON ib.platform_name = ipp.platform_name
-    AND ib.diagnose_adr = ipp.diagnose_adr
-    </select>
-
-    <resultMap id="test" type="pojo.IB1_PROCEDURES_PROCEDURELei">
-        <result property="BLOCK_NAME" column="BLOCK_NAME"></result>
-        <association property="IB1_Basic" javaType="pojo.IB1_BasicLei">
-            <result property="IB1_RELEASE_DATE" column="IB1_RELEASE_DATE"></result>
-        </association>
-
-    </resultMap>-->
 
 </mapper>

@@ -1,6 +1,7 @@
 package daoTest;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.CartypeMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
@@ -13,6 +14,8 @@ public class Cartypedaotest {
     //查询全部车型
     @Test
     public void getCartype(){
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
         //获得SqlSession对象
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 

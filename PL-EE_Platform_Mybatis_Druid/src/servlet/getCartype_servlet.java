@@ -2,6 +2,7 @@ package servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.CartypeMapper;
 import org.apache.ibatis.session.SqlSession;
 import pojo.API;
@@ -23,6 +24,9 @@ public class getCartype_servlet extends HttpServlet {
             //查询cartype
             //setContentType
             response.setContentType("text/html;charset=UTF-8");
+
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
             //request.getAttribute();
 
         //获得SqlSession对象
@@ -38,6 +42,9 @@ public class getCartype_servlet extends HttpServlet {
             String list= null;
 
             try {
+                //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+                TypeUtils.compatibleWithJavaBean =true;
+
                 sqlSession = MybatisUtils.getSqlSession();
                 // getMapper
                 mapper = sqlSession.getMapper(CartypeMapper.class);

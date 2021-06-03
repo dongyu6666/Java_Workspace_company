@@ -2,7 +2,7 @@ package daoTest;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.UserMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
@@ -16,6 +16,8 @@ public class getUseralltest2 {
     //查询全部用户
     @Test
     public void getUserAll() {
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
         //获得SqlSession对象
         API api2 = new API();
         api2.setStatus("true");
@@ -28,6 +30,8 @@ public class getUseralltest2 {
         String list= null;
 
         try {
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
             sqlSession = MybatisUtils.getSqlSession();
 
             //方式1：getMapper

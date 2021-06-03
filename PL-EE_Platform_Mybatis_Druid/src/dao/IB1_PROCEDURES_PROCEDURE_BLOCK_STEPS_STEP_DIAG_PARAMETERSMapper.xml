@@ -6,8 +6,22 @@
 <mapper namespace="dao.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper">
 
     <select id="getIB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERS" resultType="pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSLei">
+        /*SELECT
+        CONCAT(' select ',GROUP_CONCAT(COLUMN_NAME),' from ', TABLE_NAME,' ;')
+        FROM information_schema.COLUMNS
+        WHERE TABLE_NAME = 'IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERS'
+        AND TABLE_SCHEMA = 'plee_platform'
+        AND COLUMN_NAME != 'platform_name'
+        AND COLUMN_NAME != 'IB1_VERSION'
+        AND COLUMN_NAME != 'diagnose_adr'
+        AND COLUMN_NAME != 'IB1_NAME'
+        AND COLUMN_NAME != 'BLOCK_NAME'
+        AND COLUMN_NAME != 'STEP_NAME'
 
-        SELECT * FROM IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERS
+        AND COLUMN_NAME != 'create_time'
+        AND COLUMN_NAME != 'update_time';*/
+        SELECT id,DIAG_PARAMETER_LONG_NAME,DIAG_PARAMETER_SHORT_NAME,DIAG_PARAMETER_MESSAGE_TYPE,DIAG_PARAMETER_RESPONSE_SHORT_NAME,DIAG_PARAMETER_PATH,DIAG_PARAMETER_DATATYPE,DIAG_PARAMETER_VALUE_PROXY_VALUE FROM ib1_procedures_procedure_block_steps_step_diag_parameters
+
         <where>
         <if test = "platform_name != null">
             platform_name = #{platform_name}
@@ -29,75 +43,75 @@
 
     <select id="getIB1_BLOCK_All" resultMap="test">
 
-    select * from(
-    SELECT
-    ib.platform_name platform_name,
-    ib.diagnose_adr diagnose_adr,
-    ib.IB1_VERSION IB1_VERSION,
+        select * from(
+        SELECT
+        ib.platform_name platform_name,
+        ib.diagnose_adr diagnose_adr,
+        ib.IB1_VERSION IB1_VERSION,
 
-    ib.IB1_NAME IB1_NAME,
-    ib.IB1_RELEASE_DATE IB1_RELEASE_DATE,
-    ib.IB1_IBN_REQUIRED IBN_REQUIRED,
-    ib.IB1_filename IB1_filename,
-    
-    ipp.PROCEDURE_NAME PROCEDURE_NAME,
-    ipp.BLOCK_KD_relevant BLOCK_KD_relevant,
-    ipp.BLOCK_P_relevant BLOCK_P_relevant,
-    ipp.BLOCK_optional BLOCK_optional,
-    ipp.BLOCK_shortname BLOCK_shortname,
-    ipp.BLOCK_standardIBNB BLOCK_standardIBNB,
-    ipp.BLOCK_version BLOCK_version,
-    ipp.BLOCK_NAME BLOCK_NAME,
-    ipp.BLOCK_NAME_EN BLOCK_NAME_EN,
-    ipp.BLOCK_DESC BLOCK_DESC,
-    ipp.BLOCK_TAGS_TAG BLOCK_TAGS_TAG,
-    ipp.BLOCK_AREA BLOCK_AREA,
-    ipp.BLOCK_LOGICAL_LINK BLOCK_LOGICAL_LINK,
-    ipp.BLOCK_LAS BLOCK_LAS,
-    ipp.BLOCK_TIMEOUT BLOCK_TIMEOUT,
-    ipp.BLOCK_POLLINTERVALL BLOCK_POLLINTERVALL,
+        ib.IB1_NAME IB1_NAME,
+        ib.IB1_RELEASE_DATE IB1_RELEASE_DATE,
+        ib.IB1_IBN_REQUIRED IBN_REQUIRED,
+        ib.IB1_filename IB1_filename,
 
-    ipp.BLOCK_CONDITIONS_MANUAL_OPERATIONS BLOCK_CONDITIONS_MANUAL_OPERATIONS,
-    ipp.BLOCK_CONDITIONS_GENERAL_CONDITIONS BLOCK_CONDITIONS_GENERAL_CONDITIONS,
-    ipp.BLOCK_CONDITIONS_BUILDUP_CONDITIONS BLOCK_CONDITIONS_BUILDUP_CONDITIONS,
-    ipp.BLOCK_IBNZ_VSI BLOCK_IBNZ_VSI,
-    ipp.BLOCK_IBNZ_VSI_VERIFIED BLOCK_IBNZ_VSI_VERIFIED,
+        ipp.PROCEDURE_NAME PROCEDURE_NAME,
+        ipp.BLOCK_KD_relevant BLOCK_KD_relevant,
+        ipp.BLOCK_P_relevant BLOCK_P_relevant,
+        ipp.BLOCK_optional BLOCK_optional,
+        ipp.BLOCK_shortname BLOCK_shortname,
+        ipp.BLOCK_standardIBNB BLOCK_standardIBNB,
+        ipp.BLOCK_version BLOCK_version,
+        ipp.BLOCK_NAME BLOCK_NAME,
+        ipp.BLOCK_NAME_EN BLOCK_NAME_EN,
+        ipp.BLOCK_DESC BLOCK_DESC,
+        ipp.BLOCK_TAGS_TAG BLOCK_TAGS_TAG,
+        ipp.BLOCK_AREA BLOCK_AREA,
+        ipp.BLOCK_LOGICAL_LINK BLOCK_LOGICAL_LINK,
+        ipp.BLOCK_LAS BLOCK_LAS,
+        ipp.BLOCK_TIMEOUT BLOCK_TIMEOUT,
+        ipp.BLOCK_POLLINTERVALL BLOCK_POLLINTERVALL,
 
-    iss.STEP_NAME STEP_NAME,
-    iss.STEP_DESC STEP_DESC,
-    iss.STEP_DIAG_SERVICE_IDENTIFIER STEP_DIAG_SERVICE_IDENTIFIER,
-    iss.STEP_DIAG_SERVICE_LONG_NAME STEP_DIAG_SERVICE_LONG_NAME,
-    iss.STEP_DIAG_SERVICE_SHORT_NAME STEP_DIAG_SERVICE_SHORT_NAME,
-    iss.STEP_DIAG_PARAMETERS_DATA_IDENTIFIER STEP_DIAG_PARAMETERS_DATA_IDENTIFIER,
-    
-    issdp.DIAG_PARAMETER_LONG_NAME DIAG_PARAMETER_LONG_NAME,
-    issdp.DIAG_PARAMETER_SHORT_NAME DIAG_PARAMETER_SHORT_NAME,
-    issdp.DIAG_PARAMETER_MESSAGE_TYPE DIAG_PARAMETER_MESSAGE_TYPE,
-    issdp.DIAG_PARAMETER_RESPONSE_SHORT_NAME DIAG_PARAMETER_RESPONSE_SHORT_NAME,
-    issdp.DIAG_PARAMETER_PATH DIAG_PARAMETER_PATH,
-    issdp.DIAG_PARAMETER_DATATYPE DIAG_PARAMETER_DATATYPE,
-    issdp.DIAG_PARAMETER_VALUE_PROXY_VALUE DIAG_PARAMETER_VALUE_PROXY_VALUE
+        ipp.BLOCK_CONDITIONS_MANUAL_OPERATIONS BLOCK_CONDITIONS_MANUAL_OPERATIONS,
+        ipp.BLOCK_CONDITIONS_GENERAL_CONDITIONS BLOCK_CONDITIONS_GENERAL_CONDITIONS,
+        ipp.BLOCK_CONDITIONS_BUILDUP_CONDITIONS BLOCK_CONDITIONS_BUILDUP_CONDITIONS,
+        ipp.BLOCK_IBNZ_VSI BLOCK_IBNZ_VSI,
+        ipp.BLOCK_IBNZ_VSI_VERIFIED BLOCK_IBNZ_VSI_VERIFIED,
+
+        iss.STEP_NAME STEP_NAME,
+        iss.STEP_DESC STEP_DESC,
+        iss.STEP_DIAG_SERVICE_IDENTIFIER STEP_DIAG_SERVICE_IDENTIFIER,
+        iss.STEP_DIAG_SERVICE_LONG_NAME STEP_DIAG_SERVICE_LONG_NAME,
+        iss.STEP_DIAG_SERVICE_SHORT_NAME STEP_DIAG_SERVICE_SHORT_NAME,
+        iss.STEP_DIAG_PARAMETERS_DATA_IDENTIFIER STEP_DIAG_PARAMETERS_DATA_IDENTIFIER,
+
+        issdp.DIAG_PARAMETER_LONG_NAME DIAG_PARAMETER_LONG_NAME,
+        issdp.DIAG_PARAMETER_SHORT_NAME DIAG_PARAMETER_SHORT_NAME,
+        issdp.DIAG_PARAMETER_MESSAGE_TYPE DIAG_PARAMETER_MESSAGE_TYPE,
+        issdp.DIAG_PARAMETER_RESPONSE_SHORT_NAME DIAG_PARAMETER_RESPONSE_SHORT_NAME,
+        issdp.DIAG_PARAMETER_PATH DIAG_PARAMETER_PATH,
+        issdp.DIAG_PARAMETER_DATATYPE DIAG_PARAMETER_DATATYPE,
+        issdp.DIAG_PARAMETER_VALUE_PROXY_VALUE DIAG_PARAMETER_VALUE_PROXY_VALUE
 
 
 
-    FROM ib1_basic AS ib
-    LEFT JOIN ib1_procedures_procedure AS ipp
-    ON ib.platform_name = ipp.platform_name 
-    AND ib.diagnose_adr = ipp.diagnose_adr 
-    AND ib.IB1_VERSION = ipp.IB1_VERSION
-    
-    LEFT JOIN ib1_procedures_procedure_block_steps_step AS iss
-    ON ipp.platform_name = iss.platform_name 
-    AND ipp.diagnose_adr = iss.diagnose_adr 
-    AND ipp.IB1_VERSION = iss.IB1_VERSION
-    AND ipp.BLOCK_NAME = iss.BLOCK_NAME
-    
-    INNER JOIN IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERS AS issdp
-    ON iss.platform_name = issdp.platform_name
-    AND iss.diagnose_adr = issdp.diagnose_adr
-    AND iss.IB1_VERSION = issdp.IB1_VERSION
-    AND iss.BLOCK_NAME = issdp.BLOCK_NAME
-    AND iss.STEP_NAME = issdp.STEP_NAME) as temp
+        FROM ib1_basic AS ib
+        LEFT JOIN ib1_procedures_procedure AS ipp
+        ON ib.platform_name = ipp.platform_name
+        AND ib.diagnose_adr = ipp.diagnose_adr
+        AND ib.IB1_VERSION = ipp.IB1_VERSION
+
+        LEFT JOIN ib1_procedures_procedure_block_steps_step AS iss
+        ON ipp.platform_name = iss.platform_name
+        AND ipp.diagnose_adr = iss.diagnose_adr
+        AND ipp.IB1_VERSION = iss.IB1_VERSION
+        AND ipp.BLOCK_NAME = iss.BLOCK_NAME
+
+        INNER JOIN IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERS AS issdp
+        ON iss.platform_name = issdp.platform_name
+        AND iss.diagnose_adr = issdp.diagnose_adr
+        AND iss.IB1_VERSION = issdp.IB1_VERSION
+        AND iss.BLOCK_NAME = issdp.BLOCK_NAME
+        AND iss.STEP_NAME = issdp.STEP_NAME) as temp
         <where>
             <if test = "platform_name != null">
                 issdp.platform_name = #{platform_name}
@@ -172,5 +186,6 @@
         </association>
 
     </resultMap>
+
 
 </mapper>

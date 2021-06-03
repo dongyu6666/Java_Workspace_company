@@ -2,6 +2,7 @@ package servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.*;
 import org.apache.ibatis.session.SqlSession;
 import pojo.*;
@@ -24,6 +25,9 @@ public class getIB1_All_servlet extends HttpServlet {
         //查询IB1_All
         //setContentType
         response.setContentType("text/html;charset=UTF-8");
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         //request.getAttribute();
         String platform_name = request.getParameter("platform_name");
         String IB1_VERSION = request.getParameter("IB1_VERSION");
@@ -116,6 +120,9 @@ public class getIB1_All_servlet extends HttpServlet {
 
 
         try {
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
+
             sqlSession = MybatisUtils.getSqlSession();
             // getMapper
 

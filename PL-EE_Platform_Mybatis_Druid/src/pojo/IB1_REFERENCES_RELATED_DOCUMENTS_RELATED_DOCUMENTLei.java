@@ -9,23 +9,25 @@ public class IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTLei {
 
     private String NAME;
     private String VERSION;
+    private String DESC;
     private String FILE_SYSTEM;
-    private String SPARE_PART_NUMBER;
     private String URL;
+    private String SPARE_PART_NUMBER;
 
     public IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTLei() {
     }
 
-    public IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTLei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String NAME, String VERSION, String FILE_SYSTEM, String SPARE_PART_NUMBER, String URL) {
+    public IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTLei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String NAME, String VERSION, String DESC, String FILE_SYSTEM, String URL, String SPARE_PART_NUMBER) {
         this.platform_name = platform_name;
         this.IB1_VERSION = IB1_VERSION;
         this.diagnose_adr = diagnose_adr;
         this.IB1_NAME = IB1_NAME;
         this.NAME = NAME;
         this.VERSION = VERSION;
+        this.DESC = DESC;
         this.FILE_SYSTEM = FILE_SYSTEM;
-        this.SPARE_PART_NUMBER = SPARE_PART_NUMBER;
         this.URL = URL;
+        this.SPARE_PART_NUMBER = SPARE_PART_NUMBER;
     }
 
     public String getPlatform_name() {
@@ -76,6 +78,14 @@ public class IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTLei {
         this.VERSION = VERSION;
     }
 
+    public String getDESC() {
+        return DESC;
+    }
+
+    public void setDESC(String DESC) {
+        this.DESC = DESC;
+    }
+
     public String getFILE_SYSTEM() {
         return FILE_SYSTEM;
     }
@@ -84,20 +94,20 @@ public class IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTLei {
         this.FILE_SYSTEM = FILE_SYSTEM;
     }
 
-    public String getSPARE_PART_NUMBER() {
-        return SPARE_PART_NUMBER;
-    }
-
-    public void setSPARE_PART_NUMBER(String SPARE_PART_NUMBER) {
-        this.SPARE_PART_NUMBER = SPARE_PART_NUMBER;
-    }
-
     public String getURL() {
         return URL;
     }
 
     public void setURL(String URL) {
         this.URL = URL;
+    }
+
+    public String getSPARE_PART_NUMBER() {
+        return SPARE_PART_NUMBER;
+    }
+
+    public void setSPARE_PART_NUMBER(String SPARE_PART_NUMBER) {
+        this.SPARE_PART_NUMBER = SPARE_PART_NUMBER;
     }
 
     @Override
@@ -109,9 +119,10 @@ public class IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTLei {
                 ", IB1_NAME='" + IB1_NAME + '\'' +
                 ", NAME='" + NAME + '\'' +
                 ", VERSION='" + VERSION + '\'' +
+                ", DESC='" + DESC + '\'' +
                 ", FILE_SYSTEM='" + FILE_SYSTEM + '\'' +
-                ", SPARE_PART_NUMBER='" + SPARE_PART_NUMBER + '\'' +
                 ", URL='" + URL + '\'' +
+                ", SPARE_PART_NUMBER='" + SPARE_PART_NUMBER + '\'' +
                 '}';
     }
 }

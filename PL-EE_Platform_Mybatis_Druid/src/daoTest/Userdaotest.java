@@ -1,6 +1,7 @@
 package daoTest;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.UserMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
@@ -15,11 +16,16 @@ public class Userdaotest {
     //查询全部用户
     @Test
     public void getUserAll(){
+
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         //获得SqlSession对象
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
         //方式1：getMapper
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
         List<UserLei> userlist = mapper.getUserAll();
 
         /*for (UserLei userLei : userlist) {
@@ -41,6 +47,10 @@ public class Userdaotest {
     //根据用户名username查询用户
     @Test
     public void getUserByUsername(){
+
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         //获得SqlSession对象
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
@@ -61,6 +71,10 @@ public class Userdaotest {
     //insert一个用户
     @Test
     public void addUser_role(){
+
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         //获得SqlSession对象
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
@@ -80,6 +94,10 @@ public class Userdaotest {
     //update一个用户user_role信息
     @Test
     public void updateUser(){
+
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         //获得SqlSession对象
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
@@ -99,6 +117,10 @@ public class Userdaotest {
     //delete一个用户
     @Test
     public void deleteUser(){
+
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
+
         //获得SqlSession对象
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 

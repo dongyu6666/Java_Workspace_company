@@ -2,6 +2,7 @@ package servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.util.TypeUtils;
 import dao.IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONMapper;
 import org.apache.ibatis.session.SqlSession;
 import pojo.API;
@@ -23,6 +24,8 @@ import java.util.Map;
 public class getIB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION_servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //查询IB1_PROCEDURES_PROCEDURE
+        //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+        TypeUtils.compatibleWithJavaBean =true;
         //setContentType
         response.setContentType("text/html;charset=UTF-8");
         //request.getAttribute();
@@ -43,6 +46,8 @@ public class getIB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION_servl
         String list= null;
 
         try {
+            //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
+            TypeUtils.compatibleWithJavaBean =true;
             sqlSession = MybatisUtils.getSqlSession();
             // getMapper
             mapper = sqlSession.getMapper(IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONMapper.class);

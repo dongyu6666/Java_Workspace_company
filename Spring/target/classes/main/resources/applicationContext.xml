@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       https://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+        <!--开启注解的支持-->
+        <context:annotation-config/>
+        <!--指定要扫描的包，这个包下的注解就会生效, 比如User222就没有放在下面的bean里,但myTest可以执行-->
+        <context:component-scan base-package="pojo"/>
+
+
+        <!--Datasourse:使用Spring的数据源替换Mybatis的配置-->
+        <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+            <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+            <!--<property name="url" value="jdbc:mysql://10.227.6.242:3306/plee_platform?useSSL=false&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>-->
+            <property name="url" value="jdbc:mysql://10.227.6.242:3306/test?useSSL=false&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+            <property name="username" value="Liang.Dongyu"/>
+            <property name="password" value="faw123"/>
+
+            <!--&lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;
+            <property name="filters" value="stat"/>
+            &lt;!&ndash; 配置初始化大小、最小、最大 &ndash;&gt;
+            <property name="maxActive" value="20"/>
+            <property name="initialSize" value="10"/>
+            <property name="minIdle" value="1"/>
+            &lt;!&ndash; 配置获取连接等待超时的时间 &ndash;&gt;
+            <property name="maxWait" value="60000"/>
+            &lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;
+            <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+            &lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;
+            <property name="minEvictableIdleTimeMillis" value="300000"/>
+
+            <property name="testWhileIdle" value="true"/>
+            <property name="testOnBorrow" value="false"/>
+            <property name="testOnReturn" value="false"/>
+            &lt;!&ndash; 打开PSCache，并且指定每个连接上PSCache的大小 &ndash;&gt;
+            <property name="poolPreparedStatements" value="true"/>-->
+        </bean>
+
+        <!--sqlSessionFactory-->
+        <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+            <property name="dataSource" ref="dataSource"/>
+            <!--绑定Mybatis（也可不加，但推荐）-->
+            <property name="configLocation" value="classpath:mybatis-config.xml"/>
+            <property name="mapperLocations" value="classpath:dao/UserMapper.xml"/>
+        </bean>
+        <!--SqlSessionTemplate就是sqlSession-->
+        <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+            <!--因为源码中没有set方法，所以只能用构造器constructor注入sqlSessionFactory,property是不行的-->
+            <constructor-arg index="0" ref="sqlSessionFactory"/>
+        </bean>
+
+        <!--配置声明式事务：AOP-->
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+
+        <!--结合AOP实现事务的植入-->
+        <!--配置事务通知：-->
+        <tx:advice id="txAdvice" transaction-manager="transactionManager">
+            <!--给哪些方法配置事务-->
+            <tx:attributes>
+                <tx:method name="add" propagation="REQUIRED"/><!--配置事务的传播特性:默认是propagation="REQUIRED"-->
+                <tx:method name="delete" propagation="REQUIRED"/>
+                <tx:method name="update" propagation="REQUIRED"/>
+                <tx:method name="query" read-only="true"/>
+                <tx:method name="*" propagation="REQUIRED"/>
+            </tx:attributes>
+        </tx:advice>
+
+        <!--配置事务切入AOP-->
+        <aop:config>
+            <aop:pointcut id="txPointCut" expression="execution(* dao.*.*(..))"/><!--*后面要有空格！  *.*表示：下面的所有类所有方法,(..)表示：参数-->
+
+            <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
+        </aop:config>
+
+
+
+        <bean id="userMapper" class="dao.UserMapperImpl">
+            <property name="sqlSession" ref="sqlSession"/>
+        </bean>
+
+
+
+<!--    <bean id="address" class="pojo.Address">
+        <property name="address" value="长春"></property>
+    </bean>
+    <bean id="user" class="pojo.User">
+        <property name="name" value="LDYLALALA"></property>
+        <property name="address" ref="address"></property>
+        <property name="books">
+            <array>
+                <value>《123》</value>
+                <value>《1234》</value>
+                <value>《12345》</value>
+                <value>《123456》</value>
+            </array>
+        </property>
+
+        <property name="hobbys">
+            <list>
+                <value>qwe</value>
+                <value>asd</value>
+                <value>zxc</value>
+            </list>
+        </property>
+
+        <property name="card">
+            <map>
+                <entry key="姓名" value="张三"/>
+                <entry key="age" value="20"/>
+                <entry key="gender" value="男"/>
+            </map>
+        </property>
+
+        <property name="games">
+            <set>
+                <value>Paopao</value>
+                <value>LOL</value>
+                <value>Dota</value>
+            </set>
+        </property>
+
+        <property name="wifi">
+            <null/>
+        </property>
+
+        <property name="info">
+            <props>
+                <prop key="学号">1080510105</prop>
+                <prop key="姓名">张三</prop>
+                <prop key="年龄">28</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="cat" class="pojo.Cat"></bean>
+    <bean id="dog" class="pojo.Dog"></bean>
+    <bean id="person" class="pojo.Person">
+        <property name="name" value="铲屎官"></property>
+    </bean>-->
+
+    <!--AOP方式一：使用原生Spring API接口-->
+    <!--注册-->
+<!--    <bean id="userService" class="service.UserServiceImpl"/>
+    <bean id="beforelog" class="log.BeforeLog"/>
+    <bean id="afterLog" class="log.AfterLog"/>
+
+    &lt;!&ndash;配置aop，需要先在xml里导入aop的约束，见最上方&ndash;&gt;
+    <aop:config>
+        &lt;!&ndash;切入点: expression:表达式：execution（要执行的位置）（..）表示任意参数&ndash;&gt;
+        <aop:pointcut id="pointcut" expression="execution(* service.UserServiceImpl.*(..))"/>
+        &lt;!&ndash;执行环绕增加&ndash;&gt;
+        <aop:advisor advice-ref="beforelog" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>
+    </aop:config>-->
+
+    <!--AOP方式二：自定义-->
+    <!--注册-->
+<!--    <bean id="userService" class="service.UserServiceImpl"/>
+
+    <bean id="diy" class="diy.DiyPointCut"/>
+    <aop:config>
+        &lt;!&ndash;自定义切面，ref到引用的类&ndash;&gt;
+        <aop:aspect ref="diy">
+            &lt;!&ndash;切入点&ndash;&gt;
+            <aop:pointcut id="pointcut" expression="execution(* service.UserServiceImpl.*(..))"/>
+            &lt;!&ndash;通知&ndash;&gt;
+            <aop:before method="before" pointcut-ref="pointcut"/>
+            <aop:after method="after" pointcut-ref="pointcut"/>
+        </aop:aspect>
+    </aop:config>-->
+
+
+    <!--AOP方式三：注解方式-->
+    <!--注册bean-->
+<!--    <bean id="userService" class="service.UserServiceImpl"/>
+
+    <bean id="annotationPointCut" class="diy.AnnotationPointCut"/>
+    &lt;!&ndash;开启注解支持   1.默认JDK（proxy-target-class="false"）；2. cglib(proxy-target-class="true")&ndash;&gt;
+    <aop:aspectj-autoproxy proxy-target-class="false"/>-->
+
+</beans>
