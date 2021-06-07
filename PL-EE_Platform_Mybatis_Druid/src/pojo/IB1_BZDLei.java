@@ -8,26 +8,28 @@ public class IB1_BZDLei {
     private String IB1_NAME;
 
     private String S42_ATTRIBUTES_ADDED;
+    private String ADDITIONAL_IDENTS_DESC;
     private String IDENTS_IDENT_NAME;
     private String IDENTS_IDENT_S42_ATTRIBUTE;
     private String IDENTS_IDENT_BGONLINE;
     private String IDENTS_IDENT_DID;
-    private String TARGET_DATE;
+    private String IDENTS_IDENT_COMMENT;
 
     public IB1_BZDLei() {
     }
 
-    public IB1_BZDLei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String s42_ATTRIBUTES_ADDED, String IDENTS_IDENT_NAME, String IDENTS_IDENT_S42_ATTRIBUTE, String IDENTS_IDENT_BGONLINE, String IDENTS_IDENT_DID, String TARGET_DATE) {
+    public IB1_BZDLei(String platform_name, String IB1_VERSION, String diagnose_adr, String IB1_NAME, String s42_ATTRIBUTES_ADDED, String ADDITIONAL_IDENTS_DESC, String IDENTS_IDENT_NAME, String IDENTS_IDENT_S42_ATTRIBUTE, String IDENTS_IDENT_BGONLINE, String IDENTS_IDENT_DID, String IDENTS_IDENT_COMMENT) {
         this.platform_name = platform_name;
         this.IB1_VERSION = IB1_VERSION;
         this.diagnose_adr = diagnose_adr;
         this.IB1_NAME = IB1_NAME;
         S42_ATTRIBUTES_ADDED = s42_ATTRIBUTES_ADDED;
+        this.ADDITIONAL_IDENTS_DESC = ADDITIONAL_IDENTS_DESC;
         this.IDENTS_IDENT_NAME = IDENTS_IDENT_NAME;
         this.IDENTS_IDENT_S42_ATTRIBUTE = IDENTS_IDENT_S42_ATTRIBUTE;
         this.IDENTS_IDENT_BGONLINE = IDENTS_IDENT_BGONLINE;
         this.IDENTS_IDENT_DID = IDENTS_IDENT_DID;
-        this.TARGET_DATE = TARGET_DATE;
+        this.IDENTS_IDENT_COMMENT = IDENTS_IDENT_COMMENT;
     }
 
     public String getPlatform_name() {
@@ -70,6 +72,14 @@ public class IB1_BZDLei {
         S42_ATTRIBUTES_ADDED = s42_ATTRIBUTES_ADDED;
     }
 
+    public String getADDITIONAL_IDENTS_DESC() {
+        return ADDITIONAL_IDENTS_DESC;
+    }
+
+    public void setADDITIONAL_IDENTS_DESC(String ADDITIONAL_IDENTS_DESC) {
+        this.ADDITIONAL_IDENTS_DESC = ADDITIONAL_IDENTS_DESC;
+    }
+
     public String getIDENTS_IDENT_NAME() {
         return IDENTS_IDENT_NAME;
     }
@@ -102,12 +112,12 @@ public class IB1_BZDLei {
         this.IDENTS_IDENT_DID = IDENTS_IDENT_DID;
     }
 
-    public String getTARGET_DATE() {
-        return TARGET_DATE;
+    public String getIDENTS_IDENT_COMMENT() {
+        return IDENTS_IDENT_COMMENT;
     }
 
-    public void setTARGET_DATE(String TARGET_DATE) {
-        this.TARGET_DATE = TARGET_DATE;
+    public void setIDENTS_IDENT_COMMENT(String IDENTS_IDENT_COMMENT) {
+        this.IDENTS_IDENT_COMMENT = IDENTS_IDENT_COMMENT;
     }
 
     @Override
@@ -118,11 +128,12 @@ public class IB1_BZDLei {
                 ", diagnose_adr='" + diagnose_adr + '\'' +
                 ", IB1_NAME='" + IB1_NAME + '\'' +
                 ", S42_ATTRIBUTES_ADDED='" + S42_ATTRIBUTES_ADDED + '\'' +
+                ", ADDITIONAL_IDENTS_DESC='" + ADDITIONAL_IDENTS_DESC + '\'' +
                 ", IDENTS_IDENT_NAME='" + IDENTS_IDENT_NAME + '\'' +
                 ", IDENTS_IDENT_S42_ATTRIBUTE='" + IDENTS_IDENT_S42_ATTRIBUTE + '\'' +
                 ", IDENTS_IDENT_BGONLINE='" + IDENTS_IDENT_BGONLINE + '\'' +
                 ", IDENTS_IDENT_DID='" + IDENTS_IDENT_DID + '\'' +
-                ", TARGET_DATE='" + TARGET_DATE + '\'' +
+                ", IDENTS_IDENT_COMMENT='" + IDENTS_IDENT_COMMENT + '\'' +
                 '}';
     }
 }
