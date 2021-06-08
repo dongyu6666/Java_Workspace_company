@@ -29,24 +29,24 @@
             <property name="username" value="Liang.Dongyu"/>
             <property name="password" value="faw123"/>
 
-            <!--&lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;
+            <!-- 配置监控统计拦截的filters -->
             <property name="filters" value="stat"/>
-            &lt;!&ndash; 配置初始化大小、最小、最大 &ndash;&gt;
+            <!-- 配置初始化大小、最小、最大 -->
             <property name="maxActive" value="20"/>
             <property name="initialSize" value="10"/>
             <property name="minIdle" value="1"/>
-            &lt;!&ndash; 配置获取连接等待超时的时间 &ndash;&gt;
+            <!-- 配置获取连接等待超时的时间 -->
             <property name="maxWait" value="60000"/>
-            &lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;
+            <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
             <property name="timeBetweenEvictionRunsMillis" value="60000"/>
-            &lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;
+            <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
             <property name="minEvictableIdleTimeMillis" value="300000"/>
 
             <property name="testWhileIdle" value="true"/>
             <property name="testOnBorrow" value="false"/>
             <property name="testOnReturn" value="false"/>
-            &lt;!&ndash; 打开PSCache，并且指定每个连接上PSCache的大小 &ndash;&gt;
-            <property name="poolPreparedStatements" value="true"/>-->
+            <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+            <property name="poolPreparedStatements" value="true"/>
         </bean>
 
         <!--sqlSessionFactory-->

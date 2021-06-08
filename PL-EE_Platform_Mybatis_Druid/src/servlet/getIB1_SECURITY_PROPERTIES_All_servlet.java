@@ -1,12 +1,11 @@
+/*
 package servlet;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.util.TypeUtils;
-import dao.IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYMapper;
 import org.apache.ibatis.session.SqlSession;
 import pojo.API;
-import pojo.IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYLei;
 import utils.MybatisUtils;
 
 import javax.servlet.ServletException;
@@ -94,3 +93,4 @@ public class getIB1_SECURITY_PROPERTIES_All_servlet extends HttpServlet {
         this.doPost(request,response);
     }
 }
+*/

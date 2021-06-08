@@ -55,8 +55,7 @@
         <mapper resource="dao/IB1_BZDMapper.xml"/>
         <mapper resource="dao/IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTMapper.xml"/>
         <mapper resource="dao/IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCMapper.xml"/>
-        <mapper resource="dao/IB1_SECURITY_PROPERTIES_ECUMapper.xml"/>
-        <mapper resource="dao/IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYMapper.xml"/>
+        <mapper resource="dao/IB1_SECURITY_PROPERTIESMapper.xml"/>
         <mapper resource="dao/IB1_TNRMapper.xml"/>
 
 
