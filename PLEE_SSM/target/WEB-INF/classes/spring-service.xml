@@ -17,24 +17,39 @@
        http://www.springframework.org/schema/mvc
        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-      <!--1.É¨ÃèserviceÏÂµÄ°ü-->
+      <!--1.æ‰«æserviceä¸‹çš„åŒ…-->
       <context:component-scan base-package="service"/>
-      <!--2.½«ËùÓÐÒµÎñÀà£¬×¢Èëµ½Spring£¬¿ÉÒÔÍ¨¹ýÅäÖÃ¡¢»òÕß×¢½âÊµÏÖ-->
+      <!--2.å°†æ‰€æœ‰ä¸šåŠ¡ç±»ï¼Œæ³¨å…¥åˆ°Springï¼Œå¯ä»¥é€šè¿‡é…ç½®ã€æˆ–è€…æ³¨è§£å®žçŽ°-->
       <bean id="UserServiceImpl" class="service.UserServiceImpl">
             <property name="userMapper" ref="userMapper"/>
       </bean>
-      <!--3.ÉùÃ÷Ê½ÊÂÎñÅäÖÃ-->
+      <bean id="PlatformServiceImpl" class="service.PlatformServiceImpl">
+            <property name="platformMapper" ref="platformMapper"/>
+      </bean>
+      <bean id="CartypeServiceImpl" class="service.CartypeServiceImpl">
+            <property name="cartypeMapper" ref="cartypeMapper"/>
+      </bean>
+
+
+
+
+
+
+
+
+
+      <!--3.å£°æ˜Žå¼äº‹åŠ¡é…ç½®-->
       <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-            <!--×¢ÈëÊý¾ÝÔ´-->
+            <!--æ³¨å…¥æ•°æ®æº-->
             <property name="dataSource" ref="dataSource"/>
       </bean>
-      <!--4.AOPÊÂÎñÖ§³Ö-->
-    <!--½áºÏAOPÊµÏÖÊÂÎñµÄÖ²Èë-->
-    <!--ÅäÖÃÊÂÎñÍ¨Öª£º-->
+      <!--4.AOPäº‹åŠ¡æ”¯æŒ-->
+    <!--ç»“åˆAOPå®žçŽ°äº‹åŠ¡çš„æ¤å…¥-->
+    <!--é…ç½®äº‹åŠ¡é€šçŸ¥ï¼š-->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
-        <!--¸øÄÄÐ©·½·¨ÅäÖÃÊÂÎñ-->
+        <!--ç»™å“ªäº›æ–¹æ³•é…ç½®äº‹åŠ¡-->
         <tx:attributes>
-            <tx:method name="add" propagation="REQUIRED"/><!--ÅäÖÃÊÂÎñµÄ´«²¥ÌØÐÔ:Ä¬ÈÏÊÇpropagation="REQUIRED"-->
+            <tx:method name="add" propagation="REQUIRED"/><!--é…ç½®äº‹åŠ¡çš„ä¼ æ’­ç‰¹æ€§:é»˜è®¤æ˜¯propagation="REQUIRED"-->
             <tx:method name="delete" propagation="REQUIRED"/>
             <tx:method name="update" propagation="REQUIRED"/>
             <tx:method name="query" read-only="true"/>
@@ -42,9 +57,9 @@
         </tx:attributes>
     </tx:advice>
 
-    <!--ÅäÖÃÊÂÎñÇÐÈëAOP-->
+    <!--é…ç½®äº‹åŠ¡åˆ‡å…¥AOP-->
     <aop:config>
-        <aop:pointcut id="txPointCut" expression="execution(* dao.*.*(..))"/><!--*ºóÃæÒªÓÐ¿Õ¸ñ£¡  *.*±íÊ¾£ºÏÂÃæµÄËùÓÐÀàËùÓÐ·½·¨,(..)±íÊ¾£º²ÎÊý-->
+        <aop:pointcut id="txPointCut" expression="execution(* dao.*.*(..))"/><!--*åŽé¢è¦æœ‰ç©ºæ ¼ï¼  *.*è¡¨ç¤ºï¼šä¸‹é¢çš„æ‰€æœ‰ç±»æ‰€æœ‰æ–¹æ³•,(..)è¡¨ç¤ºï¼šå‚æ•°-->
 
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
     </aop:config>

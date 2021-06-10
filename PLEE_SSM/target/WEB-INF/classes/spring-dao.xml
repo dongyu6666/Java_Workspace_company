@@ -14,10 +14,10 @@
        http://www.springframework.org/schema/tx
        http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!--1.¹ØÁªÊý¾Ý¿âÅäÖÃÎÄ¼þ-->
+    <!--1.å…³è”æ•°æ®åº“é…ç½®æ–‡ä»¶-->
     <context:property-placeholder location="classpath:database.properties"/>
 
-    <!--2.Á¬½Ó³Ø-->
+    <!--2.è¿žæŽ¥æ± -->
     <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <!--<property name="driverClassName" value="${driverClassName}"/>
@@ -31,7 +31,8 @@
         <property name="maxWait" value="${maxWait}"/>-->
 
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://10.227.6.242:3306/test?useSSL=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+        <!--<property name="url" value="jdbc:mysql://10.227.6.242:3306/test?useSSL=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>-->
+        <property name="url" value="jdbc:mysql://10.227.6.242:3306/plee_platform?useSSL=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
         <property name="username" value="Liang.Dongyu"/>
         <property name="password" value="faw123"/>
 
@@ -44,23 +45,23 @@
     <!--3. sqlSessionFactory-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <!--°ó¶¨Mybatis£¨Ò²¿É²»¼Ó£¬µ«ÍÆ¼ö£©-->
+        <!--ç»‘å®šMybatisï¼ˆä¹Ÿå¯ä¸åŠ ï¼Œä½†æŽ¨èï¼‰-->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
 <!--
         <property name="mapperLocations" value="classpath:dao/UserMapper.xml"/>
 -->
     </bean>
-    <!--SqlSessionTemplate¾ÍÊÇsqlSession-->
+    <!--SqlSessionTemplateå°±æ˜¯sqlSession-->
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
-        <!--ÒòÎªÔ´ÂëÖÐÃ»ÓÐset·½·¨£¬ËùÒÔÖ»ÄÜÓÃ¹¹ÔìÆ÷constructor×¢ÈësqlSessionFactory,propertyÊÇ²»ÐÐµÄ-->
+        <!--å› ä¸ºæºç ä¸­æ²¡æœ‰setæ–¹æ³•ï¼Œæ‰€ä»¥åªèƒ½ç”¨æž„é€ å™¨constructoræ³¨å…¥sqlSessionFactory,propertyæ˜¯ä¸è¡Œçš„-->
         <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
 
-    <!--ÅäÖÃdao½Ó¿ÚÉ¨Ãè°ü£¬¶¯Ì¬µÄÊµÏÖÁËdao½Ó¿Ú¿ÉÒÔ×¢Èëµ½SpringÈÝÆ÷ÖÐ-->
+    <!--é…ç½®daoæŽ¥å£æ‰«æåŒ…ï¼ŒåŠ¨æ€çš„å®žçŽ°äº†daoæŽ¥å£å¯ä»¥æ³¨å…¥åˆ°Springå®¹å™¨ä¸­-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <!--½«ÉÏ·½µÄsqlSessionFactory×¢Èë-->
+        <!--å°†ä¸Šæ–¹çš„sqlSessionFactoryæ³¨å…¥-->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-        <!--ÒªÉ¨ÃèµÄdao°ü,ÔÚdao°üÏÂ¾Í²»ÓÃÐ´ImplÊµÏÖÀàÁË-->
+        <!--è¦æ‰«æçš„daoåŒ…,åœ¨daoåŒ…ä¸‹å°±ä¸ç”¨å†™Implå®žçŽ°ç±»äº†-->
         <property name="basePackage" value="dao"/>
 
     </bean>

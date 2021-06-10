@@ -17,17 +17,17 @@
        http://www.springframework.org/schema/mvc
        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!--1¡¢×¢½âÇý¶¯-->
+    <!--1ã€æ³¨è§£é©±åŠ¨-->
     <mvc:annotation-driven/>
-    <!--2¡¢¾²Ì¬×ÊÔ´¹ýÂË,ÈÃSpringMVC²»´¦Àí¾²Ì¬×ÊÔ´£¬°üÀ¨css/js/html/mp3/mp4-->
+    <!--2ã€é™æ€èµ„æºè¿‡æ»¤,è®©SpringMVCä¸å¤„ç†é™æ€èµ„æºï¼ŒåŒ…æ‹¬css/js/html/mp3/mp4-->
     <mvc:default-servlet-handler/>
-    <!--3¡¢×Ô¶¯É¨Ãè°ücontroller£¬ÈÃÖ¸¶¨°üÏÂµÄ×¢½âÉúÐ§£¬ÓÉIOCÈÝÆ÷Í³Ò»¹ÜÀí-->
+    <!--3ã€è‡ªåŠ¨æ‰«æåŒ…controllerï¼Œè®©æŒ‡å®šåŒ…ä¸‹çš„æ³¨è§£ç”Ÿæ•ˆï¼Œç”±IOCå®¹å™¨ç»Ÿä¸€ç®¡ç†-->
     <context:component-scan base-package="controller"/>
-    <!--4¡¢ÊÓÍ¼½âÎöÆ÷-->
+    <!--4ã€è§†å›¾è§£æžå™¨-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
-        <!--Ç°×º-->
+        <!--å‰ç¼€-->
         <property name="prefix" value="/WEB-INF/jsp/"/>
-        <!--ºó×º-->
+        <!--åŽç¼€-->
         <property name="suffix" value=".jsp"/>
     </bean>
 </beans>

@@ -2,9 +2,9 @@
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
-<!--核心配置-->
+<!--鏍稿績閰嶇疆-->
 <configuration>
-    <!--配置数据源，交给Spring去做-->
+    <!--閰嶇疆鏁版嵁婧愶紝浜ょ粰Spring鍘诲仛-->
     <typeAliases>
         <package name="pojo"/>
     </typeAliases>

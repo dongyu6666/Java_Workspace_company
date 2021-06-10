@@ -9,30 +9,20 @@
     SELECT * FROM user;
     </select>
 
+    <select id="getUserByUsername" resultType="pojo.UserLei" parameterType="String">
+    SELECT * FROM USER where username = #{username};
+    </select>
+
     <insert id="addUser" parameterType="pojo.UserLei">
     insert into user(id,username,password) values (#{id},#{username},#{password});
     </insert>
 
-    <delete id="deleteUser" parameterType="int">
-        deletes from user where id = #{id};
-    </delete>
-
-    <!--<select id="getUserByUsername" resultType="pojo.UserLei" parameterType="String">
-    SELECT * FROM USER where username = #{username};
-    </select>
-
-    <insert id="addUser_role" parameterType="pojo.User_roleLei">
-    insert into user_role (id, uid,role_id) values (#{id},#{uid},#{role_id});
-    </insert>
-
-    <update id="updateUser" parameterType="pojo.User_roleLei">
-    update user_role set  uid = #{uid}, role_id = #{role_id} where id = #{id};
-    </update>
+    <!--<update id="updateUser" parameterType="pojo.UserLei">
+    update user set uid = #{uid}, role_id = #{role_id} where id = #{id};
+    </update>-->
 
     <delete id="deleteUser" parameterType="int">
         delete from user where id = #{id};
-    </delete>-->
-
-
+    </delete>
 
 </mapper>

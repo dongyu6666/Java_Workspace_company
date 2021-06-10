@@ -23,6 +23,21 @@
       <bean id="UserServiceImpl" class="service.UserServiceImpl">
             <property name="userMapper" ref="userMapper"/>
       </bean>
+      <bean id="PlatformServiceImpl" class="service.PlatformServiceImpl">
+            <property name="platformMapper" ref="platformMapper"/>
+      </bean>
+      <bean id="CartypeServiceImpl" class="service.CartypeServiceImpl">
+            <property name="cartypeMapper" ref="cartypeMapper"/>
+      </bean>
+
+
+
+
+
+
+
+
+
       <!--3.声明式事务配置-->
       <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
             <!--注入数据源-->
