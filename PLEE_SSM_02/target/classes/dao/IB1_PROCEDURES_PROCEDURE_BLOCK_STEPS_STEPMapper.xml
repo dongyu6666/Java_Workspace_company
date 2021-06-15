@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口（Dao）-->
+<mapper namespace="dao.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper">
+
+    <select id="getIB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP" resultType="pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPLei">
+        /*SELECT
+        CONCAT(' select ',GROUP_CONCAT(COLUMN_NAME),' from ', TABLE_NAME,' ;')
+        FROM information_schema.COLUMNS
+        WHERE TABLE_NAME = 'IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP'
+        AND TABLE_SCHEMA = 'plee_platform'
+        AND COLUMN_NAME != 'platform_name'
+        AND COLUMN_NAME != 'IB1_VERSION'
+        AND COLUMN_NAME != 'diagnose_adr'
+        AND COLUMN_NAME != 'IB1_NAME'
+        AND COLUMN_NAME != 'BLOCK_NAME'
+
+        AND COLUMN_NAME != 'create_time'
+        AND COLUMN_NAME != 'update_time';*/
+
+        select id,STEP_DESC,STEP_DIAG_SERVICE_IDENTIFIER,STEP_DIAG_SERVICE_LONG_NAME,STEP_DIAG_SERVICE_SHORT_NAME,STEP_NAME from ib1_procedures_procedure_block_steps_step
+    <where>
+        <if test = "platform_name != null">
+            platform_name = #{platform_name}
+        </if>
+        <if test = "IB1_VERSION != null">
+            and IB1_VERSION = #{IB1_VERSION}
+        </if>
+        <if test = "diagnose_adr != null">
+            and diagnose_adr = #{diagnose_adr}
+        </if>
+        <if test = "BLOCK_NAME != null">
+            and BLOCK_NAME = #{BLOCK_NAME}
+        </if>
+        <if test = "STEP_NAME != null">
+            and STEP_NAME = #{STEP_NAME}
+        </if>
+    </where>
+</select>
+
+    <select id="getIB1_BLOCK_STEP" resultType="pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPLei">
+        SELECT STEP_NAME FROM IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+            <if test = "IB1_VERSION != null">
+                and IB1_VERSION = #{IB1_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+            <if test = "BLOCK_NAME != null">
+                and BLOCK_NAME = #{BLOCK_NAME}
+            </if>
+            </where>
+    </select>
+
+
+</mapper>

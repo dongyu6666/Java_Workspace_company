@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口（Dao）-->
+<mapper namespace="dao.IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper">
+
+    <select id="getIB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETER" resultType="pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERLei">
+
+/*        SELECT
+        CONCAT(' select ',GROUP_CONCAT(COLUMN_NAME),' from ', TABLE_NAME,' ;')
+        FROM information_schema.COLUMNS
+        WHERE TABLE_NAME = 'IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETER'
+        AND TABLE_SCHEMA = 'plee_platform'
+        AND COLUMN_NAME != 'platform_name'
+        AND COLUMN_NAME != 'IB1_VERSION'
+        AND COLUMN_NAME != 'diagnose_adr'
+        AND COLUMN_NAME != 'IB1_NAME'
+        AND COLUMN_NAME != 'BLOCK_NAME'
+
+        AND COLUMN_NAME != 'create_time'
+        AND COLUMN_NAME != 'update_time';*/
+
+    SELECT id,BLOCK_PARAMETERS_PARAMETER_optional,BLOCK_PARAMETERS_PARAMETER_KEY,BLOCK_PARAMETERS_PARAMETER_DESC,BLOCK_PARAMETERS_PARAMETER_DATATYPE,BLOCK_PARAMETERS_PARAMETER_VALUE,BLOCK_PARAMETERS_PARAMETER_DEFAULT FROM ib1_procedures_procedure_block_parameters_parameter
+    <where>
+    <if test = "platform_name != null">
+        platform_name = #{platform_name}
+    </if>
+    <if test = "IB1_VERSION != null">
+        and IB1_VERSION = #{IB1_VERSION}
+    </if>
+    <if test = "diagnose_adr != null">
+        and diagnose_adr = #{diagnose_adr}
+    </if>
+    <if test = "BLOCK_NAME != null">
+        and BLOCK_NAME = #{BLOCK_NAME}
+    </if>
+    </where>
+</select>
+
+    <select id="getIB1_PROCEDURE_BLOCK_All" resultMap="test">
+
+        SELECT
+        ipp.BLOCK_KD_relevant BLOCK_KD_relevant,
+        ipp.BLOCK_P_relevant BLOCK_P_relevant,
+        ipp.BLOCK_optional BLOCK_optional,
+        ipp.BLOCK_shortname BLOCK_shortname,
+        ipp.BLOCK_standardIBNB BLOCK_standardIBNB,
+        ipp.BLOCK_version BLOCK_version,
+        ipp.BLOCK_NAME BLOCK_NAME,
+        ipp.BLOCK_NAME_EN BLOCK_NAME_EN,
+        ipp.BLOCK_DESC BLOCK_DESC,
+
+        ipp.BLOCK_TAGS_TAG BLOCK_TAGS_TAG,
+        ipp.BLOCK_AREA BLOCK_AREA,
+        ipp.BLOCK_LOGICAL_LINK BLOCK_LOGICAL_LINK,
+        ipp.BLOCK_LAS BLOCK_LAS,
+        ipp.BLOCK_CONDITIONS_DEPENDENCIES BLOCK_CONDITIONS_DEPENDENCIES,
+        ipp.BLOCK_CONDITIONS_BUILDUP_CONDITIONS BLOCK_CONDITIONS_BUILDUP_CONDITIONS,
+        ipp.BLOCK_CONDITIONS_GENERAL_CONDITIONS BLOCK_CONDITIONS_GENERAL_CONDITIONS,
+        ipp.BLOCK_CONDITIONS_RESSOURCES BLOCK_CONDITIONS_RESSOURCES,
+        ipp.BLOCK_CONDITIONS_MISCELLANEOUS BLOCK_CONDITIONS_MISCELLANEOUS,
+        ipp.BLOCK_CONDITIONS_MANUAL_OPERATIONS BLOCK_CONDITIONS_MANUAL_OPERATIONS,
+        ipp.BLOCK_POLLINTERVALL BLOCK_POLLINTERVALL,
+        ipp.BLOCK_TIMEOUT BLOCK_TIMEOUT,
+        ipp.BLOCK_IBNZ_VSI BLOCK_IBNZ_VSI,
+        ipp.BLOCK_IBNZ_VSI_VERIFIED BLOCK_IBNZ_VSI_VERIFIED,
+
+        ippbpp.BLOCK_PARAMETERS_PARAMETER_optional BLOCK_PARAMETERS_PARAMETER_optional,
+        ippbpp.BLOCK_PARAMETERS_PARAMETER_KEY BLOCK_PARAMETERS_PARAMETER_KEY,
+        ippbpp.BLOCK_PARAMETERS_PARAMETER_DESC BLOCK_PARAMETERS_PARAMETER_DESC,
+        ippbpp.BLOCK_PARAMETERS_PARAMETER_DATATYPE BLOCK_PARAMETERS_PARAMETER_DATATYPE,
+        ippbpp.BLOCK_PARAMETERS_PARAMETER_VALUE BLOCK_PARAMETERS_PARAMETER_VALUE,
+        ippbpp.BLOCK_PARAMETERS_PARAMETER_DEFAULT BLOCK_PARAMETERS_PARAMETER_DEFAULT
+
+        FROM IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETER AS ippbpp
+        INNER JOIN IB1_PROCEDURES_PROCEDURE AS ipp
+
+        ON ippbpp.platform_name = ipp.platform_name
+        AND ippbpp.diagnose_adr = ipp.diagnose_adr
+        AND ippbpp.IB1_VERSION = ipp.IB1_VERSION
+        AND ippbpp.BLOCK_NAME = ipp.BLOCK_NAME
+
+        <where>
+            <if test = "platform_name != null">
+                ippbpp.platform_name = #{platform_name}
+            </if>
+            <if test = "IB1_VERSION != null">
+                and ippbpp.IB1_VERSION = #{IB1_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and ippbpp.diagnose_adr = #{diagnose_adr}
+            </if>
+            <if test = "BLOCK_NAME != null">
+                and ippbpp.BLOCK_NAME = #{BLOCK_NAME}
+            </if>
+        </where>
+    </select>
+
+    <resultMap id="test" type="pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERLei">
+        <result property="BLOCK_PARAMETERS_PARAMETER_optional" column="BLOCK_PARAMETERS_PARAMETER_optional"></result>
+        <result property="BLOCK_PARAMETERS_PARAMETER_KEY" column="BLOCK_PARAMETERS_PARAMETER_KEY"></result>
+        <result property="BLOCK_PARAMETERS_PARAMETER_DESC" column="BLOCK_PARAMETERS_PARAMETER_DESC"></result>
+        <result property="BLOCK_PARAMETERS_PARAMETER_DATATYPE" column="BLOCK_PARAMETERS_PARAMETER_DATATYPE"></result>
+        <result property="BLOCK_PARAMETERS_PARAMETER_VALUE" column="BLOCK_PARAMETERS_PARAMETER_VALUE"></result>
+        <result property="BLOCK_PARAMETERS_PARAMETER_DEFAULT" column="BLOCK_PARAMETERS_PARAMETER_DEFAULT"></result>
+
+        <association property="IB1_PROCEDURES_PROCEDURE" javaType="pojo.IB1_PROCEDURES_PROCEDURELei">
+            <result property="BLOCK_KD_relevant" column="BLOCK_KD_relevant"></result>
+            <result property="BLOCK_P_relevant" column="BLOCK_P_relevant"></result>
+            <result property="BLOCK_optional" column="BLOCK_optional"></result>
+            <result property="BLOCK_shortname" column="BLOCK_shortname"></result>
+            <result property="BLOCK_standardIBNB" column="BLOCK_standardIBNB"></result>
+            <result property="BLOCK_version" column="BLOCK_version"></result>
+            <result property="BLOCK_NAME" column="BLOCK_NAME"></result>
+            <result property="BLOCK_NAME_EN" column="BLOCK_NAME_EN"></result>
+            <result property="BLOCK_DESC" column="BLOCK_DESC"></result>
+            <result property="BLOCK_TAGS_TAG" column="BLOCK_shortname"></result>
+            <result property="BLOCK_AREA" column="BLOCK_AREA"></result>
+            <result property="BLOCK_LOGICAL_LINK" column="BLOCK_LOGICAL_LINK"></result>
+            <result property="BLOCK_LAS" column="BLOCK_LAS"></result>
+            <result property="BLOCK_CONDITIONS_DEPENDENCIES" column="BLOCK_CONDITIONS_DEPENDENCIES"></result>
+            <result property="BLOCK_CONDITIONS_BUILDUP_CONDITIONS" column="BLOCK_CONDITIONS_BUILDUP_CONDITIONS"></result>
+            <result property="BLOCK_CONDITIONS_GENERAL_CONDITIONS" column="BLOCK_CONDITIONS_GENERAL_CONDITIONS"></result>
+            <result property="BLOCK_CONDITIONS_RESSOURCES" column="BLOCK_CONDITIONS_RESSOURCES"></result>
+            <result property="BLOCK_CONDITIONS_MISCELLANEOUS" column="BLOCK_CONDITIONS_MISCELLANEOUS"></result>
+            <result property="BLOCK_CONDITIONS_MANUAL_OPERATIONS" column="BLOCK_CONDITIONS_MANUAL_OPERATIONS"></result>
+            <result property="BLOCK_POLLINTERVALL" column="BLOCK_POLLINTERVALL"></result>
+            <result property="BLOCK_TIMEOUT" column="BLOCK_TIMEOUT"></result>
+            <result property="BLOCK_IBNZ_VSI" column="BLOCK_IBNZ_VSI"></result>
+            <result property="BLOCK_IBNZ_VSI_VERIFIED" column="BLOCK_IBNZ_VSI_VERIFIED"></result>
+        </association>
+
+    </resultMap>
+
+</mapper>

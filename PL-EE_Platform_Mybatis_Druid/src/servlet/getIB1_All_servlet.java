@@ -55,6 +55,8 @@ public class getIB1_All_servlet extends HttpServlet {
         IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYMapper IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYmapper = null;
         IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONMapper IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONmapper = null;
         IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEMapper IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEmapper = null;
+        IB1_ENVIRONMENT_TRANSPORT_MODEMapper IB1_ENVIRONMENT_TRANSPORT_MODEmapper = null;
+
         //IB1_BZD
         IB1_BZDMapper IB1_BZDmapper = null;
         //REFERENCES
@@ -62,7 +64,7 @@ public class getIB1_All_servlet extends HttpServlet {
         //CUSTOMER_ADJUSTMENTS
         IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCMapper IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCmapper = null;
         //SECURITY_PROPERTIES
-        IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYMapper IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYmapper = null;
+        IB1_SECURITY_PROPERTIESMapper IB1_SECURITY_PROPERTIESmapper = null;
         //IB1_TNR
         IB1_TNRMapper IB1_TNRmapper = null;
 
@@ -81,6 +83,7 @@ public class getIB1_All_servlet extends HttpServlet {
         List<IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYLei> IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYlist = null;
         List<IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONLei> IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONlist = null;
         List<IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODELei> IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODElist = null;
+        List<IB1_ENVIRONMENT_TRANSPORT_MODELei> IB1_ENVIRONMENT_TRANSPORT_MODElist = null;
         //IB1_BZD
         List<IB1_BZDLei> IB1_BZDlist = null;
         //REFERENCES
@@ -88,7 +91,7 @@ public class getIB1_All_servlet extends HttpServlet {
         //CUSTOMER_ADJUSTMENTS
         List<IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCLei> IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTClist = null;
         //SECURITY_PROPERTIES
-        List<IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYLei> IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYlist = null;
+        List<IB1_SECURITY_PROPERTIESLei> IB1_SECURITY_PROPERTIESlist = null;
         //IB1_TNR
         List<IB1_TNRLei> IB1_TNRlist = null;
 
@@ -107,6 +110,7 @@ public class getIB1_All_servlet extends HttpServlet {
         String IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCY_list= null;
         String IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION_list= null;
         String IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODE_list= null;
+        String IB1_ENVIRONMENT_TRANSPORT_MODE_list= null;
         //IB1_BZD
         String IB1_BZD_list= null;
         //REFERENCES
@@ -114,7 +118,7 @@ public class getIB1_All_servlet extends HttpServlet {
         //CUSTOMER_ADJUSTMENTS
         String IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC_list= null;
         //SECURITY_PROPERTIES
-        String IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTY_list= null;
+        String IB1_SECURITY_PROPERTIES_list= null;
         //IB1_TNR
         String IB1_TNR_list= null;
 
@@ -143,6 +147,7 @@ public class getIB1_All_servlet extends HttpServlet {
             IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYmapper = sqlSession.getMapper(IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYMapper.class);
             IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONmapper = sqlSession.getMapper(IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONMapper.class);
             IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEmapper = sqlSession.getMapper(IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEMapper.class);
+            IB1_ENVIRONMENT_TRANSPORT_MODEmapper = sqlSession.getMapper(IB1_ENVIRONMENT_TRANSPORT_MODEMapper.class);
             //IB1_BZD
             IB1_BZDmapper = sqlSession.getMapper(IB1_BZDMapper.class);
             //REFERENCES
@@ -150,7 +155,7 @@ public class getIB1_All_servlet extends HttpServlet {
             //CUSTOMER_ADJUSTMENTS
             IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCmapper = sqlSession.getMapper(IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCMapper.class);
             //SECURITY_PROPERTIES
-            IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYmapper = sqlSession.getMapper(IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYMapper.class);
+            IB1_SECURITY_PROPERTIESmapper = sqlSession.getMapper(IB1_SECURITY_PROPERTIESMapper.class);
             //IB1_TNR
             IB1_TNRmapper = sqlSession.getMapper(IB1_TNRMapper.class);
 
@@ -176,6 +181,7 @@ public class getIB1_All_servlet extends HttpServlet {
             IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYlist = IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYmapper.getIB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCY(map);
             IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONlist = IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONmapper.getIB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION(map);
             IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODElist = IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEmapper.getIB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODE(map);
+            IB1_ENVIRONMENT_TRANSPORT_MODElist = IB1_ENVIRONMENT_TRANSPORT_MODEmapper.getIB1_ENVIRONMENT_TRANSPORT_MODE(map);
             //IB1_BZD
             IB1_BZDlist = IB1_BZDmapper.getIB1_BZD(map);
             //REFERENCES
@@ -183,7 +189,7 @@ public class getIB1_All_servlet extends HttpServlet {
             //CUSTOMER_ADJUSTMENTS
             IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTClist = IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCmapper.getIB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC(map);
             //SECURITY_PROPERTIES
-            IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYlist = IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYmapper.getIB1_SECURITY_PROPERTIES_All(map);
+            IB1_SECURITY_PROPERTIESlist = IB1_SECURITY_PROPERTIESmapper.getIB1_SECURITY_PROPERTIES(map);
             //IB1_TNR
             IB1_TNRlist = IB1_TNRmapper.getIB1_TNR(map);
 
@@ -207,6 +213,7 @@ public class getIB1_All_servlet extends HttpServlet {
             IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCY_list = JSON.toJSONString(IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYlist);
             IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION_list = JSON.toJSONString(IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONlist);
             IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODE_list = JSON.toJSONString(IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODElist);
+            IB1_ENVIRONMENT_TRANSPORT_MODE_list = JSON.toJSONString(IB1_ENVIRONMENT_TRANSPORT_MODElist);
             //BZD
             IB1_BZD_list = JSON.toJSONString(IB1_BZDlist);
             //REFERENCES
@@ -214,7 +221,7 @@ public class getIB1_All_servlet extends HttpServlet {
             //CUSTOMER_ADJUSTMENTS
             IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC_list = JSON.toJSONString(IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTClist);
             //SECURITY_PROPERTIES
-            IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTY_list = JSON.toJSONString(IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYlist);
+            IB1_SECURITY_PROPERTIES_list = JSON.toJSONString(IB1_SECURITY_PROPERTIESlist);
             //IB1_TNR
             IB1_TNR_list = JSON.toJSONString(IB1_TNRlist);
 
@@ -237,6 +244,7 @@ public class getIB1_All_servlet extends HttpServlet {
             JSONArray IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCY_array = JSONArray.parseArray(IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCY_list);
             JSONArray IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION_array = JSONArray.parseArray(IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION_list);
             JSONArray IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODE_array = JSONArray.parseArray(IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODE_list);
+            JSONArray IB1_ENVIRONMENT_TRANSPORT_MODE_array = JSONArray.parseArray(IB1_ENVIRONMENT_TRANSPORT_MODE_list);
             //BZD
             JSONArray IB1_BZD_array = JSONArray.parseArray(IB1_BZD_list);
             //REFERENCES
@@ -244,7 +252,7 @@ public class getIB1_All_servlet extends HttpServlet {
             //CUSTOMER_ADJUSTMENTS
             JSONArray IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC_array = JSONArray.parseArray(IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC_list);
             //SECURITY_PROPERTIES
-            JSONArray IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTY_array = JSONArray.parseArray(IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTY_list);
+            JSONArray IB1_SECURITY_PROPERTIES_array = JSONArray.parseArray(IB1_SECURITY_PROPERTIES_list);
             //IB1_TNR
             JSONArray IB1_TNR_array = JSONArray.parseArray(IB1_TNR_list);
 
@@ -269,9 +277,10 @@ public class getIB1_All_servlet extends HttpServlet {
             class_b3.setDEPENDENCIES(IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCY_array);
             class_b3.setACCESS_AUTHORISATIONS(IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATION_array);
             class_b3.setPRODUCTION_MODES(IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODE_array);
+            class_b3.setTRANSPORT_MODE(IB1_ENVIRONMENT_TRANSPORT_MODE_array);
 
             //System.out.println("class_b toString的(NOK)"+class_b);
-/*----------------------------------------------------------------------------------*/
+            /*----------------------------------------------------------------------------------*/
             //将class_b json对象转成JSONString
             String class_b_JSON_DOC_INFO=JSON.toJSONString(class_b1);
             String class_b_JSON_IB_DESCRIPTION=JSON.toJSONString(class_b2);
@@ -300,7 +309,7 @@ public class getIB1_All_servlet extends HttpServlet {
             class_a.setBZD(IB1_BZD_array);
             class_a.setREFERENCES(IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENT_array);
             class_a.setCUSTOMER_ADJUSTMENTS(IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC_array);
-            class_a.setSECURITY_PROPERTIES(IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTY_array);
+            class_a.setSECURITY_PROPERTIES(IB1_SECURITY_PROPERTIES_array);
             class_a.setIB1_TNR(IB1_TNR_array);
 /*----------------------------------------------------------------------------------------------*/
             String  class_a_JSON = JSON.toJSONString(class_a);

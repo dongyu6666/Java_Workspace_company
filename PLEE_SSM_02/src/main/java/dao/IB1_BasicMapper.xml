@@ -38,9 +38,6 @@
             <if test = "platform_name != null">
                 platform_name = #{platform_name}
             </if>
-            <if test = "IB1_VERSION != null">
-                and IB1_VERSION = #{IB1_VERSION}
-            </if>
         </where>
     </select>
 
