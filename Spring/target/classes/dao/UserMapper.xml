@@ -14,7 +14,7 @@
     </insert>
 
     <delete id="deleteUser" parameterType="int">
-        deletes from user where id = #{id};
+        delete from user where id = #{id};
     </delete>
 
     <!--<select id="getUserByUsername" resultType="pojo.UserLei" parameterType="String">

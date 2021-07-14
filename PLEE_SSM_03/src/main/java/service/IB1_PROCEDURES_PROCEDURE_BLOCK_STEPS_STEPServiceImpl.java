@@ -2,13 +2,15 @@ package service;
 
 
 import dao.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPLei;
 
 import java.util.List;
 import java.util.Map;
-
+@Service
 public class IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl implements IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPService {
-
+@Autowired
     //service业务层调dao层：组合Dao
     private IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper iB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper;
 

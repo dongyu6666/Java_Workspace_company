@@ -1,5 +1,7 @@
 package pojo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class IB1_BZDLei {
 
     private Integer id;
@@ -9,6 +11,7 @@ public class IB1_BZDLei {
     private String diagnose_adr;
     private String IB1_NAME;
 
+    @JsonProperty(value = "S42_ATTRIBUTES_ADDED")
     private String S42_ATTRIBUTES_ADDED;
     private String ADDITIONAL_IDENTS_DESC;
     private String IDENTS_IDENT_NAME;
@@ -27,7 +30,7 @@ public class IB1_BZDLei {
         this.IB1_VERSION = IB1_VERSION;
         this.diagnose_adr = diagnose_adr;
         this.IB1_NAME = IB1_NAME;
-        S42_ATTRIBUTES_ADDED = s42_ATTRIBUTES_ADDED;
+        this.S42_ATTRIBUTES_ADDED = S42_ATTRIBUTES_ADDED;
         this.ADDITIONAL_IDENTS_DESC = ADDITIONAL_IDENTS_DESC;
         this.IDENTS_IDENT_NAME = IDENTS_IDENT_NAME;
         this.IDENTS_IDENT_S42_ATTRIBUTE = IDENTS_IDENT_S42_ATTRIBUTE;

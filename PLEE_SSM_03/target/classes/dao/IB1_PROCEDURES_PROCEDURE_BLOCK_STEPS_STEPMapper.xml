@@ -6,8 +6,7 @@
 <mapper namespace="dao.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper">
 
     <select id="getIB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP" resultType="pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPLei">
-       select * from ib1_procedures_procedure_block_steps_step
-    <where>
+        select id,IB1_NAME,BLOCK_NAME,BLOCK_id,STEP_cyclic,STEP_id,STEP_NAME,STEP_DESC,STEP_DIAG_SERVICE_IDENTIFIER,STEP_DIAG_SERVICE_LONG_NAME,STEP_DIAG_SERVICE_SHORT_NAME from ib1_procedures_procedure_block_steps_step    <where>
         <if test = "platform_name != null">
             platform_name = #{platform_name}
         </if>
@@ -24,10 +23,10 @@
             and STEP_NAME = #{STEP_NAME}
         </if>
         <if test = "BLOCK_id != null">
-            and BLOCK_NAME = #{BLOCK_NAME}
+            and BLOCK_id = #{BLOCK_id}
         </if>
         <if test = "STEP_id != null">
-            and BLOCK_NAME = #{BLOCK_NAME}
+            and STEP_id = #{STEP_id}
         </if>
     </where>
 </select>

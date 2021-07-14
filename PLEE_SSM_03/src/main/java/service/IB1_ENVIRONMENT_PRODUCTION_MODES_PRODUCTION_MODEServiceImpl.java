@@ -1,13 +1,15 @@
 package service;
 
 import dao.IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import pojo.IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODELei;
 
 import java.util.List;
 import java.util.Map;
-
+@Service
 public class IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl implements IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEService {
-
+@Autowired
     //service业务层调dao层：组合Dao
     private IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEMapper iB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEMapper;
 

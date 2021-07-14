@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口（Dao）-->
+<mapper namespace="com.fawvw.dao.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper">
+
+    <select id="getIB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP" resultType="com.fawvw.pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPLei">
+     select id,IB1_NAME,BLOCK_NAME,BLOCK_id,STEP_cyclic,STEP_id,STEP_NAME,STEP_DESC,STEP_DIAG_SERVICE_IDENTIFIER,STEP_DIAG_SERVICE_LONG_NAME,STEP_DIAG_SERVICE_SHORT_NAME from ib1_procedures_procedure_block_steps_step
+      <where>
+        <if test = "id != null">
+            id = #{id}
+        </if>
+        <if test = "platform_name != null">
+            and platform_name = #{platform_name}
+        </if>
+        <if test = "IB1_VERSION != null">
+            and IB1_VERSION = #{IB1_VERSION}
+        </if>
+        <if test = "diagnose_adr != null">
+            and diagnose_adr = #{diagnose_adr}
+        </if>
+        <if test = "BLOCK_NAME != null">
+            and BLOCK_NAME = #{BLOCK_NAME}
+        </if>
+        <if test = "STEP_NAME != null">
+            and STEP_NAME = #{STEP_NAME}
+        </if>
+        <if test = "BLOCK_id != null">
+            and BLOCK_id = #{BLOCK_id}
+        </if>
+        <if test = "STEP_id != null">
+            and STEP_id = #{STEP_id}
+        </if>
+    </where>
+</select>
+
+    <select id="getIB1_BLOCK_STEP" resultType="com.fawvw.pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPLei">
+     SELECT id, BLOCK_id, STEP_id, STEP_NAME FROM IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP
+     <where>
+            <if test = "id != null">
+                id = #{id}
+            </if>
+            <if test = "platform_name != null">
+                and platform_name = #{platform_name}
+            </if>
+            <if test = "IB1_VERSION != null">
+                and IB1_VERSION = #{IB1_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+            <if test = "BLOCK_NAME != null">
+                and BLOCK_NAME = #{BLOCK_NAME}
+            </if>
+            <if test = "BLOCK_id != null">
+                and BLOCK_id = #{BLOCK_id}
+            </if>
+            <if test = "STEP_id != null">
+                and STEP_id = #{STEP_id}
+            </if>
+     </where>
+    </select>
+
+
+    <delete id="deleteIB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP" parameterType="int">
+        delete from IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+            <if test = "IB1_VERSION != null">
+                and IB1_VERSION = #{IB1_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+        </where>
+    </delete>
+
+
+</mapper>

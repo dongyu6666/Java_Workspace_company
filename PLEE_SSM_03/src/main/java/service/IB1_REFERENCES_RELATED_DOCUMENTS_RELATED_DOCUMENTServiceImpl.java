@@ -1,13 +1,15 @@
 package service;
 
 import dao.IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import pojo.IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTLei;
 
 import java.util.List;
 import java.util.Map;
-
+@Service
 public class IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl implements IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTService {
-
+@Autowired
     //service业务层调dao层：组合Dao
     private IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTMapper iB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTMapper;
 

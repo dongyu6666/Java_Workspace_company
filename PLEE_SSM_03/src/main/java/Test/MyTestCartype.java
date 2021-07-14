@@ -24,6 +24,8 @@ public class MyTestCartype {
 
 
         List<CartypeLei> cartypeLeis = cartypeServiceImpl.getCartype();
+        List<CartypeLei> cartypeLeis2 = cartypeServiceImpl.getCartype();
+        List<CartypeLei> cartypeLeis3 = cartypeServiceImpl.getCartype();
         List<UserLei> userLeis = userServiceImpl.selectUser();
 
         System.out.println(cartypeLeis.toString());

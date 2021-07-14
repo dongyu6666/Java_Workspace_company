@@ -1,13 +1,15 @@
 package service;
 
 import dao.IB1_DOC_INFO_CONTACTSMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import pojo.IB1_DOC_INFO_CONTACTSLei;
 
 import java.util.List;
 import java.util.Map;
-
+@Service
 public class IB1_DOC_INFO_CONTACTSServiceImpl implements IB1_DOC_INFO_CONTACTSService {
-
+@Autowired
     //service业务层调dao层：组合Dao
     private IB1_DOC_INFO_CONTACTSMapper iB1_DOC_INFO_CONTACTSMapper;
 

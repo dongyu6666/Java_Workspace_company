@@ -19,7 +19,7 @@ public class UserMapperImpl implements UserMapper {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         UserLei user = new UserLei(100,"zhangsan","xxx");
         mapper.addUser(user);
-        mapper.deleteUser(100);
+        mapper.deleteUser(5);
 
         return mapper.selectUser();
     }

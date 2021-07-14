@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口（Dao）-->
+<mapper namespace="com.fawvw.dao.IB1_BasicMapper">
+
+    <select id="getIB1_Basic" resultType="com.fawvw.pojo.IB1_BasicLei">
+/*        SELECT
+        CONCAT(' select ',GROUP_CONCAT(COLUMN_NAME),' from ', TABLE_NAME,' ;')
+        FROM information_schema.COLUMNS
+        WHERE TABLE_NAME = 'IB1_Basic'
+        AND TABLE_SCHEMA = 'plee_platform'
+        AND COLUMN_NAME != 'platform_name'
+        AND COLUMN_NAME != 'IB1_VERSION'
+        AND COLUMN_NAME != 'diagnose_adr'
+        AND COLUMN_NAME != 'IB1_NAME'
+
+        AND COLUMN_NAME != 'create_time'
+        AND COLUMN_NAME != 'update_time';*/
+        SELECT * FROM IB1_Basic
+    <where>
+        <if test = "platform_name != null">
+            platform_name = #{platform_name}
+        </if>
+        <if test = "IB1_VERSION != null">
+            and IB1_VERSION = #{IB1_VERSION}
+        </if>
+        <if test = "diagnose_adr != null">
+            and diagnose_adr = #{diagnose_adr}
+        </if>
+    </where>
+    </select>
+
+    <select id="getIB1_diagnose_adr" resultType="com.fawvw.pojo.IB1_BasicLei">
+        SELECT DISTINCT diagnose_adr FROM IB1_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+        </where>
+        ORDER BY diagnose_adr
+    </select>
+
+    <select id="getIB1_diagnose_adr_and_IB1_NAME" resultType="com.fawvw.pojo.IB1_BasicLei">
+        SELECT DISTINCT diagnose_adr,IB1_NAME FROM IB1_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+        </where>
+        ORDER BY diagnose_adr
+    </select>
+
+    <select id="getIB1_filename" resultType="com.fawvw.pojo.IB1_BasicLei">
+        SELECT IB1_filename, IB1_VERSION FROM IB1_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+            <if test = "IB1_VERSION != null">
+                and IB1_VERSION = #{IB1_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteIB1_Basic" parameterType="int">
+        delete from IB1_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+            <if test = "IB1_VERSION != null">
+                and IB1_VERSION = #{IB1_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+        </where>
+    </delete>
+
+
+</mapper>

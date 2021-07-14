@@ -18,7 +18,9 @@
        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
       <!--1.扫描service下的包-->
-      <context:component-scan base-package="service"/>
+<!--
+      <context:component-scan base-package="service"></context:component-scan>
+-->
       <!--2.将所有Service业务类，注入到Spring，可以通过配置、或者注解实现,这里设置service的bean-->
       <bean id="UserServiceImpl" class="service.UserServiceImpl">
             <property name="userMapper" ref="userMapper"/>
@@ -91,9 +93,22 @@
       <bean id="IB1_TNRServiceImpl" class="service.IB1_TNRServiceImpl">
             <property name="iB1_TNRMapper" ref="IB1_TNRMapper"/>
       </bean>
-      <!--IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENT-->
+      <!--IB1_REFERENCES-->
       <bean id="IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl" class="service.IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl">
             <property name="iB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTMapper" ref="IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTMapper"/>
+      </bean>
+      <bean id="IB1_REFERENCES_REGULATIONS_REGULATIONServiceImpl" class="service.IB1_REFERENCES_REGULATIONS_REGULATIONServiceImpl">
+            <property name="iB1_REFERENCES_REGULATIONS_REGULATIONMapper" ref="IB1_REFERENCES_REGULATIONS_REGULATIONMapper"/>
+      </bean>
+      <!--IB1_BZD-->
+      <bean id="IB1_BZD_BasicServiceImpl" class="service.IB1_BZD_BasicServiceImpl">
+            <property name="iB1_BZD_BasicMapper" ref="IB1_BZD_BasicMapper"/>
+      </bean>
+      <bean id="IB1_BZD_IDENTSServiceImpl" class="service.IB1_BZD_IDENTSServiceImpl">
+            <property name="iB1_BZD_IDENTSMapper" ref="IB1_BZD_IDENTSMapper"/>
+      </bean>
+      <bean id="IB1_BZD_ADDITIONAL_IDENTSServiceImpl" class="service.IB1_BZD_ADDITIONAL_IDENTSServiceImpl">
+            <property name="iB1_BZD_ADDITIONAL_IDENTSMapper" ref="IB1_BZD_ADDITIONAL_IDENTSMapper"/>
       </bean>
       <!--IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC-->
       <bean id="IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl" class="service.IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl">
@@ -104,20 +119,17 @@
             <property name="iB1_SECURITY_PROPERTIESMapper" ref="IB1_SECURITY_PROPERTIESMapper"/>
       </bean>
 
-
-
-
-
-
-
-
-
-
       <!--3.声明式事务配置-->
       <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
             <!--注入数据源-->
             <property name="dataSource" ref="dataSource"/>
       </bean>
+
+      <!-- 配置基于注解的声明式事务 -->
+<!--
+      <tx:annotation-driven transaction-manager="transactionManager"/>
+-->
+
       <!--4.AOP事务支持-->
     <!--结合AOP实现事务的植入-->
     <!--配置事务通知：-->
@@ -127,14 +139,16 @@
             <tx:method name="add" propagation="REQUIRED"/><!--配置事务的传播特性:默认是propagation="REQUIRED"-->
             <tx:method name="delete" propagation="REQUIRED"/>
             <tx:method name="update" propagation="REQUIRED"/>
+            <tx:method name="select" propagation="REQUIRED"/>
             <tx:method name="query" read-only="true"/>
+            <tx:method name="insert" propagation="REQUIRED"/>
             <tx:method name="*" propagation="REQUIRED"/>
         </tx:attributes>
     </tx:advice>
 
     <!--配置事务切入AOP-->
     <aop:config>
-        <aop:pointcut id="txPointCut" expression="execution(* dao.*.*(..))"/><!--*后面要有空格！  *.*表示：下面的所有类所有方法,(..)表示：参数-->
+        <aop:pointcut id="txPointCut" expression="execution(* service.*.*(..))"/><!--*后面要有空格！  *.*表示：下面的所有类所有方法,(..)表示：参数-->
 
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
     </aop:config>

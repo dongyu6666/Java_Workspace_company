@@ -1,0 +1,14 @@
+package com.fawvw.service;
+
+import com.fawvw.pojo.IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONLei;
+
+import java.util.List;
+import java.util.Map;
+
+public interface IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONService {
+    //查询IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITION
+    List<IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONLei> getIB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITION(Map map);
+
+
+
+}

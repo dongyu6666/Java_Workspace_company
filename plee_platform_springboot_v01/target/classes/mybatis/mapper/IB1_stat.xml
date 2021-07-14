@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口（Dao）-->
+<mapper namespace="com.fawvw.dao.IB1_statMapper">
+
+    <select id="getIB1_stat" resultType="com.fawvw.pojo.IB1_statLei">
+    SELECT platform_name,DATE_FORMAT(create_time,'%Y%u') weeks,COUNT(IB1_filename) as times FROM `ib1_basic` where platform_name = #{platform_name} GROUP BY weeks;
+    </select>
+</mapper>

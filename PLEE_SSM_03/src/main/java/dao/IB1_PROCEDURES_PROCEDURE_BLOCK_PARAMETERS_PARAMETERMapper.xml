@@ -6,9 +6,7 @@
 <mapper namespace="dao.IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper">
 
     <select id="getIB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETER" resultType="pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERLei">
-
-    SELECT * FROM ib1_procedures_procedure_block_parameters_parameter
-    <where>
+     select id,IB1_NAME,BLOCK_NAME,BLOCK_id,BLOCK_PARAMETERS_PARAMETER_optional,BLOCK_PARAMETERS_PARAMETER_KEY,BLOCK_PARAMETERS_PARAMETER_DESC,BLOCK_PARAMETERS_PARAMETER_DATATYPE,BLOCK_PARAMETERS_PARAMETER_VALUE,BLOCK_PARAMETERS_PARAMETER_DEFAULT from ib1_procedures_procedure_block_parameters_parameter    <where>
     <if test = "platform_name != null">
         platform_name = #{platform_name}
     </if>

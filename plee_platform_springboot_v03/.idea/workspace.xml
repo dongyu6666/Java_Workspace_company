@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25338c79-4b67-41d1-91a7-4ba80ec28067" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../springbootv04/src/main/resources/public/1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootv04/src/main/resources/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mysql_Workspace/plee_platform/IB1/IB1_20210615.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Mysql_Workspace/plee_platform/IB1/IB1_20210615.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mysql_Workspace/plee_platform/RBAC/user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Mysql_Workspace/plee_platform/RBAC/user.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mysql_Workspace/za/Alex_test.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mysql_Workspace/za/Mysql学习.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mysql_Workspace/za/cha.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mysql_Workspace/za/zengshanchagai.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/PL-EE_Platform_Mybatis_Druid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/PL-EE_Platform_Mybatis_Druid.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/PL-EE_Platform_DBserver0512-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/PL-EE_Platform_DBserver0512-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/PL-EE_Platform_DBserver0512.war" beforeDir="false" afterPath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/PL-EE_Platform_DBserver0512.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/META-INF/PL-EE_Platform_Mybatis_Druid.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/dao/IB1_SECURITY_PROPERTIES_ECUMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/dao/IB1_SECURITY_PROPERTIES_ECUMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/dao/IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/dao/IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/pojo/IB1_SECURITY_PROPERTIES_ECULei.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/pojo/IB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTYLei.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/servlet/getIB1_SECURITY_PROPERTIES_ECU_SECURITY_PROPERTY_servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/classes/servlet/getIB1_SECURITY_PROPERTIES_ECU_servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PL-EE_Platform_Mybatis_Druid/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/META-INF/PLEE_SSM_03.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/Test/MyTestCartype.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/Test/MyTestCartype.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/CartypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/CartypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_AllController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_BZDController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_BZDController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_CUSTOMER_ADJUSTMENTSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_CUSTOMER_ADJUSTMENTSController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_DOC_INFOController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_DOC_INFOController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_ENVIRONMENTController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_ENVIRONMENTController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_IB_DESCRIPTIONController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_IB_DESCRIPTIONController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_REFERENCESController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_REFERENCESController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_SECURITY_PROPERTIESController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/controller/IB1_SECURITY_PROPERTIESController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_BZDMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_BZDMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDUREMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDUREMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_SECURITY_PROPERTIESMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_SECURITY_PROPERTIESMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_SECURITY_PROPERTIESMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/dao/IB1_SECURITY_PROPERTIESMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/pojo/Class_B.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/pojo/Class_B.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/pojo/IB1_BZDLei.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/pojo/IB1_BZDLei.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/pojo/IB1_SECURITY_PROPERTIESLei.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/pojo/IB1_SECURITY_PROPERTIESLei.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/CartypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/CartypeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_BZDServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_BZDServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_BasicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_BasicServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_DOC_INFO_CONTACTSServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_DOC_INFO_CONTACTSServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_DOC_INFO_DOC_REVISIONSServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_DOC_INFO_DOC_REVISIONSServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_TRANSPORT_MODEServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_ENVIRONMENT_TRANSPORT_MODEServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_IB_DESCRIPTION_IBNZServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_IB_DESCRIPTION_IBNZServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_IB_DESCRIPTION_IB_VARIANTSServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_IB_DESCRIPTION_IB_VARIANTSServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_IB_DESCRIPTION_SLAVEServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_IB_DESCRIPTION_SLAVEServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDUREServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDUREServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_SECURITY_PROPERTIESService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_SECURITY_PROPERTIESService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_SECURITY_PROPERTIESServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_SECURITY_PROPERTIESServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_TNRServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/IB1_TNRServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/PlatformServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/PlatformServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/classes/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/out/artifacts/PLEE_SSM_03_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/Test/MyTestCartype.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/Test/MyTestCartype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/CartypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/CartypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_AllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_All_not_used_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_BZDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_BZDController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_DOC_INFOController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_DOC_INFOController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_ENVIRONMENTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_ENVIRONMENTController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_IB_DESCRIPTIONController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_IB_DESCRIPTION_not_used_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_REFERENCESController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_REFERENCESController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_SECURITY_PROPERTIESController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/controller/IB1_SECURITY_PROPERTIES_not_used_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_BZDMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_BZDMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDUREMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDUREMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_SECURITY_PROPERTIESMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_SECURITY_PROPERTIESMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_SECURITY_PROPERTIESMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/dao/IB1_SECURITY_PROPERTIESMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/pojo/Class_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/pojo/Class_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/pojo/IB1_BZDLei.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/pojo/IB1_BZDLei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/pojo/IB1_SECURITY_PROPERTIESLei.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/pojo/IB1_SECURITY_PROPERTIESLei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/CartypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/CartypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/CartypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/CartypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_BZDServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_BZDServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_BasicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_BasicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_DOC_INFO_CONTACTSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_DOC_INFO_CONTACTSServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_DOC_INFO_DOC_REVISIONSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_DOC_INFO_DOC_REVISIONSServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_TRANSPORT_MODEServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_ENVIRONMENT_TRANSPORT_MODEServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_IB_DESCRIPTION_IBNZServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_IB_DESCRIPTION_IBNZServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_IB_DESCRIPTION_IB_VARIANTSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_IB_DESCRIPTION_IB_VARIANTSServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_IB_DESCRIPTION_SLAVEServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_IB_DESCRIPTION_SLAVEServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDUREServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDUREServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_SECURITY_PROPERTIESService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_SECURITY_PROPERTIESService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_SECURITY_PROPERTIESServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_SECURITY_PROPERTIESServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_TNRServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/IB1_TNRServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/PlatformServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/PlatformServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/java/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/resources/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/resources/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/src/main/resources/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/PLEE_SSM_war0613.war" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/PLEE_SSM_war0613.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/Test/MyTestCartype.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/Test/MyTestCartype.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/CartypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/CartypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_AllController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_BZDController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_BZDController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_DOC_INFOController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_DOC_INFOController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_ENVIRONMENTController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_ENVIRONMENTController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_IB_DESCRIPTIONController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_IB_DESCRIPTIONController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_REFERENCESController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_REFERENCESController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_SECURITY_PROPERTIESController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/controller/IB1_SECURITY_PROPERTIESController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_BZDMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_BZDMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDUREMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDUREMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_SECURITY_PROPERTIESMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_SECURITY_PROPERTIESMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_SECURITY_PROPERTIESMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/dao/IB1_SECURITY_PROPERTIESMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/pojo/Class_B.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/pojo/Class_B.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/pojo/IB1_BZDLei.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/pojo/IB1_BZDLei.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/pojo/IB1_SECURITY_PROPERTIESLei.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/pojo/IB1_SECURITY_PROPERTIESLei.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/CartypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/CartypeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_BZDServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_BZDServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_BasicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_BasicServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_DOC_INFO_CONTACTSServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_DOC_INFO_CONTACTSServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_DOC_INFO_DOC_REVISIONSServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_DOC_INFO_DOC_REVISIONSServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_TRANSPORT_MODEServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_ENVIRONMENT_TRANSPORT_MODEServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_IB_DESCRIPTION_IBNZServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_IB_DESCRIPTION_IBNZServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_IB_DESCRIPTION_IB_VARIANTSServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_IB_DESCRIPTION_IB_VARIANTSServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_IB_DESCRIPTION_SLAVEServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_IB_DESCRIPTION_SLAVEServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDUREServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDUREServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_SECURITY_PROPERTIESService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_SECURITY_PROPERTIESService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_SECURITY_PROPERTIESServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_SECURITY_PROPERTIESServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_TNRServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/IB1_TNRServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/PlatformServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/PlatformServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/target/classes/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PLEE_SSM_03/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PLEE_SSM_03/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/src/dao/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/dao/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/dao/UserMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/dao/UserMapperImpl.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\maven_respository" />
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.8.1-bin/apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.8.1-bin\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1vFmrRzn93bCeqC9DXnlPRlGwlF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java_Workspace\plee_platform_springboot_v03\src\main\resources" />
+      <recent name="D:\Java_Workspace\plee_platform_springboot_v03\src\main\java\com\fawvw" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="PleePlatformSpringbootV03Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="plee_platform_springboot_v03" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fawvw.PleePlatformSpringbootV03Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25338c79-4b67-41d1-91a7-4ba80ec28067" name="Default Changelist" comment="" />
+      <created>1626166409485</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626166409485</updated>
+      <workItem from="1626166413406" duration="1522000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

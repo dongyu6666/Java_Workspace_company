@@ -1,13 +1,16 @@
 package service;
 
 import dao.IB1_IB_DESCRIPTION_OBJECTIVESMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import pojo.IB1_IB_DESCRIPTION_OBJECTIVESLei;
 
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl implements IB1_IB_DESCRIPTION_OBJECTIVESService {
-
+@Autowired
     //service业务层调dao层：组合Dao
     private IB1_IB_DESCRIPTION_OBJECTIVESMapper iB1_IB_DESCRIPTION_OBJECTIVESMapper;
 

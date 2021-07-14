@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口（Dao）-->
+<mapper namespace="dao.IB1_BZD_ADDITIONAL_IDENTSMapper">
+
+    <select id="getIB1_BZD_ADDITIONAL_IDENTS" resultType="pojo.IB1_BZD_ADDITIONAL_IDENTSLei">
+        select diagnose_adr,IB1_NAME,IB1_VERSION,id,IDENTS_IDENT_BGONLINE,IDENTS_IDENT_COMMENT,IDENTS_IDENT_DID,IDENTS_IDENT_NAME,IDENTS_IDENT_S42_ATTRIBUTE,platform_name from ib1_bzd_additional_idents
+    <where>
+        <if test = "platform_name != null">
+            platform_name = #{platform_name}
+        </if>
+        <if test = "IB1_VERSION != null">
+            and IB1_VERSION = #{IB1_VERSION}
+        </if>
+        <if test = "diagnose_adr != null">
+            and diagnose_adr = #{diagnose_adr}
+        </if>
+    </where>
+    </select>
+
+    <select id="getIB1_BZD_ADDITIONAL_IDENTS_DESC" resultType="pojo.IB1_BZD_ADDITIONAL_IDENTSLei">
+        SELECT DISTINCT IDENTS_DESC FROM IB1_BZD_ADDITIONAL_IDENTS
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+            <if test = "IB1_VERSION != null">
+                and IB1_VERSION = #{IB1_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+        </where>
+    </select>
+
+
+</mapper>

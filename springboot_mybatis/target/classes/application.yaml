@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: Liang.Dongyu
+    password: faw123
+    url: jdbc:mysql://10.227.6.242:3306/plee_platform?useSSL=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #type: com.alibaba.druid.pool.DruidDataSource
+
+#整合mybatis
+mybatis:
+  type-aliases-package: pojo
+  mapper-locations: classpath:dao/*.xml
+
+

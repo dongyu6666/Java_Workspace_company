@@ -22,21 +22,19 @@ import java.util.Map;
 @Controller
 public class IB1_DOC_INFOController {
     //controller调service层
-    //@Autowired
-    //@Qualifier("IB1_DOC_INFO_CONTACTSServiceImpl")
-    //private IB1_DOC_INFO_CONTACTSService iB1_DOC_INFO_CONTACTSService;
+    @Autowired
+    @Qualifier("IB1_DOC_INFO_CONTACTSServiceImpl")
+    private IB1_DOC_INFO_CONTACTSService iB1_DOC_INFO_CONTACTSService;
 
-    ApplicationContext context1;
-    ApplicationContext context2;
+    @Autowired
+    @Qualifier("IB1_DOC_INFO_DOC_REVISIONSServiceImpl")
+    private IB1_DOC_INFO_DOC_REVISIONSService iB1_DOC_INFO_DOC_REVISIONSService;
 
     @RequestMapping("/getIB1_DOC_INFO")
     public String getIB1_DOC_INFO_CONTACTS(@RequestParam(value="platform_name", required=false) String platform_name, @RequestParam(value="IB1_VERSION", required=false) String IB1_VERSION,@RequestParam(value="diagnose_adr", required=false) String diagnose_adr,Model model){
-        context1 = new ClassPathXmlApplicationContext("applicationContext.xml");
-        context2 = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         //DOC_INFO
-        IB1_DOC_INFO_CONTACTSService iB1_DOC_INFO_CONTACTSService = (IB1_DOC_INFO_CONTACTSService)context1.getBean("IB1_DOC_INFO_CONTACTSServiceImpl");
-        IB1_DOC_INFO_DOC_REVISIONSService iB1_DOC_INFO_DOC_REVISIONSService = (IB1_DOC_INFO_DOC_REVISIONSService)context2.getBean("IB1_DOC_INFO_DOC_REVISIONSServiceImpl");
+
         API api = new API();
         api.setStatus("true");
         api.setInfo("offer all IB1_DOC_INFO info");

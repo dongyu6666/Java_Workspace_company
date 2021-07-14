@@ -1,0 +1,29 @@
+userlei:
+  username: zhangsan
+  password: 123456
+# debug= true来查看自动配置类生效与否
+#debug: true
+
+
+server:
+  port: 8080
+spring:
+  profiles:
+    active: test
+
+---
+server:
+  port: 8888
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+
+---
+server:
+  port: 9999
+spring:
+  config:
+    activate:
+      on-profile: test

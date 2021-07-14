@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口（Dao）-->
+<mapper namespace="com.fawvw.dao.IB2P_BasicMapper">
+
+    <select id="getIB2P_Basic" resultType="com.fawvw.pojo.IB2P_BasicLei">
+        SELECT * FROM IB2P_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+            <if test = "IB2P_VERSION != null">
+                and IB2P_VERSION = #{IB2P_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+        </where>
+    </select>
+
+    <select id="getIB2P_diagnose_adr" resultType="com.fawvw.pojo.IB2P_BasicLei">
+        SELECT DISTINCT diagnose_adr FROM IB2P_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+        </where>
+        ORDER BY diagnose_adr
+    </select>
+
+    <select id="getIB2P_diagnose_adr_and_IB2P_NAME" resultType="com.fawvw.pojo.IB2P_BasicLei">
+        SELECT DISTINCT diagnose_adr,IB2P_NAME FROM IB2P_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+        </where>
+        ORDER BY diagnose_adr
+    </select>
+
+    <select id="getIB2P_filename" resultType="com.fawvw.pojo.IB2P_BasicLei">
+        SELECT IB2P_filename, IB2P_VERSION FROM IB2P_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+            <if test = "IB2P_VERSION != null">
+                and IB2P_VERSION = #{IB2P_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteIB2P_Basic" parameterType="int">
+        delete from IB2P_Basic
+        <where>
+            <if test = "platform_name != null">
+                platform_name = #{platform_name}
+            </if>
+            <if test = "IB2P_VERSION != null">
+                and IB2P_VERSION = #{IB2P_VERSION}
+            </if>
+            <if test = "diagnose_adr != null">
+                and diagnose_adr = #{diagnose_adr}
+            </if>
+        </where>
+    </delete>
+
+    <insert id="insertIB2P_Basic" parameterType="com.fawvw.pojo.IB2P_BasicLei">
+    /*
+         SELECT
+    CONCAT(GROUP_CONCAT(COLUMN_NAME))
+    FROM information_schema.COLUMNS
+    WHERE TABLE_NAME = 'IB2P_Basic'
+    AND TABLE_SCHEMA = 'plee_platform'
+    AND COLUMN_NAME != 'id'
+
+    AND COLUMN_NAME != 'create_time'
+    AND COLUMN_NAME != 'update_time'
+    */
+    INSERT INTO IB2P_Basic
+    (
+    platform_name,IB2P_VERSION,diagnose_adr,IB2P_NAME,IB2P_RELEASE_DATE,IB2P_filename,username,IB2P_VERSION_LOCAL,IB3P_Official_Release)
+    SELECT
+
+    platform_name,IB2P_VERSION,diagnose_adr,IB2P_NAME,IB2P_RELEASE_DATE,IB2P_filename,username = #{username} AS username, IB2P_VERSION_LOCAL = #{IB2P_VERSION_LOCAL} AS IB2P_VERSION_LOCAL,IB3P_Official_Release = #{IB3P_Official_Release} AS IB3P_Official_Release
+    FROM IB2P_Basic WHERE platform_name = #{platform_name} AND IB2P_VERSION = #{IB2P_VERSION} AND diagnose_adr = #{diagnose_adr}
+
+    </insert>
+
+
+</mapper>

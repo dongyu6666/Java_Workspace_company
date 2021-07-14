@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -17,5 +17,250 @@
         <import resource="classpath:spring-dao.xml"/>
         <import resource="classpath:spring-service.xml"/>
         <import resource="classpath:spring-mvc.xml"/>
+
+        <!--持久层配置Dao，开始
+        1.关联数据库配置文件
+            <context:property-placeholder location="classpath:database.properties"/>
+
+        2.连接池
+        <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
+                <property name="driverClassName" value="${driverClassName}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+
+                <property name="initialSize" value="${initialSize}"/>
+                <property name="minIdle" value="${minIdle}"/>
+                <property name="maxActive" value="${maxActive}"/>
+                <property name="maxWait" value="${maxWait}"/>
+
+                <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://10.227.6.242:3306/test?useSSL=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+
+                        <property name="url" value="jdbc:mysql://10.227.6.242:3306/plee_platform?useSSL=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+                        <property name="username" value="Liang.Dongyu"/>
+                        <property name="password" value="faw123"/>
+
+                <property name="url" value="jdbc:mysql://localhost:3306/plee_platform_self?useSSL=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+                <property name="username" value="plee"/>
+                <property name="password" value="plee123!"/>
+                下面是Hikari的
+
+                        <property name="readOnly" value="false" />
+                        &lt;!&ndash; 等待连接池分配连接的最大时长（毫秒），超过这个时长还没可用的连接则发生SQLException， 缺省:30秒 &ndash;&gt;
+                        <property name="connectionTimeout" value="30000" />
+                        &lt;!&ndash; 一个连接idle状态的最大时长（毫秒），超时则被释放（retired），缺省:10分钟 &ndash;&gt;
+                        <property name="idleTimeout" value="600000" />
+                        &lt;!&ndash; 一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒，参考MySQL
+                            wait_timeout参数（show variables like '%timeout%';） &ndash;&gt;
+                        <property name="maxLifetime" value="1800000" />
+                        &lt;!&ndash; 连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count) &ndash;&gt;
+                        <property name="maximumPoolSize" value="60" />
+                        <property name="minimumIdle" value="10" />
+
+                Hikari结束
+
+                 配置初始化大小、最小、最大
+                       <property name="initialSize" value="1"/>
+                       <property name="minIdle" value="1"/>
+                       <property name="maxActive" value="20"/>
+
+                 配置获取连接等待超时的时间
+                        <property name="maxWait" value="60000"/>
+
+                 配置间隔多久（1分钟）启动一次DestroyThread，对连接池内的连接才进行一次检测，单位是毫秒。
+                   检测时:
+                   1.如果连接空闲并且超过minIdle以外的连接，
+                   如果空闲时间超过minEvictableIdleTimeMillis设置的值则直接物理关闭。
+                   2.在minIdle以内的不处理。
+                        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+
+                 配置一个连接在池中最大空闲、不被驱逐的时间，单位是毫秒,5分钟
+                        <property name="minEvictableIdleTimeMillis" value="300000" />
+
+                 设置从连接池获取连接时是否检查连接有效性，true时，每次都检查;false时，不检查
+                <property name="testOnBorrow" value="true"/>
+
+                 连接泄露检查，打开removeAbandoned功能 ,
+                连接从连接池借出后，长时间不归还，将触发强制回连接。
+                回收周期随timeBetweenEvictionRunsMillis进行，
+                如果连接为从连接池借出状态，并且未执行任何sql，
+                并且从借出时间起已超过removeAbandonedTimeout时间，
+                则强制归还连接到连接池中。
+
+                <property name="removeAbandoned" value="true"/>
+                <property name="removeAbandonedTimeoutMillis" value="1800000"/>
+
+                 关闭abanded连接时输出错误日志，这样出现连接泄露时可以通过错误日志定位忘记关闭连接的位置
+                        <property name="logAbandoned" value="true" />
+
+
+                配置数据源监控的filter
+                <property name="filters" value="stat"/>
+
+        </bean>
+        3. 配置sqlSessionFactory
+        <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+                <property name="dataSource" ref="dataSource"/>
+                绑定Mybatis（也可不加，但推荐）
+                <property name="configLocation" value="classpath:mybatis-config.xml"/>
+                mapperLocations仅仅是sql配置文件，会被解析放入Configuration中
+                configLocation可以设置其他东西，比如二级缓存、实体类别名、数据源（DataSource）等，
+                可以配置多个config.xml实现多数据源配置。它会被解析为Configuration对象，这是构建SqlSessionFactory所必须的。
+                <property name="mapperLocations" value="classpath:dao/*.xml"/>
+        </bean>
+        4. SqlSessionTemplate就是sqlSession
+        <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+                因为源码中没有set方法，所以只能用构造器constructor注入sqlSessionFactory,property是不行的
+                <constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
+        </bean>
+
+        配置dao接口扫描包，动态的实现了dao接口可以注入到Spring容器中
+        <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+                将上方的sqlSessionFactory注入
+                <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+                要扫描的dao包,在dao包下就不用写Impl实现类了
+                <property name="basePackage" value="dao"/>
+        </bean>
+
+        持久层配置Dao，结束
+
+        业务层配置Service，开始
+        1.扫描service下的包
+              <context:component-scan base-package="service"></context:component-scan>
+        2.将所有Service业务类，注入到Spring，可以通过配置、或者注解实现,这里设置service的bean
+        <bean id="UserServiceImpl" class="service.UserServiceImpl">
+                <property name="userMapper" ref="userMapper"/>
+        </bean>
+        <bean id="PlatformServiceImpl" class="service.PlatformServiceImpl">
+                <property name="platformMapper" ref="platformMapper"/>
+        </bean>
+        <bean id="CartypeServiceImpl" class="service.CartypeServiceImpl">
+                <property name="cartypeMapper" ref="cartypeMapper"/>
+        </bean>
+        <bean id="IB1_BasicServiceImpl" class="service.IB1_BasicServiceImpl">
+                <这里好像有问题，IB1_BasicMapper首字母为何不小写"/>
+                <property name="iB1_BasicMapper" ref="IB1_BasicMapper"/>
+        </bean>
+        DOC_INFO
+        <bean id="IB1_DOC_INFO_CONTACTSServiceImpl" class="service.IB1_DOC_INFO_CONTACTSServiceImpl">
+                <property name="iB1_DOC_INFO_CONTACTSMapper" ref="IB1_DOC_INFO_CONTACTSMapper"/>
+        </bean>
+        <bean id="IB1_DOC_INFO_DOC_REVISIONSServiceImpl" class="service.IB1_DOC_INFO_DOC_REVISIONSServiceImpl">
+                <property name="iB1_DOC_INFO_DOC_REVISIONSMapper" ref="IB1_DOC_INFO_DOC_REVISIONSMapper"/>
+        </bean>
+        IB_DESCRIPTION
+        <bean id="IB1_IB_DESCRIPTION_IB_VARIANTSServiceImpl" class="service.IB1_IB_DESCRIPTION_IB_VARIANTSServiceImpl">
+                <property name="iB1_IB_DESCRIPTION_IB_VARIANTSMapper" ref="IB1_IB_DESCRIPTION_IB_VARIANTSMapper"/>
+        </bean>
+        <bean id="IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl" class="service.IB1_IB_DESCRIPTION_OBJECTIVESServiceImpl">
+                <property name="iB1_IB_DESCRIPTION_OBJECTIVESMapper" ref="IB1_IB_DESCRIPTION_OBJECTIVESMapper"/>
+        </bean>
+        <bean id="IB1_IB_DESCRIPTION_IBNZServiceImpl" class="service.IB1_IB_DESCRIPTION_IBNZServiceImpl">
+                <property name="iB1_IB_DESCRIPTION_IBNZMapper" ref="IB1_IB_DESCRIPTION_IBNZMapper"/>
+        </bean>
+        <bean id="IB1_IB_DESCRIPTION_SLAVEServiceImpl" class="service.IB1_IB_DESCRIPTION_SLAVEServiceImpl">
+                <property name="iB1_IB_DESCRIPTION_SLAVEMapper" ref="IB1_IB_DESCRIPTION_SLAVEMapper"/>
+        </bean>
+        ENVIRONMENT
+        <bean id="IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONServiceImpl" class="service.IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONServiceImpl">
+                <property name="iB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONMapper" ref="IB1_ENVIRONMENT_PRE_CONDITIONS_PRE_CONDITIONMapper"/>
+        </bean>
+        <bean id="IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYServiceImpl" class="service.IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYServiceImpl">
+                <property name="iB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYMapper" ref="IB1_ENVIRONMENT_DEPENDENCIES_DEPENDENCYMapper"/>
+        </bean>
+        <bean id="IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONServiceImpl" class="service.IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONServiceImpl">
+                <property name="iB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONMapper" ref="IB1_ENVIRONMENT_ACCESS_AUTHORISATIONS_ACCESS_AUTHORISATIONMapper"/>
+        </bean>
+        <bean id="IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl" class="service.IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEServiceImpl">
+                <property name="iB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEMapper" ref="IB1_ENVIRONMENT_PRODUCTION_MODES_PRODUCTION_MODEMapper"/>
+        </bean>
+        <bean id="IB1_ENVIRONMENT_TRANSPORT_MODEServiceImpl" class="service.IB1_ENVIRONMENT_TRANSPORT_MODEServiceImpl">
+                <property name="iB1_ENVIRONMENT_TRANSPORT_MODEMapper" ref="IB1_ENVIRONMENT_TRANSPORT_MODEMapper"/>
+        </bean>
+        PROCEDURE
+        <bean id="IB1_PROCEDURES_PROCEDUREServiceImpl" class="service.IB1_PROCEDURES_PROCEDUREServiceImpl">
+                <property name="iB1_PROCEDURES_PROCEDUREMapper" ref="IB1_PROCEDURES_PROCEDUREMapper"/>
+        </bean>
+        <bean id="IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERServiceImpl" class="service.IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERServiceImpl">
+                <property name="iB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper" ref="IB1_PROCEDURES_PROCEDURE_BLOCK_PARAMETERS_PARAMETERMapper"/>
+        </bean>
+        STEP
+        <bean id="IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl" class="service.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPServiceImpl">
+                <property name="iB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper" ref="IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEPMapper"/>
+        </bean>
+        <bean id="IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSServiceImpl" class="service.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSServiceImpl">
+                <property name="iB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper" ref="IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSMapper"/>
+        </bean>
+        BZD
+        <bean id="IB1_BZDServiceImpl" class="service.IB1_BZDServiceImpl">
+                <property name="iB1_BZDMapper" ref="IB1_BZDMapper"/>
+        </bean>
+        TNR
+        <bean id="IB1_TNRServiceImpl" class="service.IB1_TNRServiceImpl">
+                <property name="iB1_TNRMapper" ref="IB1_TNRMapper"/>
+        </bean>
+        IB1_REFERENCES
+        <bean id="IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl" class="service.IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTServiceImpl">
+                <property name="iB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTMapper" ref="IB1_REFERENCES_RELATED_DOCUMENTS_RELATED_DOCUMENTMapper"/>
+        </bean>
+        <bean id="IB1_REFERENCES_REGULATIONS_REGULATIONServiceImpl" class="service.IB1_REFERENCES_REGULATIONS_REGULATIONServiceImpl">
+                <property name="iB1_REFERENCES_REGULATIONS_REGULATIONMapper" ref="IB1_REFERENCES_REGULATIONS_REGULATIONMapper"/>
+        </bean>
+        IB1_BZD
+        <bean id="IB1_BZD_BasicServiceImpl" class="service.IB1_BZD_BasicServiceImpl">
+                <property name="iB1_BZD_BasicMapper" ref="IB1_BZD_BasicMapper"/>
+        </bean>
+        <bean id="IB1_BZD_IDENTSServiceImpl" class="service.IB1_BZD_IDENTSServiceImpl">
+                <property name="iB1_BZD_IDENTSMapper" ref="IB1_BZD_IDENTSMapper"/>
+        </bean>
+        <bean id="IB1_BZD_ADDITIONAL_IDENTSServiceImpl" class="service.IB1_BZD_ADDITIONAL_IDENTSServiceImpl">
+                <property name="iB1_BZD_ADDITIONAL_IDENTSMapper" ref="IB1_BZD_ADDITIONAL_IDENTSMapper"/>
+        </bean>
+        IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTC
+        <bean id="IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl" class="service.IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCServiceImpl">
+                <property name="iB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCMapper" ref="IB1_CUSTOMER_ADJUSTMENTS_BLOCKING_DTCS_DTCMapper"/>
+        </bean>
+        IB1_SECURITY_PROPERTIES
+        <bean id="IB1_SECURITY_PROPERTIESServiceImpl" class="service.IB1_SECURITY_PROPERTIESServiceImpl">
+                <property name="iB1_SECURITY_PROPERTIESMapper" ref="IB1_SECURITY_PROPERTIESMapper"/>
+        </bean>
+
+        3.声明式事务配置
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+                注入数据源
+                <property name="dataSource" ref="dataSource"/>
+        </bean>
+
+         配置基于注解的声明式事务
+              <tx:annotation-driven transaction-manager="transactionManager"/>
+
+        4.AOP事务支持
+        结合AOP实现事务的植入
+        配置事务通知：
+        <tx:advice id="txAdvice" transaction-manager="transactionManager">
+                给哪些方法配置事务
+                <tx:attributes>
+                        <tx:method name="add" propagation="REQUIRED"/>配置事务的传播特性:默认是propagation="REQUIRED"
+                        <tx:method name="delete" propagation="REQUIRED"/>
+                        <tx:method name="update" propagation="REQUIRED"/>
+                        <tx:method name="select" propagation="REQUIRED"/>
+                        <tx:method name="query" read-only="true"/>
+                        <tx:method name="*" propagation="REQUIRED"/>
+                </tx:attributes>
+        </tx:advice>
+
+        配置事务切入AOP
+        <aop:config>
+                <aop:pointcut id="txPointCut" expression="execution(* service.*.*(..))"/>*后面要有空格！  *.*表示：下面的所有类所有方法,(..)表示：参数
+
+                <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
+        </aop:config>
+
+        业务层配置Service，结束
+-->
+
+
 
 </beans>

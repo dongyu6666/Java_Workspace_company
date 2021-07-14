@@ -3,6 +3,7 @@ package controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.util.TypeUtils;
+import com.google.gson.JsonArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -10,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import pojo.API;
+import pojo.Class_B;
 import pojo.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSLei;
 import service.IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService;
 
@@ -33,8 +35,12 @@ public class IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSController
         api.setError("null");
 
         String list= null;
+        String list_DATA_IDENTIFIER= null;
         List<IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSLei> result;
+        List<IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSLei> result_DATA_IDENTIFIER;
         JSONArray array;
+        JSONArray array_DATA_IDENTIFIER;
+
 
         try {
             //解决fastjson问题，Bean对象的属性字段首字母默认被转成了小写形式
@@ -49,9 +55,17 @@ public class IB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSController
             map.put("STEP_id", STEP_id);
 
             result = iB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService.getIB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERS(map);
+            result_DATA_IDENTIFIER = iB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERSService.getIB1_PROCEDURES_PROCEDURE_BLOCK_STEPS_STEP_DIAG_PARAMETERS_DATA_IDENTIFIER(map);
             list = JSON.toJSONString(result);
+            list_DATA_IDENTIFIER = JSON.toJSONString(result_DATA_IDENTIFIER);
             array = JSONArray.parseArray(list);
-            api.setPara(array);
+            array_DATA_IDENTIFIER = JSONArray.parseArray(list_DATA_IDENTIFIER);
+            JSONArray array_all = new JSONArray();
+
+            array_all.add(array);
+            array_all.add(array_DATA_IDENTIFIER);
+            api.setPara(array_all);
+
         } catch (Exception e) {
             e.printStackTrace();
             //set error info if catches

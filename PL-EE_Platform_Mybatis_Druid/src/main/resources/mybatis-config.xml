@@ -17,9 +17,12 @@
             <transactionManager type="JDBC"/>
             <dataSource type="factory.MyDruidDataSourceFactory">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://10.227.6.242:3306/plee_platform?useSSL=false&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+                <!--<property name="url" value="jdbc:mysql://10.227.6.242:3306/plee_platform?useSSL=false&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
                 <property name="username" value="Liang.Dongyu"/>
-                <property name="password" value="faw123"/>
+                <property name="password" value="faw123"/>-->
+                <property name="url" value="jdbc:mysql://localhost:3306/plee_platform_self?useSSL=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+                <property name="username" value="plee"/>
+                <property name="password" value="plee123!"/>
             </dataSource>
         </environment>
     </environments>

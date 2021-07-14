@@ -41,6 +41,7 @@ public class CartypeController {
             list = JSON.toJSONString(result);
             array = JSONArray.parseArray(list);
             api.setPara(array);
+
         } catch (Exception e) {
             e.printStackTrace();
             //set error info if catches

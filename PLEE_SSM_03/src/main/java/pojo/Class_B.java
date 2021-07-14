@@ -1,29 +1,55 @@
 package pojo;
 
 import com.alibaba.fastjson.JSONArray;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
-//定义接口
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class Class_B {
 
+    //Doc
     private JSONArray CONTACTS;
     private JSONArray DOC_REVISIONS;
-
+    //IB_Description
     private JSONArray IB_VARIANTS;
     private JSONArray OBJECTIVES;
     private JSONArray IBNZ;
     private JSONArray SLAVES;
-
+    //Environment
     private JSONArray PRE_CONDITIONS;
     private JSONArray DEPENDENCIES;
     private JSONArray ACCESS_AUTHORISATIONS;
     private JSONArray PRODUCTION_MODES;
     private JSONArray TRANSPORT_MODE;
+    //reference
+    private JSONArray RELATED_DOCUMENT;
+    private JSONArray REGULATION;
+    //BZD
+    private JSONArray BASIC;
+
+    private JSONArray IDENTS;
+    private JSONArray ADDITIONAL_IDENTS;
+    //BZD:TARGET_DATE,S42_ATTRIBUTES_ADDED
+/*    private JSONArray TARGET_DATE;
+
+    @JsonProperty(value = "S42_ATTRIBUTES_ADDED")
+    private JSONArray S42_ATTRIBUTES_ADDED;*/
+
+    private JSONArray S42_ATTRIBUTES_ADDED;
+    private JSONArray TARGET_DATE;
+    private JSONArray IDENTS_DESC;
+    private JSONArray ADDITIONAL_IDENTS_DESC;
 
 
-    public Class_B() {
+    private JSONArray DATA_IDENTIFIER;
+
+  /*  public Class_B() {
     }
 
-    public Class_B(JSONArray CONTACTS, JSONArray DOC_REVISIONS, JSONArray IB_VARIANTS, JSONArray OBJECTIVES, JSONArray IBNZ, JSONArray SLAVES, JSONArray PRE_CONDITIONS, JSONArray DEPENDENCIES, JSONArray ACCESS_AUTHORISATIONS, JSONArray PRODUCTION_MODES, JSONArray TRANSPORT_MODE) {
+    public Class_B(JSONArray CONTACTS, JSONArray DOC_REVISIONS, JSONArray IB_VARIANTS, JSONArray OBJECTIVES, JSONArray IBNZ, JSONArray SLAVES, JSONArray PRE_CONDITIONS, JSONArray DEPENDENCIES, JSONArray ACCESS_AUTHORISATIONS, JSONArray PRODUCTION_MODES, JSONArray TRANSPORT_MODE, JSONArray RELATED_DOCUMENT, JSONArray REGULATION, JSONArray IDENTS, JSONArray ADDITIONAL_IDENTS, JSONArray TARGET_DATE, JSONArray s42_ATTRIBUTES_ADDED, JSONArray IDENTS_DESC, JSONArray ADDITIONAL_IDENTS_DESC) {
         this.CONTACTS = CONTACTS;
         this.DOC_REVISIONS = DOC_REVISIONS;
         this.IB_VARIANTS = IB_VARIANTS;
@@ -35,6 +61,14 @@ public class Class_B {
         this.ACCESS_AUTHORISATIONS = ACCESS_AUTHORISATIONS;
         this.PRODUCTION_MODES = PRODUCTION_MODES;
         this.TRANSPORT_MODE = TRANSPORT_MODE;
+        this.RELATED_DOCUMENT = RELATED_DOCUMENT;
+        this.REGULATION = REGULATION;
+        this.IDENTS = IDENTS;
+        this.ADDITIONAL_IDENTS = ADDITIONAL_IDENTS;
+        this.TARGET_DATE = TARGET_DATE;
+        this.S42_ATTRIBUTES_ADDED = S42_ATTRIBUTES_ADDED;
+        this.IDENTS_DESC = IDENTS_DESC;
+        this.ADDITIONAL_IDENTS_DESC = ADDITIONAL_IDENTS_DESC;
     }
 
     public JSONArray getCONTACTS() {
@@ -125,6 +159,70 @@ public class Class_B {
         this.TRANSPORT_MODE = TRANSPORT_MODE;
     }
 
+    public JSONArray getRELATED_DOCUMENT() {
+        return RELATED_DOCUMENT;
+    }
+
+    public void setRELATED_DOCUMENT(JSONArray RELATED_DOCUMENT) {
+        this.RELATED_DOCUMENT = RELATED_DOCUMENT;
+    }
+
+    public JSONArray getREGULATION() {
+        return REGULATION;
+    }
+
+    public void setREGULATION(JSONArray REGULATION) {
+        this.REGULATION = REGULATION;
+    }
+
+    public JSONArray getIDENTS() {
+        return IDENTS;
+    }
+
+    public void setIDENTS(JSONArray IDENTS) {
+        this.IDENTS = IDENTS;
+    }
+
+    public JSONArray getADDITIONAL_IDENTS() {
+        return ADDITIONAL_IDENTS;
+    }
+
+    public void setADDITIONAL_IDENTS(JSONArray ADDITIONAL_IDENTS) {
+        this.ADDITIONAL_IDENTS = ADDITIONAL_IDENTS;
+    }
+
+    public JSONArray getTARGET_DATE() {
+        return TARGET_DATE;
+    }
+
+    public void setTARGET_DATE(JSONArray TARGET_DATE) {
+        this.TARGET_DATE = TARGET_DATE;
+    }
+
+    public JSONArray getS42_ATTRIBUTES_ADDED() {
+        return S42_ATTRIBUTES_ADDED;
+    }
+
+    public void setS42_ATTRIBUTES_ADDED(JSONArray S42_ATTRIBUTES_ADDED) {
+        this.S42_ATTRIBUTES_ADDED = S42_ATTRIBUTES_ADDED;
+    }
+
+    public JSONArray getIDENTS_DESC() {
+        return IDENTS_DESC;
+    }
+
+    public void setIDENTS_DESC(JSONArray IDENTS_DESC) {
+        this.IDENTS_DESC = IDENTS_DESC;
+    }
+
+    public JSONArray getADDITIONAL_IDENTS_DESC() {
+        return ADDITIONAL_IDENTS_DESC;
+    }
+
+    public void setADDITIONAL_IDENTS_DESC(JSONArray ADDITIONAL_IDENTS_DESC) {
+        this.ADDITIONAL_IDENTS_DESC = ADDITIONAL_IDENTS_DESC;
+    }
+
     @Override
     public String toString() {
         return "Class_B{" +
@@ -139,6 +237,14 @@ public class Class_B {
                 ", ACCESS_AUTHORISATIONS=" + ACCESS_AUTHORISATIONS +
                 ", PRODUCTION_MODES=" + PRODUCTION_MODES +
                 ", TRANSPORT_MODE=" + TRANSPORT_MODE +
+                ", RELATED_DOCUMENT=" + RELATED_DOCUMENT +
+                ", REGULATION=" + REGULATION +
+                ", IDENTS=" + IDENTS +
+                ", ADDITIONAL_IDENTS=" + ADDITIONAL_IDENTS +
+                ", TARGET_DATE=" + TARGET_DATE +
+                ", S42_ATTRIBUTES_ADDED=" + S42_ATTRIBUTES_ADDED +
+                ", IDENTS_DESC=" + IDENTS_DESC +
+                ", ADDITIONAL_IDENTS_DESC=" + ADDITIONAL_IDENTS_DESC +
                 '}';
-    }
+    }*/
 }
